@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/', [HomeControllerController::class, 'index']);
+Route::get('/', [HomeController::class, 'index']);
