@@ -1,5 +1,9 @@
 <x-layout>
 
-echo "teste" 
+<header class="bg-dark">
+
+
+    
+</header>
 
 </x-layout>   
