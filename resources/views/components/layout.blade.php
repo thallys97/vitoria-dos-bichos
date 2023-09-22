@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Associação Vitória dos Bichos | Vitória dos Bichos</title>
-    <!-- Inclua aqui seus links para folhas de estilo CSS, se necessário -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 
