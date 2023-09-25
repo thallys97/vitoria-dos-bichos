@@ -10,17 +10,20 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <li class="nav-item border text-center">
+                    <a class="nav-link" href="#">Início</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                  <li class="nav-item border text-center">
+                    <a class="nav-link" href="#">Sobre a associação</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                  <li class="nav-item border text-center">
+                    <a class="nav-link" href="#">Serviços de castração</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  <li class="nav-item border text-center">
+                    <a class="nav-link" href="#">Doação</a>
+                  </li>
+                  <li class="nav-item border text-center">
+                    <a class="nav-link" href="#">Contatos</a>
                   </li>
                 </ul>
               </div>
