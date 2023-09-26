@@ -11,19 +11,19 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item border text-center">
-                    <a class="nav-link nav-link-custom" href="#">Início</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#">Início</a>
                   </li>
                   <li class="nav-item border text-center">
-                    <a class="nav-link nav-link-custom" href="#">Sobre a associação</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#">Sobre a associação</a>
                   </li>
                   <li class="nav-item border text-center">
-                    <a class="nav-link nav-link-custom" href="#">Serviços de castração</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#">Serviços de castração</a>
                   </li>
                   <li class="nav-item border text-center">
-                    <a class="nav-link nav-link-custom" href="#">Doação</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#">Doação</a>
                   </li>
                   <li class="nav-item border text-center">
-                    <a class="nav-link nav-link-custom" href="#">Contatos</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#">Contatos</a>
                   </li>
                 </ul>
               </div>
