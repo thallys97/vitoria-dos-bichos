@@ -8,6 +8,11 @@ body {
 
 }
 
+.cabecalho{
+
+    background-color: black;
+}
+
 a.nav-link {
 
     color: #6C3593;
@@ -33,4 +38,10 @@ a.nav-link {
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -1
+}
+
+.sobre-associacao-conteudo{
+
+    background-color: #38076B;
+
 }

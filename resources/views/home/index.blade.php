@@ -1,7 +1,7 @@
 <x-layout>
 
    
-    <header class="bg-dark d-flex flex-column justify-content-center align-items-center pb-5">
+    <header class="cabecalho d-flex flex-column justify-content-center align-items-center pb-5">
         <img src="{{ asset('images/logo-AVB.png') }}" class="w-50" alt="logo da associação vitória dos bichos">
         <nav class="navbar navbar-expand-lg navbar-dark w-100">
             <div class="container-fluid justify-content-center">
@@ -40,9 +40,10 @@
     </div>
 
     <!-- Conteúdo da página -->
-    <div class="content">
-        <h1>Seu Conteúdo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <div class="sobre-associacao-conteudo  d-flex flex-column justify-content-center align-items-center">
+      <img src="{{ asset('images/cachorrinho.png') }}" class="w-50" alt="cachorrinho">
+      <h1>Seu Conteúdo</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
     </div>
 
 </section>
