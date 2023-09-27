@@ -5,7 +5,7 @@
         <img src="{{ asset('images/logo-AVB.png') }}" class="w-50" alt="logo da associação vitória dos bichos">
         <nav class="navbar navbar-expand-lg navbar-dark w-100">
             <div class="container-fluid justify-content-center">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
