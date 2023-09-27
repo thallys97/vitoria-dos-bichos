@@ -32,10 +32,26 @@
     </header>
 <main>
 
+<section class="sobre-associacao">
+
+      <!-- Camadas parallax -->
+    <div class="parallax-container">
+        <div class="parallax-layer" style="background-image: url('{{ asset('images/parallax-cao-gato.png') }}');"></div>
+    </div>
+
+    <!-- Conteúdo da página -->
+    <div class="content">
+        <h1>Seu Conteúdo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+
+</section>
 
 
-  
+
 </main>
+
+
 
 
 </x-layout>   

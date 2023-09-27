@@ -17,7 +17,7 @@ a.nav-link {
         /* Estilos CSS para as camadas parallax */
 .parallax-container {
     position: relative;
-    height: 100vh; /* Defina a altura desejada para a camada */
+    height: 10rem; /* Defina a altura desejada para a camada */
     overflow: hidden;
 }
 
@@ -25,12 +25,12 @@ a.nav-link {
 .parallax-layer {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     z-index: -1
 }
