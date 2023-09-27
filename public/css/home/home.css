@@ -13,3 +13,24 @@ a.nav-link {
     color: #6C3593;
 
 }
+
+        /* Estilos CSS para as camadas parallax */
+.parallax-container {
+    position: relative;
+    height: 100vh; /* Defina a altura desejada para a camada */
+    overflow: hidden;
+}
+
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1
+}

@@ -30,7 +30,12 @@
             </div>
           </nav>
     </header>
+<main>
 
+
+
+  
+</main>
 
 
 </x-layout>   
