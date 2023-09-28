@@ -45,3 +45,15 @@ a.nav-link {
     background-color: #38076B;
 
 }
+
+.sobre-associacao-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{ 
+
+    color: white;
+
+}
+
+.sobre-associacao-texto {
+
+    text-align: justify;
+
+}
