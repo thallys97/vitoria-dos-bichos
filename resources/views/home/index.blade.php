@@ -36,6 +36,7 @@
 
       <!-- Camadas parallax -->
     <div class="parallax-container">
+        <div class="parallax-black-banner" style="background-image: url('{{ asset('images/black_banner.png') }}');"></div>
         <div class="parallax-layer" style="background-image: url('{{ asset('images/parallax-cao-gato.png') }}');"></div>
     </div>
 
