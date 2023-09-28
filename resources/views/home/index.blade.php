@@ -53,15 +53,22 @@
 
 <section class="servicos">
 
-
       <!-- Camadas parallax -->
       <div class="parallax-container">
         <div class="parallax-layer-gato" style="background-image: url('{{ asset('images/gato-preto.jpg') }}');"></div>
     </div>
 
-    <div> 
+    <div class="servicos-conteudo d-flex flex-column justify-content-center align-items-center pt-4"> 
+
+      <img src="{{ asset('images/cachorro-adulto.png') }}" class="w-50 mb-2" alt="cachorro adulto">
 
       <h2>Serviços</h2>
+
+      <p> Objetivo: castração </p>
+      <p class="text-center"> 1. Não recebemos ajuda fianceira do municipio e governo <br>
+        2. Não dispomos de local para abrigo de animais <br>
+        3. Somente recolhemos animais que já possuem local de encaminhamento para o mesmo. <span> Ex: Lar temporário até que fique pronto para adoção. </span>  <br>
+        Realizamos um trabalho voluntário quando encontramos animais acidentados ou doentes em nosso percurso, ele recebe o tratamento adequado e vai para adoção posteriormente. </p>
 
     </div>
 
