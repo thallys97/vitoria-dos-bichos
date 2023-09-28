@@ -71,3 +71,30 @@ a.nav-link {
     text-align: justify;
 
 }
+
+
+.parallax-layer-gato {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1
+}
+
+
+.servicos-conteudo {
+
+    background-color: #9D5A00;
+
+}
+
+.servicos-titulo, .servicos-texto {
+    
+    color: white;    
+
+} 
