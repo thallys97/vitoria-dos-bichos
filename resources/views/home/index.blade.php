@@ -51,6 +51,24 @@
 </section>
 
 
+<section class="servicos">
+
+
+      <!-- Camadas parallax -->
+      <div class="parallax-container">
+        <div class="parallax-layer-gato" style="background-image: url('{{ asset('images/gato-preto.jpg') }}');"></div>
+    </div>
+
+    <div> 
+
+      <h2>Serviços</h2>
+
+    </div>
+
+
+</section>
+
+
 
 </main>
 
