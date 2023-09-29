@@ -121,8 +121,8 @@
 
     <h2 class="contatos-titulo fw-bold pb-3">Contatos</h2>
 
-    <p class="contatos-telefones">(63) 98120-0001 <br>
-       (63) 98426-6777</p>
+    <p class="contatos-telefones"> <i class="fa-brands fa-whatsapp"></i> (63) 98120-0001 <br>
+      <i class="fa-brands fa-whatsapp"></i>  (63) 98426-6777</p>
 
     <img src="{{ asset('images/whatsapp.png') }}" class="w-50" alt="logo do whatsapp">
     <img src="{{ asset('images/logo-AVB-contatos.png') }}" class="w-50" alt="logo da associação vitória dos bichos">
