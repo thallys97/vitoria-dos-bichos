@@ -88,8 +88,12 @@
 
   </div>
   
-  <div class="parceiros">
+  <div class="parceiros mx-4">
 
+    <h2>Veja alguns dos nossos parceiros</h2>
+
+    <img src="{{ asset('images/PetClinic-Sk1.png') }}" class="w-100" alt="logos da PetClinic e da SK1 embalagens">
+    <img src="{{ asset('images/sempre6-cargeo.png') }}" class="w-100" alt="logos da sempre 6 e da cargeo">
 
   </div>
 
