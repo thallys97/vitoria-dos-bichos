@@ -105,3 +105,19 @@ a.nav-link {
     background-color: #38076B;
 
 }
+
+.doacao-titulo , .doacao-texto {
+
+    color: white;
+
+}
+
+.doacao-botao {
+
+    background-color: black;
+
+    color: #6C3593;
+
+    border: 3px solid #9D5A00;
+
+}

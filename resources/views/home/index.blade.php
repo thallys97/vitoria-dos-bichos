@@ -76,15 +76,15 @@
 
 <section class="doacao">
 
-  <div class="doacao-conteudo">
+  <div class="doacao-conteudo d-flex flex-column justify-content-center align-items-center pt-5 pb-4">
 
-    <h2>Doação</h2>
+    <h2 class="doacao-titulo fw-bold  display-4">Doação</h2>
 
-    <p>Se você gostaria de fazer uma doação para a AVB - Associação Vitória dos Bichos, basta acessar o link abaixo.</p>
+    <p class="doacao-texto fw-bold mx-4 mt-3 text-center">Se você gostaria de fazer uma doação para a AVB - Associação Vitória dos Bichos, basta acessar o link abaixo.</p>
 
-    <img src="{{ asset('images/PicPay.jpg') }}" class="w-50" alt="PicPay">
+    <img src="{{ asset('images/PicPay.jpg') }}" class="w-75 mt-2 rounded-3" alt="PicPay">
 
-    <a href="#" class="btn btn-primary mt-2">QUERO DOAR</a>
+    <a href="#" class="btn doacao-botao mt-2 py-3 w-75 rounded-pill fw-bold">QUERO DOAR</a>
 
   </div>
   
