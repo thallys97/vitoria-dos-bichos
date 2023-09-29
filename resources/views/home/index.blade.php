@@ -108,11 +108,12 @@
 
 <section class="contatos">
 
-  <div class="localizacao d-flex flex-column justify-content-center align-items-center">
+  <div class="localizacao d-flex flex-column justify-content-center align-items-center px-2">
 
     <h2>Localização</h2>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.3823753250945!2d-49.071228025716024!3d-11.73808963622875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933e9535e4f20845%3A0x9e96207bb1aa71d8!2sAssocia%C3%A7%C3%A3o%20Vit%C3%B3ria%20dos%20Bichos%20-%20AVB!5e0!3m2!1spt-BR!2sbr!4v1696017751942!5m2!1spt-BR!2sbr" width="90%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.3823753250945!2d-49.071228025716024!3d-11.73808963622875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933e9535e4f20845%3A0x9e96207bb1aa71d8!2sAssocia%C3%A7%C3%A3o%20Vit%C3%B3ria%20dos%20Bichos%20-%20AVB!5e0!3m2!1spt-BR!2sbr!4v1696017751942!5m2!1spt-BR!2sbr" width="90%" height="300" style="border: 8px solid white;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 
   </div>
   
