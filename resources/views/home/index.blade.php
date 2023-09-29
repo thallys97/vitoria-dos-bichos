@@ -80,6 +80,11 @@
 
     <h2>Doação</h2>
 
+    <p>Se você gostaria de fazer uma doação para a AVB - Associação Vitória dos Bichos, basta acessar o link abaixo.</p>
+
+    <img src="{{ asset('images/PicPay.jpg') }}" class="w-50" alt="PicPay">
+
+    <a href="#" class="btn btn-primary mt-2">QUERO DOAR</a>
 
   </div>
   
