@@ -13,8 +13,8 @@
 
     {{ $slot }}
     
-    <footer>
-        <p>Vitória dos Bichos@ 2022 - Todos os Direitos Reservados</p>        
+    <footer style="background-color: black; color: white;" class="py-3">
+        <p class="text-center mb-0">&copy; 2023 Associação Vitória dos Bichos. <br> Todos os Direitos Reservados</p>        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
