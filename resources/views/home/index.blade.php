@@ -1,8 +1,8 @@
 <x-layout>
 
    
-    <header class="cabecalho d-flex flex-column justify-content-center align-items-center pb-5">
-        <img src="{{ asset('images/logo-AVB.png') }}" class="w-50" alt="logo da associação vitória dos bichos">
+    <header class="cabecalho d-flex flex-column flex-lg-row justify-content-center align-items-center pb-5  ">
+        <img src="{{ asset('images/logo-AVB.png') }}" class="logo-cabecalho" alt="logo da associação vitória dos bichos">
         <nav class="navbar navbar-expand-lg navbar-dark w-100">
             <div class="container-fluid justify-content-center">
               <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
