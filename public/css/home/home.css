@@ -196,5 +196,19 @@ a.nav-link {
     
     }
 
-    
+    .cabecalho-navbar-lista {
+
+        gap: 0.1rem;
+
+    }    
+
+    .cabecalho-navbar-item {
+
+        padding: 0.1rem 1rem;
+
+        display: flex;
+        align-items: center;
+
+    }
+
 }

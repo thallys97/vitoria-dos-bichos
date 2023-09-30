@@ -9,20 +9,20 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item border text-center">
+                <ul class="navbar-nav cabecalho-navbar-lista">
+                  <li class="nav-item cabecalho-navbar-item border border-secondary text-center">
                     <a class="nav-link nav-link-custom fw-bold" href="#">Início</a>
                   </li>
-                  <li class="nav-item border text-center">
+                  <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
                     <a class="nav-link nav-link-custom fw-bold" href="#">Sobre a associação</a>
                   </li>
-                  <li class="nav-item border text-center">
+                  <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
                     <a class="nav-link nav-link-custom fw-bold" href="#">Serviços de castração</a>
                   </li>
-                  <li class="nav-item border text-center">
+                  <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
                     <a class="nav-link nav-link-custom fw-bold" href="#">Doação</a>
                   </li>
-                  <li class="nav-item border text-center">
+                  <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
                     <a class="nav-link nav-link-custom fw-bold" href="#">Contatos</a>
                   </li>
                 </ul>
