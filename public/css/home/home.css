@@ -11,11 +11,19 @@ body {
 .cabecalho{
 
     background-color: black;
+
+    padding-bottom: 3rem;
 }
 
-.logo-cabecalho {
+.cabecalho-logo {
 
     width: 50%;
+
+}
+
+.cabecalho-navbar{
+
+    width: 100%;
 
 }
 
@@ -169,11 +177,24 @@ a.nav-link {
 
 @media screen and (min-width: 992px) {
 
-    .logo-cabecalho {
+
+    .cabecalho{
+    
+        padding-bottom: 0;
+    }
+
+    .cabecalho-logo {
 
         width: 140px;
         height: 150px;
 
     }
+
+    .cabecalho-navbar{
+
+        width: 60%;
+    
+    }
+
     
 }
