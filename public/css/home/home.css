@@ -183,10 +183,19 @@ a.nav-link {
         padding-bottom: 0;
     }
 
+    .cabecalho-logo-container{
+
+        width: 140px; /* Largura desejada */
+        height: 115px; /* Altura desejada após cortar 20px da parte superior e 20px da parte inferior */
+        overflow: hidden;
+
+    }
+
     .cabecalho-logo {
 
         width: 140px;
         height: 150px;
+        margin-top: -20px;
 
     }
 

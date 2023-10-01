@@ -2,7 +2,9 @@
 
    
     <header class="cabecalho d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around align-items-center">
+      <div class="cabecalho-logo-container">
         <img src="{{ asset('images/logo-AVB.png') }}" class="cabecalho-logo" alt="logo da associação vitória dos bichos">
+      </div> 
         <nav class="cabecalho-navbar navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid justify-content-center">
               <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
