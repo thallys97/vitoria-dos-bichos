@@ -2,7 +2,7 @@
 
    
     <header class="cabecalho d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around align-items-center">
-      <div class="cabecalho-logo-container">
+      <div class="cabecalho-logo-container d-flex justify-content-center">
         <img src="{{ asset('images/logo-AVB.png') }}" class="cabecalho-logo" alt="logo da associação vitória dos bichos">
       </div> 
         <nav class="cabecalho-navbar navbar navbar-expand-lg navbar-dark">
