@@ -33,6 +33,7 @@ a.nav-link {
 
 }
 
+
         /* Estilos CSS para as camadas parallax */
 .parallax-container {
     position: relative;
@@ -77,6 +78,9 @@ a.nav-link {
 .sobre-associacao-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{ 
 
     color: white;
+
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 
 }
 
@@ -229,6 +233,13 @@ a.nav-link {
     .parallax-black-banner{
 
         height: 40rem;
+
+    }
+
+    .sobre-associacao-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{
+
+        margin-right: 0;
+        margin-left: 0;
 
     }
     

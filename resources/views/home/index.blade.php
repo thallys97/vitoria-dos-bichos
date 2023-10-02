@@ -43,12 +43,14 @@
     </div>
 
     <!-- Conteúdo da página -->
-    <div class="sobre-associacao-conteudo  d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center pt-4">
-      <img src="{{ asset('images/cachorrinho.png') }}" class="w-50 mb-2" alt="cachorrinho">
-      <div>
-        <h2 class="sobre-associacao-titulo text-center my-4 fw-bold">Conheça a Vitória dos <br> Bichos</h2>
-        <h4 class="sobre-associacao-subtitulo text-center fw-bold fs-5 pt-2">Sobre a Associação</h4>
-        <p class="sobre-associacao-texto mx-4 mt-3 mb-5 ">São vários os chamados por dia que recebemos pela página do Facebook, telefonemas de pessoas que se deparam com animais em risco, atropelados, doentes ou abandonados, mas que sequer se comprometem a se responsabilizar por eles, oferecendo ao menos um local para acomodá-los. Pessoas que passam pelo local e não prestam socorro ao animal, achando que esse trabalho somente pode ser executado por nós. Poucas pessoas vão ao local socorrer ou mesmo se interessam pela causa, e o animal acaba sofrendo e até vindo a falecer sem socorro. Isso é muito triste. Gostaríamos sim de recolher todos os animais de rua e perdemos a conta de quantos já resgatamos por conta própria, assumindo sozinhas as responsabilidades de ter que levá-los para nossas próprias casas. Sem falar que as casas das protetoras já estão abarrotadas de animais, porém são tantos que encontramos na rua que na maioria das vezes só conseguimos alimentá-los. Dispomos de poucos recursos financeiros, vivemos de doações e até mesmo colocamos a mão no bolso para poder oferecer um pouquinho de dignidade e carinho a esses seres indefesos. Fazemos o que podemos e te convidamos a fazer parte da equipe!</p>
+    <div class="sobre-associacao-conteudo" >
+      <div class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center pt-4 container-lg">
+        <img src="{{ asset('images/cachorrinho.png') }}" class="w-50 mb-2" alt="cachorrinho">
+        <div>
+          <h2 class="sobre-associacao-titulo text-center text-lg-start my-4 fw-bold">Conheça a Vitória dos <br class="d-md-none"> Bichos</h2>
+          <h4 class="sobre-associacao-subtitulo text-center text-lg-start fw-bold fs-5 pt-2">Sobre a Associação</h4>
+          <p class="sobre-associacao-texto mt-3 mb-5 ">São vários os chamados por dia que recebemos pela página do Facebook, telefonemas de pessoas que se deparam com animais em risco, atropelados, doentes ou abandonados, mas que sequer se comprometem a se responsabilizar por eles, oferecendo ao menos um local para acomodá-los. Pessoas que passam pelo local e não prestam socorro ao animal, achando que esse trabalho somente pode ser executado por nós. Poucas pessoas vão ao local socorrer ou mesmo se interessam pela causa, e o animal acaba sofrendo e até vindo a falecer sem socorro. Isso é muito triste. Gostaríamos sim de recolher todos os animais de rua e perdemos a conta de quantos já resgatamos por conta própria, assumindo sozinhas as responsabilidades de ter que levá-los para nossas próprias casas. Sem falar que as casas das protetoras já estão abarrotadas de animais, porém são tantos que encontramos na rua que na maioria das vezes só conseguimos alimentá-los. Dispomos de poucos recursos financeiros, vivemos de doações e até mesmo colocamos a mão no bolso para poder oferecer um pouquinho de dignidade e carinho a esses seres indefesos. Fazemos o que podemos e te convidamos a fazer parte da equipe!</p>
+        </div>
       </div>
     </div>
 
