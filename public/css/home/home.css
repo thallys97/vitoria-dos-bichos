@@ -242,5 +242,13 @@ a.nav-link {
         margin-left: 0;
 
     }
+
+    .servicos-titulo {
+
+        position: relative;
+        bottom: 20px;
+        left: 150px;
+
+    }
     
 }
