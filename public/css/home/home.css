@@ -122,6 +122,8 @@ a.nav-link {
 
     background-color: #38076B;
 
+    padding-bottom: 1.5rem;
+
 }
 
 .doacao-titulo , .doacao-texto {
@@ -129,6 +131,13 @@ a.nav-link {
     color: white;
 
 }
+
+.imagem-picpay {
+
+    width: 75%;
+
+}
+
 
 .doacao-botao {
 
@@ -138,7 +147,22 @@ a.nav-link {
 
     border: 3px solid #9D5A00;
 
+    width: 75%;
+
+    margin-top: 0.5rem;
+
 }
+
+.doacao-botao:hover {
+
+    background-color: #3CB371;
+
+    border: 3px solid #9D5A00;
+
+    color: #6C3593;
+
+}    
+
 
 .parceiros{
 
@@ -174,6 +198,31 @@ a.nav-link {
 .contatos-titulo , .contatos-telefones{
 
     color: white;
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .imagem-picpay {
+
+        width: 50%;
+    
+    }
+
+    .doacao-botao {
+
+        width: 50%;
+
+        margin-top: 2rem;
+
+    }
+
+    .doacao-conteudo {
+    
+        padding-bottom: 3rem;
+    
+    }
 
 }
 
@@ -250,5 +299,18 @@ a.nav-link {
         left: 150px;
 
     }
+
+    .imagem-picpay {
+
+        width: 30%;
+    
+    }
+
+    .doacao-botao {
+
+        width: 30%;
+
+    }
+
     
 }
