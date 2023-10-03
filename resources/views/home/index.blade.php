@@ -65,7 +65,7 @@
       </div>
 
     <div class="servicos-conteudo">
-      <div class=" d-flex flex-column flex-md-row-reverse justify-content-center align-items-center py-4 container-lg"> 
+      <div class=" d-flex flex-column flex-md-row-reverse justify-content-center align-items-center py-4 container-md"> 
 
         <img src="{{ asset('images/cachorro-adulto.png') }}" class="w-50 mb-2" alt="cachorro adulto">
 
