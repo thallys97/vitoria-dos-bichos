@@ -99,16 +99,16 @@
 
   </div>
   
-  <div class="parceiros d-flex flex-column justify-content-center align-items-center pt-5 pb-4 ">
+  <div class="parceiros d-flex flex-column justify-content-center align-items-center pt-5">
 
     <h2 class="parceiros-titulo text-center fw-bold">Veja alguns dos nossos parceiros</h2>
 
-    <div class="mx-4 mt-4">
-      <img src="{{ asset('images/PetClinic-Sk1.png') }}" class="w-100 mb-2" alt="logos da PetClinic e da SK1 embalagens">
-      <img src="{{ asset('images/sempre6-cargeo.png') }}" class="w-100" alt="logos da sempre 6 e da cargeo">
+    <div class="mx-4 mt-4 d-md-flex flex-md-row align-items-md-center container-md parceiros-imagens">
+      <img src="{{ asset('images/PetClinic-Sk1.png') }}" class="imagem-PetClinic-Sk1 mb-2" alt="logos da PetClinic e da SK1 embalagens">
+      <img src="{{ asset('images/sempre6-cargeo.png') }}" class="imagem-sempre6-cargeo" alt="logos da sempre 6 e da cargeo">
     </div>
 
-    <a href="#" class="btn doacao-botao mt-2 py-3 mt-4 w-75 rounded-pill fw-bold">QUERO ME TORNAR UM PARCEIRO</a>
+    <a href="#" class="btn doacao-botao mt-2 py-3 mt-4 rounded-pill fw-bold">QUERO ME TORNAR UM PARCEIRO</a>
 
   </div>
 

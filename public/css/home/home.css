@@ -168,6 +168,8 @@ a.nav-link {
 
     background-color: #9D5A00;
 
+    padding-bottom: 1.5rem;
+
 }
 
 .parceiros-titulo {
@@ -175,6 +177,13 @@ a.nav-link {
     color: white;
 
 }
+
+.imagem-PetClinic-Sk1 , .imagem-sempre6-cargeo {
+
+    width: 100%;
+
+}
+
 
 .localizacao{
 
@@ -223,6 +232,34 @@ a.nav-link {
         padding-bottom: 3rem;
     
     }
+
+    .parceiros{
+
+        gap: 3rem;
+
+        padding-bottom: 3rem;
+    
+    }
+
+    .parceiros-imagens {
+
+        gap: 2rem;
+
+    }
+
+    .imagem-PetClinic-Sk1 {
+
+        width: 42%;
+    
+    }
+
+    .imagem-sempre6-cargeo {
+
+        width: 58%;
+        height: 90%;
+
+    }
+
 
 }
 
