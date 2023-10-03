@@ -217,11 +217,18 @@ a.nav-link {
 }
 
 
-.logo-whatsapp {
+.container-whatsapp {
 
     width: 50%;
 
 }
+
+.logo-whatsapp {
+
+    width: 100%;
+
+}
+
 
 .logo-AVB-contatos {
 
@@ -286,7 +293,7 @@ a.nav-link {
     
     }
 
-    .logo-whatsapp {
+    .container-whatsapp {
 
         width: 25%;
 

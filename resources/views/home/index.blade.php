@@ -3,7 +3,9 @@
    
     <header class="cabecalho d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around align-items-center">
       <div class="cabecalho-logo-container d-flex justify-content-center">
-        <img src="{{ asset('images/logo-AVB.png') }}" class="cabecalho-logo" alt="logo da associação vitória dos bichos">
+        <a href="http://avitoriadosbichos.com.br/">
+          <img src="{{ asset('images/logo-AVB.png') }}" class="cabecalho-logo" alt="logo da associação vitória dos bichos">
+        </a>
       </div> 
         <nav class="cabecalho-navbar navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid justify-content-center">
@@ -16,16 +18,16 @@
                     <a class="nav-link nav-link-custom fw-bold" href="#">Início</a>
                   </li>
                   <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                    <a class="nav-link nav-link-custom fw-bold" href="#">Sobre a associação</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#sobrenos">Sobre a associação</a>
                   </li>
                   <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                    <a class="nav-link nav-link-custom fw-bold" href="#">Serviços de castração</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#servicos-castracao">Serviços de castração</a>
                   </li>
                   <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                    <a class="nav-link nav-link-custom fw-bold" href="#">Doação</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#doacoes">Doação</a>
                   </li>
                   <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                    <a class="nav-link nav-link-custom fw-bold" href="#">Contatos</a>
+                    <a class="nav-link nav-link-custom fw-bold" href="#contatos-telefones">Contatos</a>
                   </li>
                 </ul>
               </div>
@@ -43,7 +45,7 @@
     </div>
 
     <!-- Conteúdo da página -->
-    <div class="sobre-associacao-conteudo" >
+    <div id="sobrenos" class="sobre-associacao-conteudo" >
       <div class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center pt-4 container-lg">
         <img src="{{ asset('images/cachorrinho.png') }}" class="w-50 mb-2" alt="cachorrinho">
         <div>
@@ -64,7 +66,7 @@
           <div class="parallax-layer-gato" style="background-image: url('{{ asset('images/gato-preto.jpg') }}');"></div>
       </div>
 
-    <div class="servicos-conteudo">
+    <div id="servicos-castracao" class="servicos-conteudo">
       <div class=" d-flex flex-column flex-md-row-reverse justify-content-center align-items-center py-4 container-md"> 
 
         <img src="{{ asset('images/cachorro-adulto.png') }}" class="w-50 mb-2" alt="cachorro adulto">
@@ -87,15 +89,15 @@
 
 <section class="doacao">
 
-  <div class="doacao-conteudo d-flex flex-column justify-content-center align-items-center pt-5">
+  <div id="doacoes" class="doacao-conteudo d-flex flex-column justify-content-center align-items-center pt-5">
 
     <h2 class="doacao-titulo fw-bold  display-4">Doação</h2>
 
     <p class="doacao-texto fw-bold mx-4 mt-3 text-center">Se você gostaria de fazer uma doação para a AVB - Associação Vitória dos Bichos, basta acessar o link abaixo.</p>
 
-    <img src="{{ asset('images/PicPay.jpg') }}" class="imagem-picpay mt-2 rounded-3" alt="PicPay">
+      <img src="{{ asset('images/PicPay.jpg') }}" class="imagem-picpay mt-2 rounded-3" alt="PicPay">
 
-    <a href="#" class="btn doacao-botao py-3 rounded-pill fw-bold">QUERO DOAR</a>
+    <a href="https://app.picpay.com/user/vitoriadosbichos" class="btn doacao-botao py-3 rounded-pill fw-bold">QUERO DOAR</a>
 
   </div>
   
@@ -108,7 +110,7 @@
       <img src="{{ asset('images/sempre6-cargeo.png') }}" class="imagem-sempre6-cargeo" alt="logos da sempre 6 e da cargeo">
     </div>
 
-    <a href="#" class="btn doacao-botao mt-2 py-3 mt-4 rounded-pill fw-bold">QUERO ME TORNAR UM PARCEIRO</a>
+    <a href="https://api.whatsapp.com/send?phone=5563981200001&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20uma%20atendente" class="btn doacao-botao mt-2 py-3 mt-4 rounded-pill fw-bold">QUERO ME TORNAR UM PARCEIRO</a>
 
   </div>
 
@@ -129,14 +131,16 @@
     </div>
   </div>
   
-  <div class="contatos-conteudo d-flex flex-column justify-content-center align-items-center pt-3 pb-2">
+  <div id="contatos-telefones" class="contatos-conteudo d-flex flex-column justify-content-center align-items-center pt-3 pb-2">
 
     <h2 class="contatos-titulo fw-bold pb-3 display-4">Contatos</h2>
     <div class="d-flex flex-column justify-content-center align-items-center flex-md-row  justify-content-md-between">
         <p class="order-md-1 contatos-telefones fs-4 fw-bold"> <i class="fa-brands fa-whatsapp"></i> (63) 98120-0001 <br>
           <i class="fa-brands fa-whatsapp"></i>  (63) 98426-6777</p>
 
-        <img src="{{ asset('images/whatsapp.png') }}" class="order-md-2 logo-whatsapp" alt="logo do whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5563981200001&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20uma%20atendente" class="order-md-2 container-whatsapp" >  
+          <img src="{{ asset('images/whatsapp.png') }}" class="logo-whatsapp" alt="logo do whatsapp">
+        </a>
         <img src="{{ asset('images/logo-AVB-contatos.png') }}" class="order-md-0 logo-AVB-contatos" alt="logo da associação vitória dos bichos">
     </div>    
   </div>
