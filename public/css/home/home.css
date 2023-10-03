@@ -210,6 +210,25 @@ a.nav-link {
 
 }
 
+.contatos-telefones{
+
+    padding-bottom: 0.5rem;
+
+}
+
+
+.logo-whatsapp {
+
+    width: 50%;
+
+}
+
+.logo-AVB-contatos {
+
+    width: 50%;
+
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -259,6 +278,26 @@ a.nav-link {
         height: 90%;
 
     }
+
+    .contatos-telefones{
+
+        padding-bottom: 0;
+        margin-bottom: 0;
+    
+    }
+
+    .logo-whatsapp {
+
+        width: 20%;
+
+    }
+
+    .logo-AVB-contatos {
+
+        width: 20%;
+
+    }
+
 
 
 }
