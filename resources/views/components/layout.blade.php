@@ -27,19 +27,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav cabecalho-navbar-lista">
                     <li class="nav-item cabecalho-navbar-item border border-secondary text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="#">Início</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="http://avitoriadosbichos.com.br/">Home</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="#sobrenos">Sobre a associação</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#sobrenos">Sobre a associação</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="#servicos-castracao">Serviços de castração</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#servicos-castracao">Serviços de castração</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="#doacoes">Doação</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#doacoes">Doação</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="#contatos-telefones">Contatos</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#contatos-telefones">Contatos</a>
                     </li>
                   </ul>
                 </div>
