@@ -12,6 +12,41 @@
 </head>
 <body>
 
+
+    <header class="cabecalho d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around align-items-center">
+        <div class="cabecalho-logo-container d-flex justify-content-center">
+          <a href="http://avitoriadosbichos.com.br/">
+            <img src="{{ asset('images/logo-AVB.png') }}" class="cabecalho-logo" alt="logo da associação vitória dos bichos">
+          </a>
+        </div> 
+          <nav class="cabecalho-navbar navbar navbar-expand-lg navbar-dark">
+              <div class="container-fluid justify-content-center">
+                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav cabecalho-navbar-lista">
+                    <li class="nav-item cabecalho-navbar-item border border-secondary text-center">
+                      <a class="nav-link nav-link-custom fw-bold" href="#">Início</a>
+                    </li>
+                    <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
+                      <a class="nav-link nav-link-custom fw-bold" href="#sobrenos">Sobre a associação</a>
+                    </li>
+                    <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
+                      <a class="nav-link nav-link-custom fw-bold" href="#servicos-castracao">Serviços de castração</a>
+                    </li>
+                    <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
+                      <a class="nav-link nav-link-custom fw-bold" href="#doacoes">Doação</a>
+                    </li>
+                    <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
+                      <a class="nav-link nav-link-custom fw-bold" href="#contatos-telefones">Contatos</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+      </header>
+
     {{ $slot }}
     
     <footer style="background-color: black; color: white;" class="py-3">
