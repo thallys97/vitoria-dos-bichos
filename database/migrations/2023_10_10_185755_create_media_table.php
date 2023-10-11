@@ -12,8 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('media', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id(); 
+            $table->unsignedBigInteger('post_id'); 
+            $table->string('path'); 
+            $table->timestamps(); 
         });
     }
 
