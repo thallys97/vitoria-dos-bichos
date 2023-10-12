@@ -11,56 +11,56 @@ class CategoryController extends Controller
     public function index()
     {
         // Listar todas as categorias
-        $categorias = Category::all();
-        return view('categorias.index', compact('categorias'));
+        $categories = Category::all();
+        return view('categories.index', compact('categories'));
     }
 
     public function show($id)
     {
         // Exibir uma categoria específica e seus posts associados
-        $categoria = Category::findOrFail($id);
-        return view('categorias.show', compact('categoria'));
+        $category = Category::findOrFail($id);
+        return view('categories.show', compact('category'));
     }
 
     public function create()
     {
         // Exibir o formulário de criação de uma nova categoria
-        return view('categorias.create');
+        return view('categories.create');
     }
 
     public function store(Request $request)
     {
         // Salvar uma nova categoria
-        $categoria = new Category();
-        $categoria->nome = $request->input('nome');
-        $categoria->save();
+        $category = new Category();
+        $category->name = $request->input('name');
+        $category->save();
 
-        return redirect('/categorias')->with('success', 'Categoria criada com sucesso.');
+        return redirect('/categories')->with('success', 'Categoria criada com sucesso.');
     }
 
     public function edit($id)
     {
         // Exibir o formulário de edição de uma categoria existente
-        $categoria = Category::findOrFail($id);
-        return view('categorias.edit', compact('categoria'));
+        $category = Category::findOrFail($id);
+        return view('categories.edit', compact('category'));
     }
 
     public function update(Request $request, $id)
     {
         // Atualizar uma categoria existente
-        $categoria = Category::findOrFail($id);
-        $categoria->nome = $request->input('nome');
-        $categoria->save();
+        $category = Category::findOrFail($id);
+        $category->name = $request->input('name');
+        $category->save();
 
-        return redirect('/categorias')->with('success', 'Categoria atualizada com sucesso.');
+        return redirect('/categories')->with('success', 'Categoria atualizada com sucesso.');
     }
 
     public function destroy($id)
     {
         // Excluir uma categoria
-        $categoria = Category::findOrFail($id);
-        $categoria->delete();
+        $category = Category::findOrFail($id);
+        $category->delete();
 
-        return redirect('/categorias')->with('success', 'Categoria excluída com sucesso.');
+        return redirect('/categories')->with('success', 'Categoria excluída com sucesso.');
     }
 }
