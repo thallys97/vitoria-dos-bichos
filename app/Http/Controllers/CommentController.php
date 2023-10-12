@@ -6,17 +6,17 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Comment;
 
-class ComentarioController extends Controller
+class CommentController extends Controller
 {
     public function store(Request $request)
     {
         // Salvar um novo comentário
-        $comentario = new Comment();
-        $comentario->post_id = $request->input('post_id');
-        $comentario->nome = $request->input('nome');
-        $comentario->email = $request->input('email');
-        $comentario->conteudo = $request->input('conteudo');
-        $comentario->save();
+        $comment = new Comment();
+        $comment->post_id = $request->input('post_id');
+        $comment->name = $request->input('name');
+        $comment->email = $request->input('email');
+        $comment->content = $request->input('content');
+        $comment->save();
 
         return redirect()->back()->with('success', 'Comentário adicionado com sucesso.');
     }
@@ -24,26 +24,26 @@ class ComentarioController extends Controller
     public function edit($id)
     {
         // Exibir o formulário de edição de um comentário existente
-        $comentario = Comment::findOrFail($id);
-        return view('comentarios.edit', compact('comentario'));
+        $comment = Comment::findOrFail($id);
+        return view('comments.edit', compact('comment'));
     }
 
     public function update(Request $request, $id)
     {
         // Atualizar um comentário existente
-        $comentario = Comment::findOrFail($id);
-        $comentario->conteudo = $request->input('conteudo');
-        $comentario->save();
+        $comment = Comment::findOrFail($id);
+        $comment->content = $request->input('content');
+        $comment->save();
 
-        return redirect('/posts/'.$comentario->post_id)->with('success', 'Comentário atualizado com sucesso.');
+        return redirect('/posts/'.$comment->post_id)->with('success', 'Comentário atualizado com sucesso.');
     }
 
     public function destroy($id)
     {
         // Excluir um comentário
-        $comentario = Comment::findOrFail($id);
-        $postId = $comentario->post_id;
-        $comentario->delete();
+        $comment = Comment::findOrFail($id);
+        $postId = $comment->post_id;
+        $comment->delete();
 
         return redirect('/posts/'.$postId)->with('success', 'Comentário excluído com sucesso.');
     }
