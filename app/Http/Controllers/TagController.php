@@ -32,7 +32,7 @@ class TagController extends Controller
     {
         // Salvar uma nova tag
         $tag = new Tag;
-        $tag->nome = $request->input('nome');
+        $tag->name = $request->input('name');
         $tag->save();
 
         return redirect('/tags')->with('success', 'Tag criada com sucesso.');
@@ -49,7 +49,7 @@ class TagController extends Controller
     {
         // Atualizar uma tag existente
         $tag = Tag::findOrFail($id);
-        $tag->nome = $request->input('nome');
+        $tag->name = $request->input('name');
         $tag->save();
 
         return redirect('/tags')->with('success', 'Tag atualizada com sucesso.');
