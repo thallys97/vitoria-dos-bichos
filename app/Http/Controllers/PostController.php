@@ -32,9 +32,9 @@ class PostController extends Controller
     {
         // Salvar um novo post
         $post = new Post();
-        $post->titulo = $request->input('titulo');
-        $post->conteudo = $request->input('conteudo');
-        $post->autor_id = auth()->user()->id; // Associa o autor (pode variar dependendo da autenticação)
+        $post->title = $request->input('title');
+        $post->content = $request->input('content');
+        $post->author_id = auth()->user()->id; // Associa o autor (pode variar dependendo da autenticação)
         $post->save();
 
         return redirect('/posts')->with('success', 'Post criado com sucesso.');
@@ -51,8 +51,8 @@ class PostController extends Controller
     {
         // Atualizar um post existente
         $post = Post::findOrFail($id);
-        $post->titulo = $request->input('titulo');
-        $post->conteudo = $request->input('conteudo');
+        $post->title = $request->input('title');
+        $post->content = $request->input('content');
         $post->save();
 
         return redirect('/posts')->with('success', 'Post atualizado com sucesso.');
