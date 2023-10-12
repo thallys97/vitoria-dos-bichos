@@ -12,16 +12,16 @@ class AuthorController extends Controller
     public function create()
     {
         // Exibir o formulário para adicionar um novo autor
-        return view('autores.create');
+        return view('authors.create');
     }
 
     public function store(Request $request)
     {
         // Criar um novo autor
-        $autor = new Author();
-        $autor->user_id = $request->input('user_id');
-        $autor->nome_completo = $request->input('nome_completo');
-        $autor->save();
+        $author = new Author();
+        $author->user_id = $request->input('user_id');
+        $author->full_name = $request->input('full_name');
+        $author->save();
 
         return redirect()->back()->with('success', 'Autor adicionado com sucesso.');
     }
@@ -29,23 +29,23 @@ class AuthorController extends Controller
     public function show($id)
     {
         // Exibir informações de um autor específico
-        $autor = Author::findOrFail($id);
-        return view('autores.show', compact('autor'));
+        $author = Author::findOrFail($id);
+        return view('authors.show', compact('author'));
     }
 
     public function edit($id)
     {
         // Exibir o formulário de edição de um autor
-        $autor = Author::findOrFail($id);
-        return view('autores.edit', compact('autor'));
+        $author = Author::findOrFail($id);
+        return view('authors.edit', compact('author'));
     }
 
     public function update(Request $request, $id)
     {
         // Atualizar informações de um autor
-        $autor = Author::findOrFail($id);
-        $autor->nome_completo = $request->input('nome_completo');
-        $autor->save();
+        $author = Author::findOrFail($id);
+        $author->full_name = $request->input('full_name');
+        $author->save();
 
         return redirect()->back()->with('success', 'Informações do autor atualizadas com sucesso.');
     }
@@ -53,9 +53,9 @@ class AuthorController extends Controller
     public function destroy($id)
     {
         // Excluir um autor
-        $autor = Author::findOrFail($id);
-        $autor->delete();
+        $author = Author::findOrFail($id);
+        $author->delete();
 
-        return redirect('/autores')->with('success', 'Autor excluído com sucesso.');
+        return redirect('/authors')->with('success', 'Autor excluído com sucesso.');
     }
 }
