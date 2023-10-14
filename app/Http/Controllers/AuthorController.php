@@ -44,15 +44,15 @@ class AuthorController extends Controller
         return view('authors.edit', compact('author'));
     }
 
-    public function update(Request $request, $id)
-    {
-        // Atualizar informações de um autor
-        $author = Author::findOrFail($id);
-        $author->full_name = $request->input('full_name');
-        $author->save();
+    public function update(Request $request, Author $author)
+{
+    // Atualizar informações de um autor
+    $author->full_name = $request->input('full_name');
+    $author->save();
 
-        return redirect()->back()->with('success', 'Informações do autor atualizadas com sucesso.');
-    }
+    return redirect()->back()->with('success', 'Informações do autor atualizadas com sucesso.');
+}
+
 
     public function destroy($id)
     {
