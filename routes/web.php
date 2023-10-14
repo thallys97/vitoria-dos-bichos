@@ -29,4 +29,4 @@ Route::get('/authors/create', [AuthorController::class, 'create'])->name('author
 
 Route::post('/authors', [AuthorController::class, 'store'])->name('authors.store'); // Rota para processar o formulário e armazenar um novo autor
 
-// ... Outras rotas relacionadas a AuthorController, como show, edit, update e destroy
+Route::put('/authors/{author}', [AuthorController::class, 'update'])->name('authors.update'); // Rota para processar o formulário de edição de autor
