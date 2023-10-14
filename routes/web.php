@@ -30,3 +30,9 @@ Route::get('/authors/create', [AuthorController::class, 'create'])->name('author
 Route::post('/authors', [AuthorController::class, 'store'])->name('authors.store'); // Rota para processar o formulário e armazenar um novo autor
 
 Route::put('/authors/{author}', [AuthorController::class, 'update'])->name('authors.update'); // Rota para processar o formulário de edição de autor
+
+Route::get('/authors/{author}', [AuthorController::class, 'show'])->name('authors.show'); // Rota para exibir informações de um autor específico
+
+Route::get('/authors/{author}/edit', [AuthorController::class, 'edit'])->name('authors.edit'); // Rota para exibir o formulário de edição de um autor
+
+Route::delete('/authors/{author}', [AuthorController::class, 'destroy'])->name('authors.destroy'); // Rota para excluir um autor
