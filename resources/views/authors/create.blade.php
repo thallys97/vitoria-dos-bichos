@@ -12,8 +12,8 @@
     <form method="POST" action="{{ route('authors.store') }}">
         @csrf
         <div class="form-group">
-            <label for="user_id">ID do Usuário:</label>
-            <input type="text" name="user_id" class="form-control" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="form-control" required>
         </div>
 
         <div class="form-group">
