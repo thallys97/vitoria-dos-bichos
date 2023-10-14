@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Author;
+use App\Models\User;
 
 
 class AuthorController extends Controller
@@ -16,15 +17,18 @@ class AuthorController extends Controller
     }
 
     public function store(Request $request)
-    {
-        // Criar um novo autor
-        $author = new Author();
-        $author->user_id = $request->input('user_id');
-        $author->full_name = $request->input('full_name');
-        $author->save();
+{
+    $user = new User();
+    $user->email = $request->input('email');
+    $user->save();
 
-        return redirect()->back()->with('success', 'Autor adicionado com sucesso.');
-    }
+    $author = new Author();
+    $author->user_id = $user->id; // Associe o autor ao usuário criado
+    $author->full_name = $request->input('full_name');
+    $author->save();
+
+    return redirect()->back()->with('success', 'Autor adicionado com sucesso.');
+}
 
     public function show($id)
     {
