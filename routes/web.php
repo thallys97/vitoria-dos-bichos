@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +21,19 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'index']);
+
+
+
+
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index'); // Exemplo de rota para listar todos os posts
+Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create'); // Rota para exibir o formulário de criação de um novo post
+Route::post('/posts', [PostController::class, 'store'])->name('posts.store'); // Rota para salvar um novo post
+Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show'); // Rota para exibir um post específico
+Route::get('/posts/{id}/edit', [PostController::class, 'edit'])->name('posts.edit'); // Exemplo de rota para exibir o formulário de edição de um post
+Route::put('/posts/{id}', [PostController::class, 'update'])->name('posts.update'); // Exemplo de rota para atualizar um post existente
+Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy'); // Exemplo de rota para excluir um post
+
+
 
 
 
