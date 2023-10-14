@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AuthorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'index']);
+
+
+
+
+Route::get('/authors/create', [AuthorController::class, 'create'])->name('authors.create');// Rota para exibir o formulário de criação de autor
+
+Route::post('/authors', [AuthorController::class, 'store'])->name('authors.store'); // Rota para processar o formulário e armazenar um novo autor
+
+// ... Outras rotas relacionadas a AuthorController, como show, edit, update e destroy

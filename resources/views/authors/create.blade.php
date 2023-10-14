@@ -1,7 +1,6 @@
 <x-layout>
 
-@section('content')
-<div class="container">
+<main class="container">
     <h2>Criar um Novo Autor</h2>
 
     @if(session('success'))
@@ -24,8 +23,8 @@
 
         <button type="submit" class="btn btn-primary">Adicionar Autor</button>
     </form>
-</div>
-@endsection
+</main>
+
 
 
 </x-layout> 
