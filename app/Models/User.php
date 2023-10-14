@@ -45,6 +45,18 @@ class User extends Authenticatable
     ];
 
 
+    public function comments() 
+    { 
+        return $this->hasMany(Comment::class); 
+    }
+
+
+    public function posts() 
+    { 
+        return $this->hasMany(Post::class, 'user_id'); 
+    }
+
+
     public function isReader() 
     { 
         return $this->role === 'leitor'; 
