@@ -34,7 +34,7 @@ class PostController extends Controller
         $post = new Post();
         $post->title = $request->input('title');
         $post->content = $request->input('content');
-        $post->author_id = auth()->user()->id; // Associa o autor (pode variar dependendo da autenticação)
+        $post->user_id = auth()->user()->id; // Associa o autor (pode variar dependendo da autenticação)
         $post->save();
 
         return redirect('/posts')->with('success', 'Post criado com sucesso.');
