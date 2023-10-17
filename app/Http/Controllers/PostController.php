@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Medium;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class PostController extends Controller
 {
@@ -37,6 +39,20 @@ class PostController extends Controller
             'content' => 'required',
             'media' => 'image|mimes:jpeg,png,gif|max:2048', // Define as regras para o upload da imagem
         ]);
+
+
+        
+        //  // Crie um usuário temporário para fins de teste
+        // $user = new User();
+        // $user->name = 'usuário teste 2';
+        // $user->email = 'teste2@example.com';
+        // $user->password = bcrypt('senha_de_teste2');
+        // $user->save();
+
+        // // Autentique o usuário temporário
+        // Auth::login($user);
+
+
 
         // Salvar um novo post
         $post = new Post();
