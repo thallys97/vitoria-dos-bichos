@@ -29,7 +29,7 @@ class PostController extends Controller
         return view('posts.create');
     }
 
-    public function store(Request $request)
+    public function store(Request $request) //ERROR PARA RESOLVER DEPOIS: o problema é que não tem nenhum User autenticado no momento, por isso o id é nulo
     {
 
         $request->validate([
