@@ -83,14 +83,30 @@ class PostController extends Controller
 
     public function update(Request $request, $id)
     {
-        // Atualizar um post existente
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            'media' => 'image|mimes:jpeg,png,gif|max:2048', // Se você permitir o upload de mídia
+        ]);
+    
         $post = Post::findOrFail($id);
         $post->title = $request->input('title');
         $post->content = $request->input('content');
         $post->save();
-
-        return redirect('/posts')->with('success', 'Post atualizado com sucesso.');
+    
+        // Processar a mídia (imagem) se foi enviada
+        if ($request->hasFile('media')) {
+            $mediaPath = $request->file('media')->store('media', 'public');
+            // Crie um novo registro de mídia associado ao post
+            Medium::create([
+                'post_id' => $post->id,
+                'path' => $mediaPath,
+            ]);
+        }
+    
+        return redirect()->route('posts.show', $post->id)->with('success', 'Post atualizado com sucesso.');
     }
+    
 
     public function destroy($id)
     {
