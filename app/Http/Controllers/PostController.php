@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\Medium;
 
 class PostController extends Controller
 {
@@ -30,12 +31,29 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
+
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            'media' => 'image|mimes:jpeg,png,gif|max:2048', // Define as regras para o upload da imagem
+        ]);
+
         // Salvar um novo post
         $post = new Post();
         $post->title = $request->input('title');
         $post->content = $request->input('content');
         $post->user_id = auth()->user()->id; // Associa o autor (pode variar dependendo da autenticação)
         $post->save();
+
+            // Processar a mídia (imagem) se foi enviada
+        if ($request->hasFile('media')) {
+            $mediaPath = $request->file('media')->store('media', 'public');
+            // Crie um novo registro de mídia associado ao post
+            Medium::create([
+                'post_id' => $post->id,
+                'path' => $mediaPath,
+            ]);
+        }
 
         return redirect('/posts')->with('success', 'Post criado com sucesso.');
     }
