@@ -17,7 +17,7 @@
 
             <div class="form-group">
                 <label for="media">Media</label>
-                <input type="file" name="media" class="form-control-file">
+                <input type="file" name="media"  id="media"  accept="image/*" class="form-control-file">
             </div>
 
             <button type="submit" class="btn btn-primary">Update</button>
