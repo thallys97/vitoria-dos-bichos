@@ -96,6 +96,14 @@ class PostController extends Controller
     
         // Processar a mídia (imagem) se foi enviada
         if ($request->hasFile('media')) {
+
+            $media = Medium::where('post_id', $post->id)->first(); //obter o caminho do arquivo de mídia atualmente associado ao post
+
+            if ($media) {  //Remover o registro de mídia existente associado ao post
+                $media->delete();
+            }
+
+
             $mediaPath = $request->file('media')->store('media', 'public');
             // Crie um novo registro de mídia associado ao post
             Medium::create([
