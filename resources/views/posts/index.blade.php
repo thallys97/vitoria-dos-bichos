@@ -11,7 +11,7 @@
                         @endif
                         <div class="card-body">
                             <h5 class="card-title">{{ $post->title }}</h5>
-                            <p class="card-text">{{ $post->content }}</p>
+                            <p class="card-text">{{ Str::limit($post->content, 100) }}</p>
                             <a href="{{ route('posts.show', $post->id) }}" class="btn btn-info">Ver</a>
                             <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar</a>
                             <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
