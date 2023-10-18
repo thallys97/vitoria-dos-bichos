@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Medium;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
@@ -100,15 +101,20 @@ class PostController extends Controller
             $media = Medium::where('post_id', $post->id)->first(); //obter o caminho do arquivo de mídia atualmente associado ao post
 
             if ($media) {  //Remover o registro de mídia existente associado ao post
+                            // Excluir o arquivo do storage
+                $mediaPath = $media->path;
+                Storage::disk('public')->delete($mediaPath);
+
+                // Excluir o registro da mídia
                 $media->delete();
             }
 
 
-            $mediaPath = $request->file('media')->store('media', 'public');
+            $newMediaPath = $request->file('media')->store('media', 'public');
             // Crie um novo registro de mídia associado ao post
             Medium::create([
                 'post_id' => $post->id,
-                'path' => $mediaPath,
+                'path' => $newMediaPath,
             ]);
         }
     
