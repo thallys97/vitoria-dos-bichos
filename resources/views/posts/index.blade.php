@@ -7,12 +7,17 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="card">
                         @if ($post->media->count() > 0)
-                            <img src="{{ asset('storage/' . $post->media[0]->path) }}" class="card-img-top" alt="Imagem do post">
+                            <a href="{{ route('posts.show', $post->id) }}">
+                                <img src="{{ asset('storage/' . $post->media[0]->path) }}" class="card-img-top" alt="Imagem do post">
+                            </a>        
                         @endif
                         <div class="card-body">
-                            <h5 class="card-title">{{ $post->title }}</h5>
-                            <p class="card-text">{{ Str::limit($post->content, 100) }}</p>
-                            <a href="{{ route('posts.show', $post->id) }}" class="btn btn-info">Ver</a>
+                            <a href="{{ route('posts.show', $post->id) }}">
+                                <h5 class="card-title">{{ $post->title }}</h5>
+                            </a>
+                            <a href="{{ route('posts.show', $post->id) }}">        
+                                <p class="card-text">{{ Str::limit($post->content, 100) }}</p>
+                            </a>    
                             <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar</a>
                             <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
                                 @csrf
