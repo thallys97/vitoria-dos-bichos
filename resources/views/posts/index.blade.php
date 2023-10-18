@@ -2,6 +2,7 @@
 
     <main class="container">
         <h1>Lista de Posts</h1>
+        <a href="{{ route('posts.create') }}" class="btn btn-success">Criar Novo Post</a>
         <div class="row">
             @foreach ($posts as $post)
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
