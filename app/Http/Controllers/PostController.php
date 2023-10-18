@@ -47,7 +47,7 @@ class PostController extends Controller
         // $user = new User();
         // $user->name = 'usuário teste 2';
         // $user->email = 'teste2@example.com';
-        // $user->password = bcrypt('senha_de_teste2');
+        // $user->password = bcrypt('senha_de_teste4');
         // $user->save();
 
         // // Autentique o usuário temporário
