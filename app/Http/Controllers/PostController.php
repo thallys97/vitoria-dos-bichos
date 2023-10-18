@@ -124,10 +124,24 @@ class PostController extends Controller
 
     public function destroy($id)
     {
-        // Excluir um post
         $post = Post::findOrFail($id);
+
+        // Verifique se há uma mídia associada ao post
+        $media = Medium::where('post_id', $post->id)->first();
+
+        if ($media) {
+            // Exclua o arquivo de mídia do storage
+            $mediaPath = $media->path;
+            Storage::disk('public')->delete($mediaPath);
+
+            // Exclua o registro de mídia
+            $media->delete();
+        }
+
+        // Exclua o post
         $post->delete();
 
-        return redirect('/posts')->with('success', 'Post excluído com sucesso.');
+        return redirect('/posts')->with('success', 'Post e mídia excluídos com sucesso.');
     }
+
 }
