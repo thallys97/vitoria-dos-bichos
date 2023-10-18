@@ -45,9 +45,9 @@ class PostController extends Controller
         
         //  // Crie um usuário temporário para fins de teste
         // $user = new User();
-        // $user->name = 'usuário teste 2';
-        // $user->email = 'teste2@example.com';
-        // $user->password = bcrypt('senha_de_teste4');
+        // $user->name = 'usuário teste 5';
+        // $user->email = 'teste5@example.com';
+        // $user->password = bcrypt('senha_de_teste5');
         // $user->save();
 
         // // Autentique o usuário temporário
