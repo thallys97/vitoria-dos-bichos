@@ -20,7 +20,9 @@
                 <input type="file" name="media"  id="media"  accept="image/*" class="form-control-file">
             </div>
 
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-primary">Atualizar Post</button>
+            <a href="{{ route('posts.index') }}" class="btn btn-secondary">Voltar para a Lista de Posts</a>
+
         </form>
     </main>
 </x-layout>  
