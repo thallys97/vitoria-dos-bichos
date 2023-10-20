@@ -50,6 +50,18 @@
             </nav>
       </header>
 
+      @if(session('success'))
+          <div class="alert alert-success">
+              {{ session('success') }}
+          </div>
+      @endif
+
+      @if(session('error'))
+          <div class="alert alert-danger">
+              {{ session('error') }}
+          </div>
+      @endif
+
     {{ $slot }}
     
     <footer style="background-color: black; color: white;" class="py-3">
