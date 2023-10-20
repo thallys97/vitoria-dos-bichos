@@ -42,7 +42,7 @@
                       <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#contatos-telefones">Contatos</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                        <a class="nav-link nav-link-custom fw-bold" href="#">Blog</a>
+                        <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/posts">Blog</a>
                     </li>
                   </ul>
                 </div>
