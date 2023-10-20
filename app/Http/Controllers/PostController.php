@@ -81,9 +81,12 @@ class PostController extends Controller
 
     public function edit($id)
     {
-        // Exibir o formulário de edição de um post existente
-        $post = Post::findOrFail($id);
-        return view('posts.edit', compact('post'));
+        try{
+            $post = Post::findOrFail($id); // Exibir o formulário de edição de um post existente
+            return view('posts.edit', compact('post'));
+        } catch (ModelNotFoundException $e) {            
+            return redirect('/posts')->with('error', 'Post não encontrado.'); // Post não encontrado, redirecione o usuário ou mostre uma mensagem de erro
+        }
     }
 
     public function update(Request $request, $id)
