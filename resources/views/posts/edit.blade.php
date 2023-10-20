@@ -17,6 +17,9 @@
 
             <div class="form-group">
                 <label for="media">Media</label>
+                @if ($post->media->count() > 0)
+                <img src="{{ asset('storage/' . $post->media[0]->path) }}" alt="Current Image" class="mb-3" style="max-width: 100%">
+                @endif
                 <input type="file" name="media"  id="media"  accept="image/*" class="form-control-file">
             </div>
 
