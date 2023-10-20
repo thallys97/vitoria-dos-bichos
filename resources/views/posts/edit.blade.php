@@ -13,13 +13,13 @@
 
             @if ($post->media->count() > 0)
                 <div>    
-                    <h5>imagem atual</h5>
+                    <h5>Imagem atual</h5>
                     <img src="{{ asset('storage/' . $post->media[0]->path) }}" alt="Current Image" class="mb-3" style="max-width: 100%">
                 </div>    
             @endif
 
             <div class="form-group">
-                <label for="media">(opcional) insira uma nova imagem</label>
+                <label for="media">(Opcional) Troque a imagem atual por outra</label>
                 <input type="file" name="media"  id="media"  accept="image/*" class="form-control-file">
             </div>
 
