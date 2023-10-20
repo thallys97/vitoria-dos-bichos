@@ -9,6 +9,7 @@ use App\Models\Medium;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class PostController extends Controller
 {
@@ -21,9 +22,12 @@ class PostController extends Controller
 
     public function show($id)
     {
-        // Exibir um post específico
-        $post = Post::findOrFail($id);
-        return view('posts.show', compact('post'));
+        try{
+            $post = Post::findOrFail($id);  // Exibir um post específico
+            return view('posts.show', compact('post'));
+        } catch (ModelNotFoundException $e) {            
+            return redirect('/posts')->with('error', 'Post não encontrado.');// Post não encontrado, redirecione o usuário ou mostre uma mensagem de erro
+        }
     }
 
     public function create()
@@ -124,24 +128,30 @@ class PostController extends Controller
 
     public function destroy($id)
     {
-        $post = Post::findOrFail($id);
+        try{
 
-        // Verifique se há uma mídia associada ao post
-        $media = Medium::where('post_id', $post->id)->first();
+            $post = Post::findOrFail($id);
 
-        if ($media) {
-            // Exclua o arquivo de mídia do storage
-            $mediaPath = $media->path;
-            Storage::disk('public')->delete($mediaPath);
+            // Verifique se há uma mídia associada ao post
+            $media = Medium::where('post_id', $post->id)->first();
 
-            // Exclua o registro de mídia
-            $media->delete();
+            if ($media) {
+                // Exclua o arquivo de mídia do storage
+                $mediaPath = $media->path;
+                Storage::disk('public')->delete($mediaPath);
+
+                // Exclua o registro de mídia
+                $media->delete();
+            }
+
+            // Exclua o post
+            $post->delete();
+
+            return redirect('/posts')->with('success', 'Post e mídia excluídos com sucesso.');
+
+        } catch (ModelNotFoundException $e) {            
+            return redirect('/posts')->with('error', 'Post não encontrado.'); // Post não encontrado, redirecione o usuário ou mostre uma mensagem de erro
         }
-
-        // Exclua o post
-        $post->delete();
-
-        return redirect('/posts')->with('success', 'Post e mídia excluídos com sucesso.');
     }
 
 }
