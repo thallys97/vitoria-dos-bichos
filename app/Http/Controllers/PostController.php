@@ -94,7 +94,7 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required',
             'content' => 'required',
-            'media' => 'image|mimes:jpeg,png,gif|max:2048', // Se você permitir o upload de mídia
+            'media' => 'required|image|mimes:jpeg,png,gif|max:2048', // Se você permitir o upload de mídia
         ]);
     
         $post = Post::findOrFail($id);
