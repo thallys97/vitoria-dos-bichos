@@ -94,28 +94,26 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required',
             'content' => 'required',
-            'media' => 'required|image|mimes:jpeg,png,gif|max:2048', // Se você permitir o upload de mídia
+            'media' => 'image|mimes:jpeg,png,gif|max:2048', // Se você permitir o upload de mídia
         ]);
-    
+
         $post = Post::findOrFail($id);
         $post->title = $request->input('title');
         $post->content = $request->input('content');
-        $post->save();
-    
+
         // Processar a mídia (imagem) se foi enviada
         if ($request->hasFile('media')) {
+            $media = Medium::where('post_id', $post->id)->first();
 
-            $media = Medium::where('post_id', $post->id)->first(); //obter o caminho do arquivo de mídia atualmente associado ao post
-
-            if ($media) {  //Remover o registro de mídia existente associado ao post
-                            // Excluir o arquivo do storage
+            if ($media) {
+                // Remover o registro de mídia existente associado ao post
+                // Excluir o arquivo do storage
                 $mediaPath = $media->path;
                 Storage::disk('public')->delete($mediaPath);
 
                 // Excluir o registro da mídia
                 $media->delete();
             }
-
 
             $newMediaPath = $request->file('media')->store('media', 'public');
             // Crie um novo registro de mídia associado ao post
@@ -124,9 +122,12 @@ class PostController extends Controller
                 'path' => $newMediaPath,
             ]);
         }
-    
+
+        $post->save();
+
         return redirect()->route('posts.show', $post->id)->with('success', 'Post atualizado com sucesso.');
     }
+
     
 
     public function destroy($id)
