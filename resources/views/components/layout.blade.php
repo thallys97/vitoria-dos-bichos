@@ -61,7 +61,7 @@
               {{ session('error') }}
           </div>
       @endif
-
+       
     {{ $slot }}
     
     <footer style="background-color: black; color: white;" class="py-3">
