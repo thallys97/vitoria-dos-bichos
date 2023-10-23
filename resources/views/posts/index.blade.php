@@ -19,12 +19,11 @@
                             <a href="{{ route('posts.show', $post->id) }}">        
                                 <p class="card-text">{{ Str::limit($post->content, 100) }}</p>
                             </a>    
-                            <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar</a>
+                            <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar Post</a>
                             <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
                                 @csrf
                                 @method('DELETE')
-                                <!-- <button type="submit" class="btn btn-danger">Excluir</button> -->
-                                <button type="button" class="btn btn-danger delete-post" data-post-id="{{ $post->id }}">Excluir</button>
+                                <button type="button" class="btn btn-danger delete-post" data-post-id="{{ $post->id }}">Excluir Post</button>
                             </form>
                         </div>
                     </div>
