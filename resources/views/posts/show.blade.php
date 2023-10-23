@@ -9,7 +9,7 @@
 
         <p>{{ $post->content }}</p>
         
-        <a href="{{ route('posts.index') }}" class="btn btn-secondary">Voltar para a Lista de Posts</a>
+        <a href="{{ route('posts.index') }}" class="btn btn-secondary">Lista de Posts</a>
         <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar Post</a>
         <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
             @csrf

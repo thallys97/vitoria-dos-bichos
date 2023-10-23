@@ -42,7 +42,7 @@
 
 
             <button type="submit" class="btn btn-primary">Atualizar Post</button>
-            <a href="{{ route('posts.index') }}" class="btn btn-secondary">Voltar para a Lista de Posts</a>
+            <a href="{{ route('posts.index') }}" class="btn btn-secondary">Lista de Posts</a>
 
         </form>
     </main>
