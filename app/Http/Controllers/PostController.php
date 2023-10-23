@@ -49,9 +49,9 @@ class PostController extends Controller
         
         //  // Crie um usuário temporário para fins de teste
         // $user = new User();
-        // $user->name = 'usuário teste 5';
-        // $user->email = 'teste5@example.com';
-        // $user->password = bcrypt('senha_de_teste5');
+        // $user->name = 'usuário teste 6';
+        // $user->email = 'teste6@example.com';
+        // $user->password = bcrypt('senha_de_teste6');
         // $user->save();
 
         // // Autentique o usuário temporário
@@ -76,7 +76,7 @@ class PostController extends Controller
             ]);
         }
 
-        return redirect('/posts')->with('success', 'Post criado com sucesso.');
+        return redirect()->route('posts.show', $post->id)->with('success', 'Post criado com sucesso.');
     }
 
     public function edit($id)
