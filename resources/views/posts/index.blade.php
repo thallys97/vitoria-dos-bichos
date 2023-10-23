@@ -20,10 +20,11 @@
                                 <p class="card-text">{{ Str::limit($post->content, 100) }}</p>
                             </a>    
                             <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar</a>
-                            <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
+                            <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Excluir</button>
+                                <!-- <button type="submit" class="btn btn-danger">Excluir</button> -->
+                                <button type="button" class="btn btn-danger delete-post" data-post-id="{{ $post->id }}">Excluir</button>
                             </form>
                         </div>
                     </div>
@@ -31,5 +32,7 @@
             @endforeach
         </div>
     </main>
+
+  <script src="{{ asset('js/delete-modal-confirmation.js') }}"></script> 
 
 </x-layout>  
