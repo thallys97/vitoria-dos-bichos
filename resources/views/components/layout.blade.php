@@ -15,7 +15,7 @@
 
     <header class="cabecalho d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around align-items-center">
         <div class="cabecalho-logo-container d-flex justify-content-center">
-          <a href="http://avitoriadosbichos.com.br/" class="text-center">
+          <a href="{{ route('home.index') }}" class="text-center">
             <img src="{{ asset('images/logo-AVB.png') }}" class="cabecalho-logo" alt="logo da associação vitória dos bichos">
           </a>
         </div> 
@@ -27,22 +27,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav cabecalho-navbar-lista">
                     <li class="nav-item cabecalho-navbar-item border border-secondary text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="http://avitoriadosbichos.com.br/">Home</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}">Home</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#sobrenos">Sobre a associação</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#sobrenos">Sobre a associação</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#servicos-castracao">Serviços de castração</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#servicos-castracao">Serviços de castração</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#doacoes">Doação</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#doacoes">Doação</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/#contatos-telefones">Contatos</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#contatos-telefones">Contatos</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                        <a class="nav-link nav-link-custom fw-bold" href="https://avitoriadosbichos.com.br/posts">Blog</a>
+                        <a class="nav-link nav-link-custom fw-bold" href="{{ route('posts.index') }}">Blog</a>
                     </li>
                   </ul>
                 </div>
