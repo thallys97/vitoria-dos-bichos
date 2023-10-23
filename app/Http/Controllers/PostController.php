@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use App\Http\Requests\PostsStoreRequest;
+use App\Http\Requests\PostsUpdateRequest;
 
 class PostController extends Controller
 {
@@ -36,16 +38,8 @@ class PostController extends Controller
         return view('posts.create');
     }
 
-    public function store(Request $request) //ERROR PARA RESOLVER DEPOIS: o problema é que não tem nenhum User autenticado no momento, por isso o id é nulo
+    public function store(PostsStoreRequest $request) //ERROR PARA RESOLVER DEPOIS: o problema é que não tem nenhum User autenticado no momento, por isso o id é nulo
     {
-
-        $request->validate([
-            'title' => 'required',
-            'content' => 'required',
-            'media' => 'required|image|mimes:jpeg,png,gif|max:2048', // Define as regras para o upload da imagem
-        ]);
-
-
         
         //  // Crie um usuário temporário para fins de teste
         // $user = new User();
@@ -89,14 +83,9 @@ class PostController extends Controller
         }
     }
 
-    public function update(Request $request, $id)
+    public function update(PostsUpdateRequest $request, $id)
     {
-        $request->validate([
-            'title' => 'required',
-            'content' => 'required',
-            'media' => 'image|mimes:jpeg,png,gif|max:2048', // Se você permitir o upload de mídia
-        ]);
-
+       
         $post = Post::findOrFail($id);
         $post->title = $request->input('title');
         $post->content = $request->input('content');
