@@ -10,6 +10,7 @@
         <p>{{ $post->content }}</p>
         
         <a href="{{ route('posts.index') }}" class="btn btn-secondary">Voltar para a Lista de Posts</a>
+        <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar</a>
     </main>
 
 </x-layout>
