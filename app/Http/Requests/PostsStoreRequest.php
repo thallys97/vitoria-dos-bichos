@@ -27,4 +27,14 @@ class PostsStoreRequest extends FormRequest
             'media' => 'required|image|mimes:jpeg,png,gif|max:2048', // Define as regras para o upload da imagem
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'title.required' => 'O título do post deve ser fornecido.',
+            'content.required' => 'O conteúdo do post deve ser fornecido.',
+            'media.required' => 'A imagem deve ser enviada.',
+        ];
+    }
+
 }

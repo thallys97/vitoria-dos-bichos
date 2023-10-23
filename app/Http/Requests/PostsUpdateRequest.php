@@ -27,4 +27,12 @@ class PostsUpdateRequest extends FormRequest
             'media' => 'image|mimes:jpeg,png,gif|max:2048', // Se você permitir o upload de mídia
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'title.required' => 'O título do post deve ser fornecido.',
+            'content.required' => 'O conteúdo do post deve ser fornecido.',
+        ];
+    }
 }
