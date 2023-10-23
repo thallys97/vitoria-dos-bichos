@@ -33,6 +33,9 @@ class PostsUpdateRequest extends FormRequest
         return [
             'title.required' => 'O título do post deve ser fornecido.',
             'content.required' => 'O conteúdo do post deve ser fornecido.',
+            'media.image' => 'A Mídia deve ser uma imagem.',
+            'media.mimes' => 'A Mídia deve ser uma imagem do tipo jpeg, png ou gif.',
+            'media.max' => 'A Mídia deve ter no máximo 2MB.',
         ];
     }
 }
