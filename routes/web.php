@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,5 +36,13 @@ Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.de
 
 
 
+
+
+Route::get('/users', [UserController::class, 'index'])->name('users.index'); // Listar todos os usuários
+Route::get('/users/create', [UserController::class, 'create'])->name('users.create'); // Exibir o formulário de criação de usuário
+Route::post('/users', [UserController::class, 'store'])->name('users.store'); // Salvar um novo usuário
+Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('users.edit'); // Exibir o formulário de edição de um usuário
+Route::put('/users/{id}', [UserController::class, 'update'])->name('users.update'); // Atualizar informações de um usuário
+Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy'); // Excluir um usuário
 
 
