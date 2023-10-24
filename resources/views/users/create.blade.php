@@ -43,11 +43,18 @@
 
         <div class="form-group">
             <label for="role">Função</label>
-            <select name="role" id="role" class="form-control" required>
-                <option value="autor">Autor</option>
-                <option value="editor">Editor</option>
-                <option value="administrador">Administrador</option>
-            </select>
+            <div class="input-group"> <!-- Adicione uma classe input-group -->
+                <select name="role" id="role" class="form-control" required>
+                    <option value="autor">Autor</option>
+                    <option value="editor">Editor</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+                <div class="input-group-append"> <!-- Adicione uma classe input-group-append -->
+                    <span class="input-group-text">
+                        <i class="fas fa-caret-down"></i> <!-- Ícone de seta para baixo do Font Awesome -->
+                    </span>
+                </div>
+            </div>
         </div>
 
         <button type="submit" class="btn btn-primary">Criar Usuário</button>
