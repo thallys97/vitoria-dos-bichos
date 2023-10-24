@@ -28,7 +28,7 @@ class UserController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|min:8',
             'role' => 'required',
-            'phone' => 'required|regex:/^\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}$/',
+            'phone' => 'required|regex:/^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/',
         ]);
 
         // Criação do usuário
