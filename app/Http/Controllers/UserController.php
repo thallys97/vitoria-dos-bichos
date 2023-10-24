@@ -15,12 +15,6 @@ class UserController extends Controller
         return view('users.index', compact('users'));
     }
 
-    public function show($id)
-    {
-        // Exibir informações de um usuário específico
-        $user = User::findOrFail($id);
-        return view('users.show', compact('user'));
-    }
 
     public function edit($id)
     {
