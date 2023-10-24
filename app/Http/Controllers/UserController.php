@@ -27,9 +27,13 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:8',
-            'role' => 'required',
+            'password_confirmation' => 'required|same:password',
+            'role' => 'required|in:leitor,autor,editor,administrador',
             'phone' => 'required|regex:/^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/',
         ]);
+
+        // Remova espaços iniciais e finais do campo phone, se eles existirem
+        $phone = trim($request->input('phone'));
 
         // Criação do usuário
         $user = new User;
@@ -37,7 +41,7 @@ class UserController extends Controller
         $user->email = $request->input('email');
         $user->password = bcrypt($request->input('password'));
         $user->role = $request->input('role');
-        $user->phone = $request->input('phone'); 
+        $user->phone = $phone; 
 
         $user->save();
 
@@ -53,11 +57,25 @@ class UserController extends Controller
 
     public function update(Request $request, $id)
     {
+
+                // Validação dos campos
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email,' . $id,
+            'password' => 'required|min:8',
+            'password_confirmation' => 'required|same:password',
+            'role' => 'required|in:leitor,autor,editor,administrador',
+            'phone' => 'required|regex:/^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/',
+        ]);
+
+        // Remova espaços iniciais e finais do campo phone, se eles existirem
+        $phone = trim($request->input('phone'));
+
         $user = User::findOrFail($id); // Atualizar informações de um usuário
         $user->name = $request->input('name');
         $user->email = $request->input('email');
         $user->role = $request->input('role');
-        $user->phone = $request->input('phone'); // Adicione essa linha para atualizar o número de telefone
+        $user->phone = $phone; // Adicione essa linha para atualizar o número de telefone
         $user->save();
 
         return redirect('/users')->with('success', 'Informações do usuário atualizadas com sucesso.');
