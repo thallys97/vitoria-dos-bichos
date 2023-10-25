@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\UsersStoreRequest;
+use App\Http\Requests\UsersUpdateRequest;
 use Illuminate\Http\Request;
 use App\Models\User;
 
@@ -20,17 +22,8 @@ class UserController extends Controller
         return view('users.create'); // Exibir o formulário de criação de usuário
     }
 
-    public function store(Request $request)
+    public function store(UsersStoreRequest $request)
     {
-        // Validação dos campos
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:8',
-            'password_confirmation' => 'required|same:password',
-            'role' => 'required|in:leitor,autor,editor,administrador',
-            'phone' => 'required|regex:/^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/',
-        ]);
 
         // Remova espaços iniciais e finais do campo phone, se eles existirem
         $phone = trim($request->input('phone'));
@@ -55,18 +48,8 @@ class UserController extends Controller
         return view('users.edit', compact('user'));
     }
 
-    public function update(Request $request, $id)
+    public function update(UsersUpdateRequest $request, $id)
     {
-
-                // Validação dos campos
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users,email,' . $id,
-            'password' => 'required|min:8',
-            'password_confirmation' => 'required|same:password',
-            'role' => 'required|in:leitor,autor,editor,administrador',
-            'phone' => 'required|regex:/^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/',
-        ]);
 
         // Remova espaços iniciais e finais do campo phone, se eles existirem
         $phone = trim($request->input('phone'));
