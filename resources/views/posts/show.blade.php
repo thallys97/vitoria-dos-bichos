@@ -18,6 +18,6 @@
         </form>
     </main>
 
-    <script src="{{ asset('js/delete-modal-confirmation.js') }}"></script>
+    <script src="{{ asset('js/posts/delete-modal-confirmation.js') }}"></script>
 
 </x-layout>
