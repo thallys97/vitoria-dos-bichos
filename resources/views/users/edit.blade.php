@@ -14,7 +14,7 @@
     @endif
 
 
-    <form method="post" action="{{ route('users.update', $user->id) }}">
+    <form id="update-form-{{ $user->id }}"  method="post" action="{{ route('users.update', $user->id) }}">
         @csrf
         @method('PUT') 
 
@@ -52,9 +52,11 @@
             <input type="text" name="phone" id="phone" class="form-control" value="{{ $user->phone }}" required>
         </div>
 
-        <button type="submit" class="btn btn-primary">Salvar</button>
+        <button type="button" class="btn btn-primary update-user" data-user-id="{{ $user->id }}">Salvar</button>
         <a href="{{ route('users.index') }}" class="btn btn-secondary">Lista de Usuários</a>
     </form>
 </main>
+
+<script src="{{ asset('js/users/update-modal-confirmation.js') }}"></script>
 
 </x-layout> 
