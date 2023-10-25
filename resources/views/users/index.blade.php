@@ -26,10 +26,10 @@
                             <td>{{ $user->role }}</td>
                             <td>
                                 <a href="{{ route('users.edit', $user->id) }}" class="btn btn-primary">Editar</a>
-                                <form action="{{ route('users.destroy', $user->id) }}" method="POST" style="display: inline;">
+                                <form id="delete-form-{{ $user->id }}"  action="{{ route('users.destroy', $user->id) }}" method="POST" style="display: inline;">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">Excluir</button>
+                                    <button type="button" class="btn btn-danger delete-user" data-user-id="{{ $user->id }}">Excluir</button>
                                 </form>
                             </td>
                         </tr>
@@ -40,5 +40,7 @@
             <p>Nenhum usuário encontrado.</p>
         @endif
     </main>
+
+    <script src="{{ asset('js/users/delete-modal-confirmation.js') }}"></script>     
 
 </x-layout> 
