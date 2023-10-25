@@ -74,6 +74,7 @@ class UserController extends Controller
         $user = User::findOrFail($id); // Atualizar informações de um usuário
         $user->name = $request->input('name');
         $user->email = $request->input('email');
+        $user->password = bcrypt($request->input('password'));
         $user->role = $request->input('role');
         $user->phone = $phone; // Adicione essa linha para atualizar o número de telefone
         $user->save();
