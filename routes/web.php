@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,16 @@ use App\Http\Controllers\UserController;
 // });
 
 
-Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/', [HomeController::class, 'index'] )->name('home.index');
+
+
+// Route::middleware(['auth'])->group(function () {
+//     Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
+// });
+
+
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
 
 
