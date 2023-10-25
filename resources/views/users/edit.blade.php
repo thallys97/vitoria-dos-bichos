@@ -53,6 +53,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Salvar</button>
+        <a href="{{ route('users.index') }}" class="btn btn-secondary">Lista de Usuários</a>
     </form>
 </main>
 
