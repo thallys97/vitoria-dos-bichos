@@ -33,4 +33,22 @@ class UsersUpdateRequest extends FormRequest
             'phone' => 'required|regex:/^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/',
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'name.required' => 'O nome do usuário deve ser fornecido.',
+            'email.required' => 'O e-mail do usuário deve ser fornecido.',
+            'email.email' => 'O e-mail do usuário deve ser válido.',
+            'password.required' => 'A senha do usuário deve ser fornecida.',
+            'password.min' => 'A senha do usuário deve ter no mínimo 8 caracteres.',
+            'password_confirmation.required' => 'A confirmação da senha do usuário deve ser fornecida.',
+            'password_confirmation.same' => 'A confirmação da senha do usuário deve ser igual à senha fornecida.',
+            'role.required' => 'A função do usuário deve ser fornecida.',
+            'role.in' => 'A função do usuário deve ser válida.',
+            'phone.required' => 'O numero de telefone do usuário deve ser fornecido.',
+            'phone.regex' => 'O numero de telefone do usuário deve ser válido.',
+        ];
+    }
+
 }
