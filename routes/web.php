@@ -32,6 +32,8 @@ use App\Http\Controllers\AuthController;
     
 
 Route::get('/login', [AuthController::class, 'showLoginForm'] )->name('login');
+Route::post('/login', [AuthController::class, 'login'] )->name('login.request');
+Route::post('/logout', [AuthController::class, 'logout'] )->name('logout');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
     
