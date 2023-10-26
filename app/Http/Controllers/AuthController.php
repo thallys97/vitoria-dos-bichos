@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use App\Models\User;
 
 
 class AuthController extends Controller
@@ -17,10 +19,14 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $credentials = $request->only('email', 'password');
-        $remember = $request->has('remember'); // Verifica se o campo "remember" foi marcado
+        $remember = $request->has('remember'); // Verifique se o campo "remember" foi marcado
 
-        if (Auth::attempt($credentials, $remember)) {
+        // Recupere o usuário da tabela "users" com o mesmo e-mail
+        $user = User::where('email', $credentials['email'])->first();
+
+        if ($user && Hash::check($credentials['password'], $user->password)) {
             // Autenticação bem-sucedida
+            Auth::login($user, $remember); // Autentique o usuário
             return redirect()->route('dashboard.index');
         }
 
