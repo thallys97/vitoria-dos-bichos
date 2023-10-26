@@ -17,8 +17,9 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $credentials = $request->only('email', 'password');
+        $remember = $request->has('remember'); // Verifica se o campo "remember" foi marcado
 
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials, $remember)) {
             // Autenticação bem-sucedida
             return redirect()->route('dashboard.index');
         }
