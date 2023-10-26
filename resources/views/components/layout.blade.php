@@ -62,11 +62,21 @@
           </div>
       @endif
       
-      <div class="fixed-bottom w-50 mb-3 ms-2">
+      <div class="fixed-bottom w-50 mb-5 ms-2">
         <a href="{{ route('dashboard.index') }}" class="btn btn-primary w-25">dashboard</a>
       </div>
 
+      <div class="fixed-bottom w-50 mb-2 ms-2">
+        <a href="{{ route('logout') }}" class="btn btn-primary w-25" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+          Logout
+        </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+      </div>
+
        
+
     {{ $slot }}
     
     <footer style="background-color: black; color: white;" class="py-3">
