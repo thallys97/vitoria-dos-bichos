@@ -62,7 +62,7 @@
           </div>
       @endif
       
-      <div class="fixed-bottom w-50 mb-3">
+      <div class="fixed-bottom w-50 mb-3 ms-2">
         <a href="{{ route('dashboard.index') }}" class="btn btn-primary w-25">dashboard</a>
       </div>
 
