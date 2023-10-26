@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,18 +23,19 @@ use App\Http\Controllers\DashboardController;
 // });
 
 
-Route::get('/', [HomeController::class, 'index'] )->name('home.index');
 
 
 // Route::middleware(['auth'])->group(function () {
-//     Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
-// });
+    //     Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
+    // });
+    
+    
 
-
+Route::get('/login', [AuthController::class, 'showLoginForm'] )->name('login');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
-
-
+    
+Route::get('/', [HomeController::class, 'index'] )->name('home.index');
 
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index'); // Exemplo de rota para listar todos os posts
