@@ -41,18 +41,6 @@ class PostController extends Controller
     public function store(PostsStoreRequest $request) //ERROR PARA RESOLVER DEPOIS: o problema é que não tem nenhum User autenticado no momento, por isso o id é nulo
     {
         
-        //  // Crie um usuário temporário para fins de teste
-        // $user = new User();
-        // $user->name = 'usuário teste 6';
-        // $user->email = 'teste6@example.com';
-        // $user->password = bcrypt('senha_de_teste6');
-        // $user->save();
-
-        // // Autentique o usuário temporário
-        // Auth::login($user);
-
-
-
         // Salvar um novo post
         $post = new Post();
         $post->title = $request->input('title');
