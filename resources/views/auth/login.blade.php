@@ -4,7 +4,7 @@
     <div class="row justify-content-center w-100">
         <div class="col-md-6">
             <div class="card custom-card">
-                <div class="card-header"><h3 class="fw-bold">Login</h3></div>
+                <div class="card-header"><h3 class="fw-bold mt-2">Login</h3></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login.request') }}">
@@ -14,7 +14,7 @@
                             <label for="email">E-Mail</label>
                             <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                             @error('email')
-                            <span class="invalid-feedback" role="alert">
+                            <span class="invalid-feedback bg-danger-subtle text-center" role="alert">
                                 <strong class="fs-5">{{ $message }}</strong>
                             </span>
                             @enderror
@@ -24,7 +24,7 @@
                             <label for="password">Senha</label>
                             <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                             @error('password')
-                            <span class="invalid-feedback" role="alert">
+                            <span class="invalid-feedback bg-danger-subtle text-center" role="alert">
                                 <strong class="fs-5">{{ $message }}</strong>
                             </span>
                             @enderror
@@ -40,8 +40,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group fw-bold">
-                            <button type="submit" class="btn btn-primary">
+                        <div class="form-group">
+                            <button type="submit" class="btn login-button rounded-pill fw-bold">
                                 Login
                             </button>
                         </div>
