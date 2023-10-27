@@ -65,11 +65,11 @@
 
       @auth
         <div class="fixed-bottom w-50 mb-5 ms-2">
-          <a href="{{ route('dashboard.index') }}" class="btn btn-primary w-25">dashboard</a>
+          <a href="{{ route('dashboard.index') }}" class="btn btn-primary w-25 border border-0 fw-bold" style="background-color: #6C3593; color: black;">dashboard</a>
         </div>
 
         <div class="fixed-bottom w-50 mb-2 ms-2">
-          <a href="{{ route('logout') }}" class="btn btn-primary w-25" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+          <a href="{{ route('logout') }}" class="btn btn-primary w-25 border border-0" style="background-color: gray; color: black;" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             Logout
           </a>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
