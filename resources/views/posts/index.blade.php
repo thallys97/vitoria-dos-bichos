@@ -2,7 +2,9 @@
 
     <main class="container">
         <h1>Lista de Posts</h1>
-        <a href="{{ route('posts.create') }}" class="btn btn-success">Criar Novo Post</a>
+        @auth
+            <a href="{{ route('posts.create') }}" class="btn btn-success">Criar Novo Post</a>
+        @endauth
 
         @if (count($posts) > 0)
             <div class="row">
@@ -20,13 +22,15 @@
                                 </a>
                                 <a href="{{ route('posts.show', $post->id) }}">        
                                     <p class="card-text">{{ Str::limit($post->content, 100) }}</p>
-                                </a>    
-                                <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar Post</a>
-                                <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="button" class="btn btn-danger delete-post" data-post-id="{{ $post->id }}">Excluir Post</button>
-                                </form>
+                                </a>
+                                @auth
+                                    <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar Post</a>
+                                    <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="button" class="btn btn-danger delete-post" data-post-id="{{ $post->id }}">Excluir Post</button>
+                                    </form>
+                                @endauth
                             </div>
                         </div>
                     </div>

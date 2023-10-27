@@ -61,20 +61,22 @@
               {{ session('error') }}
           </div>
       @endif
-      
-      <div class="fixed-bottom w-50 mb-5 ms-2">
-        <a href="{{ route('dashboard.index') }}" class="btn btn-primary w-25">dashboard</a>
-      </div>
 
-      <div class="fixed-bottom w-50 mb-2 ms-2">
-        <a href="{{ route('logout') }}" class="btn btn-primary w-25" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-          Logout
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            @csrf
-        </form>
-      </div>
 
+      @auth
+        <div class="fixed-bottom w-50 mb-5 ms-2">
+          <a href="{{ route('dashboard.index') }}" class="btn btn-primary w-25">dashboard</a>
+        </div>
+
+        <div class="fixed-bottom w-50 mb-2 ms-2">
+          <a href="{{ route('logout') }}" class="btn btn-primary w-25" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+            Logout
+          </a>
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
+        </div>
+      @endauth
        
 
     {{ $slot }}
