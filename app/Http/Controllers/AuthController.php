@@ -31,7 +31,10 @@ class AuthController extends Controller
         }
 
         // Autenticação falhou
-        return back()->withErrors(['email' => 'Credenciais inválidas.']);
+        return back()->withErrors([
+            'email' => 'Credenciais inválidas.',
+            'password' => 'Credenciais inválidas.',
+        ]);
     }
 
     public function logout()
