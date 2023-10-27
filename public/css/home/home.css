@@ -1,38 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
-
-body {
-
-    font-family: 'Montserrat', sans-serif;
-
-}
-
-.cabecalho{
-
-    background-color: black;
-
-    padding-bottom: 3rem;
-}
-
-.cabecalho-logo {
-
-    width: 50%;
-
-}
-
-.cabecalho-navbar{
-
-    width: 100%;
-
-}
-
-a.nav-link {
-
-    color: #6C3593;
-
-}
-
 
         /* Estilos CSS para as camadas parallax */
 .parallax-container {
@@ -313,49 +279,6 @@ a.nav-link {
 
 
 @media screen and (min-width: 992px) {
-
-
-    .cabecalho{
-    
-        padding-bottom: 0;
-    }
-
-    .cabecalho-logo-container{
-
-        width: 140px; /* Largura desejada */
-        height: 115px; /* Altura desejada após cortar 20px da parte superior e 20px da parte inferior */
-        overflow: hidden;
-
-    }
-
-    .cabecalho-logo {
-
-        width: 140px;
-        height: 150px;
-        margin-top: -20px;
-
-    }
-
-    .cabecalho-navbar{
-
-        width: 70%;
-    
-    }
-
-    .cabecalho-navbar-lista {
-
-        gap: 0.1rem;
-
-    }    
-
-    .cabecalho-navbar-item {
-
-        padding: 0.1rem 1rem;
-
-        display: flex;
-        align-items: center;
-
-    }
 
     .parallax-container{
 
