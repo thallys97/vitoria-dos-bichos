@@ -1,6 +1,6 @@
 <x-minimal-layout>
 
-<main class="container vh-100 d-flex justify-content-center align-items-center login-main">
+<main class="container vh-100 d-flex justify-content-center align-items-center">
     <div class="row justify-content-center w-100">
         <div class="col-md-6">
             <div class="card custom-card">

@@ -8,6 +8,7 @@
     <link rel="icon" href="{{ asset('images/favicon.ico') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/auth/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dashboard/dashboard.css') }}">
     <script src="https://kit.fontawesome.com/07138ba291.js" crossorigin="anonymous"></script>
 </head>
 <body>

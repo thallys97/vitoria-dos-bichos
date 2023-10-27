@@ -1,7 +1,7 @@
 <x-minimal-layout>
 
-    <main class="container">
-        <h2>Painel Administrativo</h2>
+    <main class="container vh-100 d-flex flex-column justify-content-center align-items-center ">
+        <h1>Painel Administrativo</h1>
 
         <div class="mb-3">
             <a href="{{ route('posts.index') }}" class="btn btn-primary">Listagem de Posts</a>
