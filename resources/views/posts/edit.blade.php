@@ -1,4 +1,9 @@
 <x-layout>
+
+    @push('head')
+        <link rel="stylesheet" href="{{ asset('css/posts/posts.css') }}">
+    @endpush   
+
     <main class="container">
         <h1>Editar o Post</h1>
 
@@ -32,8 +37,15 @@
 
             <div class="form-group">
                 <label for="media">(Opcional) Troque a imagem atual por outra</label>
-                <input type="file" name="media"  id="media"  accept="image/*" class="form-control-file">
+                <input type="file" name="media"  id="media"  accept="image/*" class="form-control">
             </div>
+
+            <span id="file-icon" class="fa-stack fa-2x" style="cursor: pointer; display: none;">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-file-upload fa-stack-1x fa-inverse"></i>
+            </span>
+    
+            <span id="file-name" style="display: none;"></span>
 
             <div class="form-group">
                 <label for="content">Conteúdo</label>
@@ -46,4 +58,7 @@
 
         </form>
     </main>
+
+    <script src="{{ asset('js/posts/file-upload-icon.js') }}"></script>
+
 </x-layout>  
