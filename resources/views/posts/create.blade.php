@@ -31,15 +31,22 @@
         </div>
 
         <div class="form-group">
-            <label for="media" class="form-label">Imagem para o post:</label>
+            <label for="media" class="form-label">Envie a imagem para o post:</label>
             <input type="file" id="media" class="form-control w-100" name="media" accept="image/*">
         </div>
+
+        <span id="file-icon" class="fa-stack fa-2x" style="cursor: pointer; display: none;">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-file-upload fa-stack-1x fa-inverse"></i>
+        </span>
+        
+        <span id="file-name" style="display: none;"></span>
 
         <button type="submit" class="btn btn-primary">Criar Post</button>
         <a href="{{ route('posts.index') }}" class="btn btn-secondary">Lista de Posts</a>
     </form>
 </main>
 
-
+<script src="{{ asset('js/posts/file-upload-icon.js') }}"></script>
 
 </x-layout>  
