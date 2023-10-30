@@ -21,17 +21,17 @@
         @csrf
 
         <div class="form-group">
-            <label for="title" class="form-label">Título do Post:</label>
+            <label for="title" class="form-label fs-5">Título do Post:</label>
             <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}">
         </div>
 
         <div class="form-group">
-            <label for="content" class="form-label">Conteúdo do Post:</label>
+            <label for="content" class="form-label fs-5">Conteúdo do Post:</label>
             <textarea class="form-control" id="content" name="content">{{ old('content') }}</textarea>
         </div>
 
         <div class="form-group">
-            <label for="media" class="form-label">Envie a imagem para o post:</label>
+            <label for="media" class="form-label fs-5">Envie a imagem para o post:</label>
             <input type="file" id="media" class="form-control w-100" name="media" accept="image/*">
         </div>
 
@@ -39,11 +39,14 @@
             <i class="fas fa-circle fa-stack-2x"></i>
             <i class="fas fa-file-upload fa-stack-1x fa-inverse"></i>
         </span>
-        
+
         <span id="file-name" style="display: none;"></span>
 
-        <button type="submit" class="btn btn-primary">Criar Post</button>
-        <a href="{{ route('posts.index') }}" class="btn btn-secondary">Lista de Posts</a>
+        <div class="form-buttons">
+            <button type="submit" class="btn btn-primary button-post rounded-pill fw-bold">Criar Post</button>
+            <a href="{{ route('posts.index') }}" class="btn btn-secondary rounded-pill fw-bold">Lista de Posts</a>
+        </div>
+
     </form>
 </main>
 
