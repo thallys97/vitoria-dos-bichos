@@ -1,5 +1,8 @@
 <x-layout>
 
+    @section('head')
+        <link rel="stylesheet" href="{{ asset('css/posts/posts.css') }}">
+    @endsection    
 
 <main class="container">
     <h1>Criar Novo Post</h1>
