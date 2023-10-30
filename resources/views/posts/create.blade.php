@@ -21,18 +21,18 @@
         @csrf
 
         <div class="form-group">
-            <label for="title">Título do Post:</label>
+            <label for="title" class="form-label">Título do Post:</label>
             <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}">
         </div>
 
         <div class="form-group">
-            <label for="content">Conteúdo do Post:</label>
+            <label for="content" class="form-label">Conteúdo do Post:</label>
             <textarea class="form-control" id="content" name="content">{{ old('content') }}</textarea>
         </div>
 
         <div class="form-group">
-            <label for="media">Conteúdo do Post:</label>
-            <input type="file" id="media" name="media" accept="image/*">
+            <label for="media" class="form-label">Imagem para o post:</label>
+            <input type="file" id="media" class="form-control w-100" name="media" accept="image/*">
         </div>
 
         <button type="submit" class="btn btn-primary">Criar Post</button>
