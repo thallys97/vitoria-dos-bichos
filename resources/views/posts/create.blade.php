@@ -1,11 +1,11 @@
 <x-layout>
 
-    @section('head')
+    @push('head')
         <link rel="stylesheet" href="{{ asset('css/posts/posts.css') }}">
-    @endsection    
+    @endpush   
 
 <main class="container">
-    <h1>Criar Novo Post</h1>
+    <h1 class="title">Criar Novo Post</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">

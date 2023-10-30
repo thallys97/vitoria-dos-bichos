@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/components/layout.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home/home.css') }}">
+    @stack('head')
     <script src="https://kit.fontawesome.com/07138ba291.js" crossorigin="anonymous"></script>
 </head>
 <body>
