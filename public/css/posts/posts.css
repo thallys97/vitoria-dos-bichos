@@ -35,3 +35,21 @@
     background-color: #9D5A00;
     border: none;
 }
+
+
+.custom-card{
+
+    border: #9D5A00 3px solid;
+
+}
+
+.card-link{
+
+    text-decoration: none;
+
+    color: #000000;
+}
+
+
+
+
