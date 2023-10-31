@@ -5,7 +5,7 @@
     @endpush   
 
     <main class="container">
-        <h1>Editar o Post</h1>
+        <h1 class="title">Editar o Post</h1>
 
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -23,7 +23,7 @@
             @method('PUT')
 
             <div class="form-group">
-                <label for="title">Título</label>
+                <label for="title" class="form-label fs-5">Título:</label>
                 <input type="text" name="title" class="form-control" value="{{ $post->title }}">
             </div>
             
@@ -36,7 +36,7 @@
             @endif
 
             <div class="form-group">
-                <label for="media">(Opcional) Troque a imagem atual por outra</label>
+                <label for="media" class="form-label fs-5">(Opcional) Troque a imagem atual por outra:</label>
                 <input type="file" name="media"  id="media"  accept="image/*" class="form-control">
             </div>
 
@@ -48,13 +48,14 @@
             <span id="file-name" style="display: none;"></span>
 
             <div class="form-group">
-                <label for="content">Conteúdo</label>
+                <label for="content" class="form-label fs-5">Conteúdo:</label>
                 <textarea name="content" class="form-control" rows="5">{{ $post->content }}</textarea>
             </div>
 
-
-            <button type="submit" class="btn btn-primary">Atualizar Post</button>
-            <a href="{{ route('posts.index') }}" class="btn btn-secondary">Lista de Posts</a>
+            <div class="form-buttons">
+                <button type="submit" class="btn button-post rounded-pill fw-bold">Atualizar Post</button>
+                <a href="{{ route('posts.index') }}" class="btn btn-secondary rounded-pill fw-bold">Lista de Posts</a>
+            </div>
 
         </form>
     </main>
