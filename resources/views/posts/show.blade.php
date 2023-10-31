@@ -16,14 +16,16 @@
 
         </section>    
             
-        <a href="{{ route('posts.index') }}" class="btn btn-secondary">Lista de Posts</a>
+        <a href="{{ route('posts.index') }}" class="btn btn-secondary button-post-list rounded-pill fw-bold mb-4">Lista de Posts</a>
         @auth
-            <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">Editar Post</a>
-            <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
-                @csrf
-                @method('DELETE')
-                <button type="button" class="btn btn-danger delete-post" data-post-id="{{ $post->id }}">Excluir Post</button>
-            </form>
+            <div class="mb-4">
+                <a href="{{ route('posts.edit', $post->id) }}" class="btn button-post rounded-pill fw-bold">Editar Post</a>
+                <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
+                    @csrf
+                    @method('DELETE')
+                    <button type="button" class="btn btn-danger rounded-pill delete-post button-delete fw-bold" data-post-id="{{ $post->id }}">Excluir Post</button>
+                </form>
+            </div>
         @endauth
             
     </main>

@@ -44,7 +44,7 @@
 
         <div class="form-buttons">
             <button type="submit" class="btn btn-primary button-post rounded-pill fw-bold">Criar Post</button>
-            <a href="{{ route('posts.index') }}" class="btn btn-secondary rounded-pill fw-bold">Lista de Posts</a>
+            <a href="{{ route('posts.index') }}" class="btn btn-secondary button-post-list rounded-pill fw-bold">Lista de Posts</a>
         </div>
 
     </form>

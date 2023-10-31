@@ -34,7 +34,7 @@
                                     <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="button" class="btn btn-danger rounded-pill delete-post" data-post-id="{{ $post->id }}">Excluir Post</button>
+                                        <button type="button" class="btn btn-danger rounded-pill delete-post button-delete fw-bold" data-post-id="{{ $post->id }}">Excluir Post</button>
                                     </form>
                                 @endauth
                             </div>

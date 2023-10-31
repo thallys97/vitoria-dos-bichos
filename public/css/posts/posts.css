@@ -32,8 +32,14 @@
 
 .button-post {
 
+    color: #000000;
     background-color: #9D5A00;
     border: none;
+}
+
+.button-post-list, .button-delete {
+    
+    color: #000000;
 }
 
 
