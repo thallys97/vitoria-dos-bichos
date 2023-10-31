@@ -36,3 +36,23 @@
     
     color: #000000;
 }
+
+
+
+/* Estilize o ícone de seta para baixo */
+.form-group .input-group {
+    position: relative;
+}
+
+.form-group .input-group .input-group-append {
+    position: absolute;
+    right: 10px; /* Ajuste o valor para a posição desejada */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Evita que o ícone seja clicável */
+}
+
+/* Ajuste o tamanho do ícone, se necessário */
+.form-group .input-group .input-group-text i.fas.fa-caret-down {
+    font-size: 1rem; /* Ajuste o tamanho desejado */
+}
