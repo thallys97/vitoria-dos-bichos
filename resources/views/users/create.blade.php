@@ -62,10 +62,10 @@
         </div>
 
         <div class="form-buttons d-flex justify-content-evenly">
-            <button type="submit" class="btn btn-primary">Criar Usuário</button>
-            <a href="{{ route('users.index') }}" class="btn btn-secondary">Lista de Usuários</a>
+            <button type="submit" class="btn button-user rounded-pill fw-bold">Criar Usuário</button>
+            <a href="{{ route('users.index') }}" class="btn btn-secondary button-user-list rounded-pill fw-bold">Lista de Usuários</a>
         </div>
-        
+
     </form>
 </main>
 
