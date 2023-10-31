@@ -21,32 +21,32 @@
         @csrf
 
         <div class="form-group">
-            <label for="name">Nome</label>
+            <label for="name" class="form-label fs-5">Nome</label>
             <input type="text" name="name" id="name" class="form-control" value="{{ old('name') }}" required>
         </div>
 
         <div class="form-group">
-            <label for="email">E-mail</label>
+            <label for="email" class="form-label fs-5">E-mail</label>
             <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}" required>
         </div>
 
         <div class="form-group">
-            <label for="password">Senha</label>
+            <label for="password" class="form-label fs-5">Senha</label>
             <input type="password" name="password" id="password" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="password_confirmation">Confirme a Senha</label>
+            <label for="password_confirmation" class="form-label fs-5">Confirme a Senha</label>
             <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="phone">Telefone</label>
+            <label for="phone" class="form-label fs-5">Telefone</label>
             <input type="text" name="phone" id="phone" class="form-control" value="{{ old('phone') }}" required>
         </div>
 
         <div class="form-group">
-            <label for="role">Função</label>
+            <label for="role" class="form-label fs-5">Função</label>
             <div class="input-group"> <!-- Adicione uma classe input-group -->
                 <select name="role" id="role" class="form-control" required>
                     <option value="autor">Autor</option>
@@ -61,8 +61,11 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary">Criar Usuário</button>
-        <a href="{{ route('users.index') }}" class="btn btn-secondary">Lista de Usuários</a>
+        <div class="form-buttons d-flex justify-content-evenly">
+            <button type="submit" class="btn btn-primary">Criar Usuário</button>
+            <a href="{{ route('users.index') }}" class="btn btn-secondary">Lista de Usuários</a>
+        </div>
+        
     </form>
 </main>
 
