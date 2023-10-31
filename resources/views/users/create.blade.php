@@ -5,7 +5,7 @@
 @endpush   
 
 <main class="container">
-    <h1>Criar Novo Usuário</h1>
+    <h1 class="title">Criar Novo Usuário</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">
