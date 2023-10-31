@@ -8,11 +8,20 @@
 
 }
 
-.form-label{
+.form-label, .image-title {
     color: #000000;
     font-weight: 700;
     margin: 1.5rem 0 0.3rem 0; 
 }
+
+#file-name {
+
+    color: #000000;
+    font-weight: 700;
+    background-color: #6C3593;
+
+}
+
 
 .form-buttons {
 
