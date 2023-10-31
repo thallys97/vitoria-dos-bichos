@@ -52,7 +52,7 @@
                 <textarea name="content" class="form-control" rows="5">{{ $post->content }}</textarea>
             </div>
 
-            <div class="form-buttons">
+            <div class="form-buttons d-flex justify-content-evenly">
                 <button type="submit" class="btn button-post rounded-pill fw-bold">Atualizar Post</button>
                 <a href="{{ route('posts.index') }}" class="btn btn-secondary button-post-list rounded-pill fw-bold">Lista de Posts</a>
             </div>

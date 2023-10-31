@@ -15,10 +15,11 @@
             <p class="post-content">{{ $post->content }}</p>
 
         </section>    
-            
-        <a href="{{ route('posts.index') }}" class="btn btn-secondary button-post-list rounded-pill fw-bold mb-4">Lista de Posts</a>
+        <div class="d-flex justify-content-center">    
+            <a href="{{ route('posts.index') }}" class="btn btn-secondary button-post-list rounded-pill fw-bold mb-4">Lista de Posts</a>
+        </div>
         @auth
-            <div class="mb-4">
+            <div class="mb-4 d-flex justify-content-evenly">
                 <a href="{{ route('posts.edit', $post->id) }}" class="btn button-post rounded-pill fw-bold">Editar Post</a>
                 <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
                     @csrf

@@ -30,12 +30,14 @@
                                     <p class="card-text fs-5 mb-4">{{ Str::limit($post->content, 100) }}</p>
                                 </a>
                                 @auth
-                                    <a href="{{ route('posts.edit', $post->id) }}" class="btn button-post rounded-pill fw-bold">Editar Post</a>
-                                    <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="button" class="btn btn-danger rounded-pill delete-post button-delete fw-bold" data-post-id="{{ $post->id }}">Excluir Post</button>
-                                    </form>
+                                    <div class="d-flex justify-content-evenly">
+                                        <a href="{{ route('posts.edit', $post->id) }}" class="btn button-post rounded-pill fw-bold">Editar Post</a>
+                                        <form id="delete-form-{{ $post->id }}" action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display: inline;">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="button" class="btn btn-danger rounded-pill delete-post button-delete fw-bold" data-post-id="{{ $post->id }}">Excluir Post</button>
+                                        </form>
+                                    </div>
                                 @endauth
                             </div>
                         </div>
