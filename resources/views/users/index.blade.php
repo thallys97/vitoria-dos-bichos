@@ -1,5 +1,9 @@
 <x-layout>
 
+@push('head')
+    <link rel="stylesheet" href="{{ asset('css/users/users.css') }}">
+@endpush 
+
     <main class="container">
         <h2>Lista de Usuários</h2>
         <a href="{{ route('users.create') }}" class="btn btn-primary">Criar Usuário</a>

@@ -1,5 +1,10 @@
 <x-layout>
 
+@push('head')
+    <link rel="stylesheet" href="{{ asset('css/users/users.css') }}">
+@endpush 
+
+
 <main class="container">
     <h2>Editar Usuário</h2>
 
