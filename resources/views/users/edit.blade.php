@@ -4,9 +4,8 @@
     <link rel="stylesheet" href="{{ asset('css/users/users.css') }}">
 @endpush 
 
-
 <main class="container">
-    <h2>Editar Usuário</h2>
+    <h1 class="title">Editar Usuário</h1>
 
     @if ($errors->any())
         <div class="alert alert-danger">
@@ -18,38 +17,37 @@
         </div>
     @endif
 
-
     <form id="update-form-{{ $user->id }}"  method="post" action="{{ route('users.update', $user->id) }}">
         @csrf
         @method('PUT') 
 
         <div class="form-group">
-            <label for="name">Nome</label>
+            <label for="name" class="form-label fs-5">Nome</label>
             <input type="text" name="name" id="name" class="form-control" value="{{ $user->name }}" required>
         </div>
 
         <div class="form-group">
-            <label for="email">E-mail</label>
+            <label for="email" class="form-label fs-5">E-mail</label>
             <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}" required>
         </div>
 
         <div class="form-group">
-            <label for="password">Senha</label>
+            <label for="password" class="form-label fs-5">Senha</label>
             <input type="password" name="password" id="password" class="form-control" value="{{ $user->password }}" required>
         </div>
 
         <div class="form-group">
-            <label for="password_confirmation">Confirmar Senha</label>
+            <label for="password_confirmation" class="form-label fs-5">Confirmar Senha</label>
             <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" value="{{ $user->password }}" required>
         </div>
 
         <div class="form-group">
-            <label for="phone">Telefone</label>
+            <label for="phone" class="form-label fs-5">Telefone</label>
             <input type="text" name="phone" id="phone" class="form-control" value="{{ $user->phone }}" required>
         </div>
 
         <div class="form-group">
-            <label for="role">Função</label>
+            <label for="role" class="form-label fs-5">Função</label>
             <div class="input-group">
                 <select name="role" id="role" class="form-control" required>
                     <option value="autor" {{ $user->role === 'autor' ? 'selected' : '' }}>Autor</option>
