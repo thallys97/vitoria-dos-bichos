@@ -44,18 +44,26 @@
         </div>
 
         <div class="form-group">
-            <label for="role">Função</label>
-            <select name="role" id="role" class="form-control" required>
-                <option value="autor" {{ $user->role === 'autor' ? 'selected' : '' }}>Autor</option>
-                <option value="editor" {{ $user->role === 'editor' ? 'selected' : '' }}>Editor</option>
-                <option value="administrador" {{ $user->role === 'administrador' ? 'selected' : '' }}>Administrador</option>
-            </select>
-        </div>
-
-        <div class="form-group">
             <label for="phone">Telefone</label>
             <input type="text" name="phone" id="phone" class="form-control" value="{{ $user->phone }}" required>
         </div>
+
+        <div class="form-group">
+            <label for="role">Função</label>
+            <div class="input-group">
+                <select name="role" id="role" class="form-control" required>
+                    <option value="autor" {{ $user->role === 'autor' ? 'selected' : '' }}>Autor</option>
+                    <option value="editor" {{ $user->role === 'editor' ? 'selected' : '' }}>Editor</option>
+                    <option value="administrador" {{ $user->role === 'administrador' ? 'selected' : '' }}>Administrador</option>
+                </select>
+                <div class="input-group-append"> 
+                    <span class="input-group-text">
+                        <i class="fas fa-caret-down"></i> <!-- Ícone de seta para baixo do Font Awesome -->
+                    </span>
+                </div>
+            </div>    
+        </div>
+
 
         <button type="button" class="btn btn-primary update-user" data-user-id="{{ $user->id }}">Salvar</button>
         <a href="{{ route('users.index') }}" class="btn btn-secondary">Lista de Usuários</a>
