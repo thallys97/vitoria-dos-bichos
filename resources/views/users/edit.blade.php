@@ -62,9 +62,10 @@
             </div>    
         </div>
 
-
-        <button type="button" class="btn btn-primary update-user" data-user-id="{{ $user->id }}">Salvar</button>
-        <a href="{{ route('users.index') }}" class="btn btn-secondary">Lista de Usuários</a>
+        <div class="form-buttons d-flex justify-content-evenly">
+            <button type="button" class="btn button-user rounded-pill fw-bold update-user" data-user-id="{{ $user->id }}">Salvar alterações</button>
+            <a href="{{ route('users.index') }}" class="btn btn-secondary button-user-list rounded-pill fw-bold">Lista de Usuários</a>
+        </div>
     </form>
 </main>
 
