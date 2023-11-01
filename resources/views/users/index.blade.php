@@ -24,17 +24,17 @@
                     <tbody>
                         @foreach ($users as $user)
                             <tr>
-                                <td>{{ $user->id }}</td>
-                                <td>{{ $user->name }}</td>
-                                <td>{{ $user->email }}</td>
-                                <td>{{ $user->phone }}</td>
-                                <td>{{ $user->role }}</td>
-                                <td>
-                                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-primary">Editar</a>
+                                <td class="align-middle">{{ $user->id }}</td>
+                                <td class="align-middle">{{ $user->name }}</td>
+                                <td class="align-middle">{{ $user->email }}</td>
+                                <td class="align-middle">{{ $user->phone }}</td>
+                                <td class="align-middle">{{ $user->role }}</td>
+                                <td class="align-middle">
+                                    <a href="{{ route('users.edit', $user->id) }}" class="btn button-user rounded-pill fw-bold">Editar</a>
                                     <form id="delete-form-{{ $user->id }}"  action="{{ route('users.destroy', $user->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="button" class="btn btn-danger delete-user" data-user-id="{{ $user->id }}">Excluir</button>
+                                        <button type="button" class="btn btn-danger rounded-pill delete-user button-delete fw-bold" data-user-id="{{ $user->id }}">Excluir</button>
                                     </form>
                                 </td>
                             </tr>
