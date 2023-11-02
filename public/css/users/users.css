@@ -64,6 +64,14 @@
 }
 
 
+.users{
+
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 
 .no-users{
