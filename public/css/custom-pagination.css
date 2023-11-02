@@ -1,0 +1,17 @@
+.custom-pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.custom-pagination li {
+    margin-right: 5px;
+}
+
+.custom-pagination .active {
+    font-weight: bold;
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+}

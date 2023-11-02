@@ -2,6 +2,7 @@
 
     @push('head')
         <link rel="stylesheet" href="{{ asset('css/posts/posts.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/custom-pagination.css') }}">
     @endpush   
 
     <main class="container">
@@ -46,9 +47,9 @@
             </div>
 
             <div class="pagination">
-                {{ $posts->links() }}
+                {{ $posts->links('custom-pagination') }}
             </div>
-            
+
         @else
             <section class="no-posts">
                 <div class="no-posts-card text-center">
