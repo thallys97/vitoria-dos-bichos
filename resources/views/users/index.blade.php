@@ -14,22 +14,22 @@
                     <table class="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Nome</th>
-                                <th>Email</th>
-                                <th>Telefone</th>
-                                <th>Função</th>
-                                <th>Ações</th>
+                                <th class="users-th">ID</th>
+                                <th class="users-th">Nome</th>
+                                <th class="users-th">Email</th>
+                                <th class="users-th">Telefone</th>
+                                <th class="users-th">Função</th>
+                                <th class="users-th">Ações</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($users as $user)
                                 <tr>
-                                    <td class="align-middle">{{ $user->id }}</td>
-                                    <td class="align-middle">{{ $user->name }}</td>
-                                    <td class="align-middle">{{ $user->email }}</td>
-                                    <td class="align-middle">{{ $user->phone }}</td>
-                                    <td class="align-middle">{{ $user->role }}</td>
+                                    <td class="align-middle users-td">{{ $user->id }}</td>
+                                    <td class="align-middle users-td">{{ $user->name }}</td>
+                                    <td class="align-middle users-td">{{ $user->email }}</td>
+                                    <td class="align-middle users-td">{{ $user->phone }}</td>
+                                    <td class="align-middle users-td">{{ $user->role }}</td>
                                     <td class="align-middle">
                                         <a href="{{ route('users.edit', $user->id) }}" class="btn button-user rounded-pill fw-bold button-user-edit">Editar</a>
                                         <form id="delete-form-{{ $user->id }}"  action="{{ route('users.destroy', $user->id) }}" method="POST" style="display: inline;">
