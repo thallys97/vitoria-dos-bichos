@@ -45,7 +45,11 @@
                 @endforeach
             </div>
         @else
-            <p>Nenhum post foi criado ainda.</p>
+            <section class="no-posts">
+                <div class="no-posts-card text-center">
+                    <p class="no-posts-text fw-bold">Nenhum post foi criado ainda.</p>
+                </div>
+            </section>    
         @endif        
     </main>
 
