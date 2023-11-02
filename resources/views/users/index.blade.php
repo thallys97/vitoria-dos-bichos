@@ -10,7 +10,7 @@
 
         @if (count($users) > 0)
             <div class="table-responsive">
-                <table class="table">
+                <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -43,7 +43,11 @@
                 </table>
             </div>    
         @else
-            <p>Nenhum usuário encontrado.</p>
+            <section class="no-users">
+                <div class="no-users-card text-center">
+                    <p class="no-users-text fw-bold">Nenhum usuário foi criado ainda.</p>
+                </div>
+            </section>    
         @endif
     </main>
 
