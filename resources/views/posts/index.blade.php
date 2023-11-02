@@ -1,8 +1,7 @@
 <x-layout>
 
     @push('head')
-        <link rel="stylesheet" href="{{ asset('css/posts/posts.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/custom-pagination.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/posts/posts.css') }}">        
     @endpush   
 
     <main class="container">
@@ -46,7 +45,7 @@
                 @endforeach
             </div>
 
-            <div class="pagination">
+            <div class="pagination d-flex justify-content-center mt-3">
                 {{ $posts->links('custom-pagination') }}
             </div>
 

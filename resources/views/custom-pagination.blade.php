@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-    <ul class="pagination custom-pagination">
+    <ul class="pagination">
         <!-- Botão "anterior" -->
         @if ($paginator->onFirstPage())
             <li class="page-item disabled"><span class="page-link">Anterior</span></li>
