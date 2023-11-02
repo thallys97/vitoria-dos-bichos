@@ -44,6 +44,11 @@
                     </div>
                 @endforeach
             </div>
+
+            <div class="pagination">
+                {{ $posts->links() }}
+            </div>
+            
         @else
             <section class="no-posts">
                 <div class="no-posts-card text-center">

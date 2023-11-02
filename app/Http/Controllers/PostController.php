@@ -17,8 +17,8 @@ class PostController extends Controller
 {
     public function index()
     {
-        // Listar todos os posts
-        $posts = Post::all();
+       
+        $posts = Post::paginate(12);
         return view('posts.index', compact('posts'));
     }
 
