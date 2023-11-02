@@ -30,7 +30,7 @@
                                 <td class="align-middle">{{ $user->phone }}</td>
                                 <td class="align-middle">{{ $user->role }}</td>
                                 <td class="align-middle">
-                                    <a href="{{ route('users.edit', $user->id) }}" class="btn button-user rounded-pill fw-bold">Editar</a>
+                                    <a href="{{ route('users.edit', $user->id) }}" class="btn button-user rounded-pill fw-bold button-user-edit">Editar</a>
                                     <form id="delete-form-{{ $user->id }}"  action="{{ route('users.destroy', $user->id) }}" method="POST" style="display: inline;">
                                         @csrf
                                         @method('DELETE')
