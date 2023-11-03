@@ -66,9 +66,11 @@
 
 
       @auth
-        <div class="fixed-bottom w-50 mb-2 ms-2">
-          <a href="{{ route('dashboard.index') }}" class="btn btn-primary w-25 border border-0 fw-bold" style="background-color: #6C3593; color: black;"><i class="fa-solid fa-gauge"></i></i></a>
-        </div>
+      <div class="fixed-bottom w-50 mb-2 ms-2">
+        <a href="{{ route('dashboard.index') }}" class="btn btn-primary dashboard-button border border-0 fw-bold" style="background-color: #6C3593; color: black;">
+            <i class="fa-solid fa-gauge fs-4 align-middle"></i>            
+        </a>
+      </div>
       @endauth
        
 

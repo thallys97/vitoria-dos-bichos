@@ -32,6 +32,21 @@ a.nav-link {
 
 }
 
+.dashboard-button {
+
+    width: 30%;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .dashboard-button {
+
+        width: 20%;
+    
+    }
+
+}    
 
 
 
@@ -77,6 +92,13 @@ a.nav-link {
         display: flex;
         align-items: center;
 
+    }
+
+
+    .dashboard-button {
+
+        width: 10%;
+    
     }
 
 
