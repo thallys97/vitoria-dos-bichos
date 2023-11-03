@@ -10,12 +10,12 @@
 }
 
 
-
 .form-label, .image-title {
     color: #000000;
     font-weight: 700;
     margin: 1.5rem 0 0.3rem 0; 
 }
+
 
 #file-name {
 
@@ -107,6 +107,13 @@
 
 @media screen and (min-width: 768px) {
 
+
+    .current-image{
+
+        width: 60%;
+    
+    }
+
     .form-control-file {
 
         width: 60%;
@@ -130,6 +137,8 @@
         width: 80%;
                 
     }
+
+
 
 }
 
