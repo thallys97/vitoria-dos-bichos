@@ -59,6 +59,20 @@
     color: #000000;
 }
 
+.card-title {
+
+    font-size: 1.8rem;
+    margin-bottom: 0;
+
+}
+
+
+.card-text {
+
+    font-size: 1.1rem;
+
+}
+
 
 .post {
 

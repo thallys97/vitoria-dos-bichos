@@ -24,10 +24,10 @@
                             @endif
                             <div class="card-body">
                                 <a href="{{ route('posts.show', $post->id) }}" class="card-link text-center">
-                                    <h2 class="card-title fw-bold display-4 mt-3">{{ $post->title }}</h2>
+                                    <h2 class="card-title fw-bold mt-3">{{ $post->title }}</h2>
                                 </a>
                                 <a href="{{ route('posts.show', $post->id) }}" class="card-link">        
-                                    <p class="card-text fs-5 mb-4">{{ Str::limit($post->content, 100) }}</p>
+                                    <p class="card-text mb-4">{{ Str::limit($post->content, 100) }}</p>
                                 </a>
                                 @auth
                                     <div class="d-flex justify-content-evenly">
