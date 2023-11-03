@@ -8,11 +8,14 @@
         <section class="post">
             <h1 class="text-center fw-bold post-title">{{ $post->title }}</h1>
             
-            @if ($post->media->count() > 0)                
-                <img src="{{ asset('storage/' . $post->media[0]->path) }}" class="img-fluid" alt="Imagem do post">                
+            @if ($post->media->count() > 0)
+                <div class="d-flex justify-content-center">                
+                    <img src="{{ asset('storage/' . $post->media[0]->path) }}" class="img-fluid post-img" alt="Imagem do post">
+                </div>                
             @endif
-
-            <p class="post-content">{{ $post->content }}</p>
+            <div class="d-flex justify-content-center">    
+                <p class="post-content">{!! nl2br(e($post->content)) !!}</p>
+            </div>
 
         </section>    
         <div class="d-flex justify-content-center">    
