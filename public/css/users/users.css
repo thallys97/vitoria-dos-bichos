@@ -110,3 +110,27 @@
     font-size: 1.2rem;
 
 }
+
+@media screen and (min-width: 768px) {
+
+    .form-group-role{
+
+        width: 30%;
+
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+    .form-custom{
+
+        width: 70%;
+                
+    }
+
+
+
+}
