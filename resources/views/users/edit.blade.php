@@ -21,51 +21,53 @@
         @csrf
         @method('PUT') 
 
-        <div class="form-group">
-            <label for="name" class="form-label fs-5">Nome</label>
-            <input type="text" name="name" id="name" class="form-control" value="{{ $user->name }}" required>
-        </div>
+        <div class="container-lg form-custom">
+            <div class="form-group">
+                <label for="name" class="form-label fs-5">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" value="{{ $user->name }}" required>
+            </div>
 
-        <div class="form-group">
-            <label for="email" class="form-label fs-5">E-mail</label>
-            <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}" required>
-        </div>
+            <div class="form-group">
+                <label for="email" class="form-label fs-5">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" value="{{ $user->email }}" required>
+            </div>
 
-        <div class="form-group">
-            <label for="password" class="form-label fs-5">Senha</label>
-            <input type="password" name="password" id="password" class="form-control" value="{{ $user->password }}" required>
-        </div>
+            <div class="form-group">
+                <label for="password" class="form-label fs-5">Senha</label>
+                <input type="password" name="password" id="password" class="form-control" value="{{ $user->password }}" required>
+            </div>
 
-        <div class="form-group">
-            <label for="password_confirmation" class="form-label fs-5">Confirmar Senha</label>
-            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" value="{{ $user->password }}" required>
-        </div>
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label fs-5">Confirmar Senha</label>
+                <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" value="{{ $user->password }}" required>
+            </div>
 
-        <div class="form-group">
-            <label for="phone" class="form-label fs-5">Telefone</label>
-            <input type="text" name="phone" id="phone" class="form-control" value="{{ $user->phone }}" required>
-        </div>
+            <div class="form-group">
+                <label for="phone" class="form-label fs-5">Telefone</label>
+                <input type="text" name="phone" id="phone" class="form-control" value="{{ $user->phone }}" required>
+            </div>
 
-        <div class="form-group">
-            <label for="role" class="form-label fs-5">Função</label>
-            <div class="input-group">
-                <select name="role" id="role" class="form-control" required>
-                    <option value="autor" {{ $user->role === 'autor' ? 'selected' : '' }}>Autor</option>
-                    <option value="editor" {{ $user->role === 'editor' ? 'selected' : '' }}>Editor</option>
-                    <option value="administrador" {{ $user->role === 'administrador' ? 'selected' : '' }}>Administrador</option>
-                </select>
-                <div class="input-group-append"> 
-                    <span class="input-group-text">
-                        <i class="fas fa-caret-down"></i> <!-- Ícone de seta para baixo do Font Awesome -->
-                    </span>
-                </div>
-            </div>    
-        </div>
+            <div class="form-group form-group-role">
+                <label for="role" class="form-label fs-5">Função</label>
+                <div class="input-group">
+                    <select name="role" id="role" class="form-control" required>
+                        <option value="autor" {{ $user->role === 'autor' ? 'selected' : '' }}>Autor</option>
+                        <option value="editor" {{ $user->role === 'editor' ? 'selected' : '' }}>Editor</option>
+                        <option value="administrador" {{ $user->role === 'administrador' ? 'selected' : '' }}>Administrador</option>
+                    </select>
+                    <div class="input-group-append"> 
+                        <span class="input-group-text">
+                            <i class="fas fa-caret-down"></i> <!-- Ícone de seta para baixo do Font Awesome -->
+                        </span>
+                    </div>
+                </div>    
+            </div>
 
-        <div class="form-buttons d-flex justify-content-evenly">
-            <button type="button" class="btn button-user rounded-pill fw-bold update-user" data-user-id="{{ $user->id }}">Salvar alterações</button>
-            <a href="{{ route('users.index') }}" class="btn btn-secondary button-user-list rounded-pill fw-bold">Lista de Usuários</a>
-        </div>
+            <div class="form-buttons d-flex justify-content-evenly">
+                <button type="button" class="btn button-user rounded-pill fw-bold update-user" data-user-id="{{ $user->id }}">Salvar usuário</button>
+                <a href="{{ route('users.index') }}" class="btn btn-secondary button-user-list rounded-pill fw-bold">Lista de usuários</a>
+            </div>
+        </div>    
     </form>
 </main>
 
