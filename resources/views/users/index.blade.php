@@ -4,13 +4,15 @@
     <link rel="stylesheet" href="{{ asset('css/users/users.css') }}">
 @endpush 
 
-    <main class="container">
+    <main class="container py-5">
         <h1 class="title">Lista de Usuários</h1>
-        <a href="{{ route('users.create') }}" class="btn button-user rounded-pill fw-bold my-3">Criar Usuário</a>
+        
 
         @if (count($users) > 0)
-            <section class="users">
+            <section class="users my-5">
+                
                 <div class="table-responsive">
+                    <a href="{{ route('users.create') }}" class="btn button-user rounded-pill fw-bold mb-3">Criar Usuário</a>
                     <table class="table table-striped table-bordered">
                         <thead>
                             <tr>
