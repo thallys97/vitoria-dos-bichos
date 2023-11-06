@@ -15,6 +15,10 @@ class EditorMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        return $next($request);
+        if (auth()->check() && auth()->user()->role === 'editor') {
+            return $next($request);
+        }
+    
+        return redirect('/login');
     }
 }

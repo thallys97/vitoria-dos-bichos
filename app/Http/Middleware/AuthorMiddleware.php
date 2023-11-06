@@ -15,6 +15,10 @@ class AuthorMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        return $next($request);
+        if (auth()->check() && auth()->user()->role === 'autor') {
+            return $next($request);
+        }
+    
+        return redirect('/login');
     }
 }
