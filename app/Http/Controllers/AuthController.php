@@ -28,7 +28,7 @@ class AuthController extends Controller
             // Autenticação bem-sucedida
             Auth::login($user, $remember); // Autentique o usuário
             
-            if ($user->role === 'admin') {
+            if ($user->role === 'administrador') {
                 return redirect()->route('dashboard.index');
             } else {
                 return redirect()->route('posts.index');
