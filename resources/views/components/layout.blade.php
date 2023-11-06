@@ -71,7 +71,7 @@
                   <i class="fa-solid fa-gauge fs-4 align-middle"></i>
               </a>
           @else
-              <a href="{{ route('logout') }}" class="btn fixed-bottom mb-2 ms-2 dashboard-button border border-0 fw-bold" style="background-color: #6C3593; color: black;">
+              <a href="{{ route('logout') }}" class="btn fixed-bottom mb-2 ms-2 dashboard-button border border-0 fw-bold confirm-logout" style="background-color: #6C3593; color: black;">
                 <i class="fas fa-sign-out-alt fs-4 align-middle"></i>
               </a>
           @endif
@@ -86,5 +86,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/layout/logout-confirmation.js') }}"></script>
 </body>
 </html>
