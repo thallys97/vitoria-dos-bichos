@@ -53,7 +53,7 @@ use App\Http\Controllers\AuthController;
             Route::post('/logout', [AuthController::class, 'logout'] )->name('logout');
         });
         
-        
+               
     });
     
     
