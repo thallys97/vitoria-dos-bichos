@@ -27,7 +27,12 @@ class AuthController extends Controller
         if ($user && Hash::check($credentials['password'], $user->password)) {
             // Autenticação bem-sucedida
             Auth::login($user, $remember); // Autentique o usuário
-            return redirect()->route('dashboard.index');
+            
+            if ($user->role === 'admin') {
+                return redirect()->route('dashboard.index');
+            } else {
+                return redirect()->route('posts.index');
+            }
         }
 
         // Autenticação falhou
