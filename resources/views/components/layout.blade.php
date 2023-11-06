@@ -66,11 +66,15 @@
 
 
       @auth
-      
-        <a href="{{ route('dashboard.index') }}" class="btn fixed-bottom mb-2 ms-2 dashboard-button border border-0 fw-bold" style="background-color: #6C3593; color: black;">
-            <i class="fa-solid fa-gauge fs-4 align-middle"></i>            
-        </a>
-      
+          @if (auth()->user()->role === 'admin')
+              <a href="{{ route('dashboard.index') }}" class="btn fixed-bottom mb-2 ms-2 dashboard-button border border-0 fw-bold" style="background-color: #6C3593; color: black;">
+                  <i class="fa-solid fa-gauge fs-4 align-middle"></i>
+              </a>
+          @else
+              <a href="{{ route('logout') }}" class="btn fixed-bottom mb-2 ms-2 dashboard-button border border-0 fw-bold" style="background-color: #6C3593; color: black;">
+                <i class="fas fa-sign-out-alt fs-4 align-middle"></i>
+              </a>
+          @endif
       @endauth
        
 
