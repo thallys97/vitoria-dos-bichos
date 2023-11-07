@@ -5,7 +5,7 @@
 @endpush 
 
     <main class="container py-5">
-        <h1 class="title d-none d-lg-block">Lista de Usuários</h1>
+        <h1 class="title">Lista de Usuários</h1>
                 
             @if (count($users) > 0)
                 <section class="users my-5">
