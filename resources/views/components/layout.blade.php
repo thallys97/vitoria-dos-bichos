@@ -71,7 +71,7 @@
                   <i class="fa-solid fa-gauge fs-4 align-middle"></i>
               </a>
           @else
-              <a href="#" class="btn fixed-bottom mb-2 ms-2 dashboard-button border border-0 fw-bold confirm-logout" style="background-color: #6C3593; color: black;">
+              <a href="#" class="btn fixed-bottom mb-2 ms-2 dashboard-button border border-0 fw-bold" style="background-color: #6C3593; color: black;" onclick="confirmLogout()">
                 <i class="fas fa-sign-out-alt fs-4 align-middle"></i>
               </a>
               <form id="logout-form-layout" action="{{ route('logout') }}" method="POST" style="display: none;">
