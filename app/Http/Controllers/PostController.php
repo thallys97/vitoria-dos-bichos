@@ -17,8 +17,16 @@ class PostController extends Controller
 {
     public function index()
     {
-       
-        $posts = Post::paginate(12);
+        $user = auth()->user();
+        
+        if ($user && $user->role === 'autor') {
+            // Se o usuário for um autor, apenas os posts do autor serão recuperados
+            $posts = Post::where('user_id', $user->id)->latest()->paginate(12);
+        } else {
+            // Se o usuário não for um autor, todos os posts serão recuperados
+            $posts = Post::latest()->paginate(12);
+        }
+
         return view('posts.index', compact('posts'));
     }
 
