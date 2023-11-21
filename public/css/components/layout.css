@@ -41,6 +41,25 @@ a.nav-link {
     font-weight: bold ;
 }
 
+.galeria-botao:focus {
+    
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.dropdown-botao-item {
+
+    padding: 0 1rem;
+
+}
+
+.dropdown-botao-item:focus{
+
+    color: #9D5A00;
+
+}
+
 .dashboard-button {
 
     width: 15%;
@@ -103,6 +122,25 @@ a.nav-link {
 
     }
 
+    .galeria {
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .galeria-botao {
+
+        height: 100%;
+
+     }
+
+
+    .dropdown-botao-item:hover{
+
+        color: #9D5A00;
+
+    }
 
     .dashboard-button {
 

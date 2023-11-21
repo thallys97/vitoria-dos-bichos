@@ -46,13 +46,13 @@
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
                       <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#contatos-telefones">Contatos</a>
                     </li>
-                    <li class="dropdown nav-item cabecalho-navbar-item border border-secondary text-center">
+                    <li class="dropdown nav-item galeria border border-secondary text-center">
                       <button class="btn galeria-botao dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Galeria
                       </button>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item disabled" aria-disabled="true">Fotos</a></li>
-                        <li><a class="dropdown-item nav-link fw-bold" href="#">Vídeos</a></li>
+                        <li><a class="dropdown-item nav-link fw-bold dropdown-botao-item" href="#">Vídeos</a></li>
                       </ul>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
