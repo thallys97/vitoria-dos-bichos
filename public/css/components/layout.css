@@ -32,6 +32,15 @@ a.nav-link {
 
 }
 
+
+.galeria-botao {
+
+    background-color: black;
+    width: 100%;
+    color: #6C3593;
+    font-weight: bold ;
+}
+
 .dashboard-button {
 
     width: 15%;

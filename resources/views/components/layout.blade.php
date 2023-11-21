@@ -35,16 +35,25 @@
                       <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}">Home</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#sobrenos">Sobre a associação</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#sobrenos">Sobre nós</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#servicos-castracao">Serviços de castração</a>
+                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#servicos-castracao">Serviços</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
                       <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#doacoes">Doação</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
                       <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#contatos-telefones">Contatos</a>
+                    </li>
+                    <li class="dropdown nav-item cabecalho-navbar-item border border-secondary text-center">
+                      <button class="btn galeria-botao dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Galeria
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item disabled" aria-disabled="true">Fotos</a></li>
+                        <li><a class="dropdown-item nav-link fw-bold" href="#">Vídeos</a></li>
+                      </ul>
                     </li>
                     <li class="nav-item cabecalho-navbar-item border border-secondary  text-center">
                         <a class="nav-link nav-link-custom fw-bold" href="{{ route('posts.index') }}">Blog</a>
