@@ -42,10 +42,16 @@
         <div>
           <h2 class="servicos-titulo text-center fw-bold display-4 mt-2">Serviços</h2>
 
-          <p class="text-center text-md-start servicos-texto mx-4"> <span class="fw-bold"> Objetivo: castração </span> <br>  1. Não recebemos ajuda fianceira do municipio e governo <br>
+          <p class="text-center text-md-start servicos-texto mx-4"> <span class="fw-bold"> Objetivo: castração </span> <br>  
+
+            Temos um Centro de castração devidamente legalizado e registrado nos orgãos competentes, de iniciativa individual e privada da Vitória dos Bichos,
+            e promovemos castrações a preços populares especialmente para animais de rua ou de famílias carentes. Nossos preços são mais acessíveis graças aos parceiros e ao trabalho voluntário.
+            
+            <!-- 1. Não recebemos ajuda fianceira do municipio e governo <br>
             2. Não dispomos de local para abrigo de animais <br>
             3. Somente recolhemos animais que já possuem local de encaminhamento para o mesmo. <span class="fw-bold"> Ex: Lar temporário até que fique pronto para adoção. </span>  <br>
-            Realizamos um trabalho voluntário quando encontramos animais acidentados ou doentes em nosso percurso, ele recebe o tratamento adequado e vai para adoção posteriormente. 
+            Realizamos um trabalho voluntário quando encontramos animais acidentados ou doentes em nosso percurso, ele recebe o tratamento adequado e vai para adoção posteriormente.
+              -->
           </p>
         </div>
       </div>
