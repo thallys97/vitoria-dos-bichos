@@ -51,7 +51,6 @@
                         Galeria
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item disabled" aria-disabled="true">Fotos</a></li>
                         <li><a class="dropdown-item nav-link fw-bold dropdown-botao-item" href="#">Vídeos</a></li>
                       </ul>
                     </li>
