@@ -1,7 +1,21 @@
 <x-layout>
 
+    @push('head')
+        <link rel="stylesheet" href="{{ asset('css/videos/videos.css') }}">
+    @endpush   
+
     <main class="container py-5">
-        <h1 class="title d-none d-lg-block">Adicionar Vídeo</h1>
+        <h1 class="title d-none d-lg-block">Adicionar Novo Vídeo</h1>
+        
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
 
         <form action="{{ route('videos.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
