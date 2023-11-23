@@ -25,13 +25,12 @@ use App\Http\Controllers\VideoController;
 // });
 
 
-
-
 // Route::middleware(['auth'])->group(function () {
     //     Route::get('/admin', 'AdminController@index')->name('admin.dashboard');
     // });
     
-    
+
+       
     Route::middleware(['auth'])->group(function () {
         
         
@@ -71,15 +70,17 @@ use App\Http\Controllers\VideoController;
     });
     
     
-Route::get('/login', [AuthController::class, 'showLoginForm'] )->name('login');
-Route::post('/login', [AuthController::class, 'login'] )->name('login.request');
+    Route::get('/login', [AuthController::class, 'showLoginForm'] )->name('login');
+    Route::post('/login', [AuthController::class, 'login'] )->name('login.request');
+    
+    
+    Route::get('/', [HomeController::class, 'index'] )->name('home.index');
+    
+
+    Route::get('/videos', [VideoController::class, 'index'])->name('videos.index'); 
 
 
-Route::get('/', [HomeController::class, 'index'] )->name('home.index');
+    Route::get('/posts', [PostController::class, 'index'])->name('posts.index'); // Exemplo de rota para listar todos os posts
+    Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show'); // Rota para exibir um post específico
 
-
-Route::get('/posts', [PostController::class, 'index'])->name('posts.index'); // Exemplo de rota para listar todos os posts
-Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show'); // Rota para exibir um post específico
-
-Route::get('/videos', [VideoController::class, 'index'])->name('videos.index');
 
