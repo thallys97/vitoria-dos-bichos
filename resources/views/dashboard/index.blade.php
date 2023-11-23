@@ -13,6 +13,10 @@
                 <div class="mb-3">
                     <a href="{{ route('users.index') }}" class="btn dashboard-button rounded-pill fw-bold">Listagem de Usuários</a>
                 </div>
+
+                <div class="mb-3">
+                    <a href="{{ route('videos.index') }}" class="btn dashboard-button rounded-pill fw-bold">Listagem de Vídeos</a>
+                </div>
         
                 <div>
                     <a href="{{ route('logout') }}" class="text-decoration-none text-dark fw-bold" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
