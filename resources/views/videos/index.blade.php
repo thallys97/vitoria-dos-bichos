@@ -23,7 +23,7 @@
                 <div class="col">
                     <div class="card videos-card">
                         <!-- Adicione seu código para exibir o vídeo, como um iframe do YouTube, por exemplo -->
-                        <!-- <iframe width="560" height="315" src="{{ $video->path }}" frameborder="0" allowfullscreen></iframe> -->
+                        <!-- <iframe width="560" height="315" src="{{ $video->path }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
                         <!-- Certifique-se de ajustar conforme o tipo de vídeo ou o método de exibição -->
                         <img src="{{ asset('storage/' . $video->path) }}" class="card-img-top" alt="Imagem do vídeo">
                         <div class="card-body">
