@@ -105,7 +105,7 @@
 }
 
 
-.doacao-botao {
+.doacao-botao, .botao-galeria {
 
     background-color: black;
 
@@ -119,7 +119,7 @@
 
 }
 
-.doacao-botao:hover {
+.doacao-botao:hover, .botao-galeria:hover {
 
     background-color: #3CB371;
 
@@ -204,6 +204,16 @@
 
 
 @media screen and (min-width: 768px) {
+
+
+
+    .botao-galeria {
+ 
+        width: 50%;
+
+        margin-top: 0;
+
+    }   
 
     .imagem-picpay {
 
@@ -298,6 +308,12 @@
         margin-left: 0;
 
     }
+
+    .botao-galeria {
+
+        width: 40%;
+
+    } 
 
     .servicos-titulo {
 
