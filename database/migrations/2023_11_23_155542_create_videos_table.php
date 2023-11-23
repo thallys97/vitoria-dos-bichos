@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->string('path');
+            $table->string('title')->nullable(); // Torna 'title' opcional permitindo valores nulos
+            $table->text('description')->nullable(); // Torna 'description' opcional permitindo valores nulos
             $table->timestamps();
         });
     }
