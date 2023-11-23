@@ -28,9 +28,15 @@ class VideoController extends Controller
             'description' => 'nullable|string',
         ]);
 
-        Video::create($request->all());
 
-        return redirect()->route('videos.index')->with('success', 'Vídeo criado com sucesso!');
+        Video::create([
+            'user_id' => auth()->user()->id,
+            'path' => $request->path,
+            'title' => $request->title,
+            'description' => $request->description,
+        ]);
+
+        return redirect()->route('videos.index')->with('success', 'Vídeo registrado com sucesso!');
     }
 
     
