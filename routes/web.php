@@ -6,6 +6,8 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\VideoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -44,6 +46,13 @@ use App\Http\Controllers\AuthController;
             Route::put('/posts/{id}', [PostController::class, 'update'])->name('posts.update'); // Exemplo de rota para atualizar um post existente
             Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy'); // Exemplo de rota para excluir um post
             
+
+            Route::get('/videos/create', [VideoController::class, 'create'])->name('videos.create');
+            Route::post('/videos', [VideoController::class, 'store'])->name('videos.store');
+            Route::get('/videos/{video}/edit', [VideoController::class, 'edit'])->name('videos.edit');
+            Route::put('/videos/{video}', [VideoController::class, 'update'])->name('videos.update');
+            Route::delete('/videos/{video}', [VideoController::class, 'destroy'])->name('videos.destroy');
+
             
             Route::middleware(['admin'])->group(function () {
                 Route::get('/users', [UserController::class, 'index'])->name('users.index'); // Listar todos os usuários
@@ -72,5 +81,5 @@ Route::get('/', [HomeController::class, 'index'] )->name('home.index');
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index'); // Exemplo de rota para listar todos os posts
 Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show'); // Rota para exibir um post específico
 
-
+Route::get('/videos', [VideoController::class, 'index'])->name('videos.index');
 
