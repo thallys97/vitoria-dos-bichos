@@ -23,7 +23,6 @@ class VideoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'user_id' => 'required|exists:users,id',
             'path' => 'required|string',
             'title' => 'nullable|string',
             'description' => 'nullable|string',
@@ -34,11 +33,7 @@ class VideoController extends Controller
         return redirect()->route('videos.index')->with('success', 'Vídeo criado com sucesso!');
     }
 
-    public function show(Video $video)
-    {
-        return view('videos.show', compact('video'));
-    }
-
+    
     public function edit(Video $video)
     {
         // Adicione lógica aqui, se necessário
@@ -48,7 +43,6 @@ class VideoController extends Controller
     public function update(Request $request, Video $video)
     {
         $request->validate([
-            'user_id' => 'required|exists:users,id',
             'path' => 'required|string',
             'title' => 'nullable|string',
             'description' => 'nullable|string',
