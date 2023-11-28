@@ -2,7 +2,7 @@
 
     @push('head')
         <!-- Adicione os estilos específicos, se necessário -->
-        <style>
+    <!--    <style>
             .videos-card {
                 max-width: 18rem;
                 margin: 1rem;
@@ -12,11 +12,19 @@
                 max-height: 10rem; /* Defina a altura máxima conforme necessário */
                 object-fit: cover; /* Garante que a imagem se ajusta ao tamanho do card */
             }
-        </style>
+        </style> -->
+        <link rel="stylesheet" href="{{ asset('css/videos/videos.css') }}">
+
     @endpush
     
-    <main class="container py-5">
-        <h1 class="title d-none d-lg-block">Galeria de Vídeos</h1>
+    <main class="container">
+        
+        <div class="mb-4">
+            <h1 class="title">Galeria de Vídeos</h1>
+            @auth
+                <a href="{{ route('videos.create') }}" class="btn button-post rounded-pill fw-bold fs-5 mt-4 mb-2">Registrar Novo Vídeo</a>
+            @endauth
+        </div>  <!-- parei aqui -->
     
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
             @forelse ($videos as $video)
