@@ -41,6 +41,13 @@ a.nav-link {
     font-weight: bold ;
 }
 
+.galeria-botao:hover {
+    
+    color: white;
+    font-weight: bolder;
+    
+}
+
 .galeria-botao:focus {
     
     color: white;
@@ -51,6 +58,12 @@ a.nav-link {
 .dropdown-botao-item {
 
     padding: 0 1rem;
+
+}
+
+.dropdown-botao-item:hover{
+
+    color: #9D5A00;
 
 }
 
@@ -136,11 +149,7 @@ a.nav-link {
      }
 
 
-    .dropdown-botao-item:hover{
-
-        color: #9D5A00;
-
-    }
+   
 
     .dashboard-button {
 
