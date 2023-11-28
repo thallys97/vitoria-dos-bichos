@@ -33,10 +33,10 @@
                     <div class="col-12 col-md-6 col-lg-4 mb-4">
                         <div class="card custom-card">
                             
-                            <iframe width="560" height="315" src="{{ $video->path }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe class="card-img-top" width="300" height="315" src="{{ $video->path }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             
                             <div class="card-body">
-                                <h2 class="card-title fw-bold mt-3">{{ $video->title }}</h5>
+                                <h2 class="card-title fw-bold mt-3 text-center">{{ $video->title }}</h5>
                                 <p class="card-text mb-4">{{ $video->description }}</p>
 
                                 @auth 
