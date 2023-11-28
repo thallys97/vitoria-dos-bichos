@@ -33,7 +33,7 @@ class VideoController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'path' => 'required|string',
+            'path' => 'required|url|active_url|string',
             'title' => 'nullable|string',
             'description' => 'nullable|string',
         ]);
@@ -63,7 +63,7 @@ class VideoController extends Controller
     public function update(Request $request, Video $video)
     {
         $request->validate([
-            'path' => 'required|string',
+            'path' => 'required|url|active_url|string',
             'title' => 'nullable|string',
             'description' => 'nullable|string',
         ]);
