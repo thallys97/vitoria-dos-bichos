@@ -26,7 +26,7 @@
 
                 <div class="form-group">
                     <label for="title" class="form-label fs-5">Título:</label>
-                    <input type="text" name="title" class="form-control" value="{{ $post->title }}">
+                    <input type="text" name="title" class="form-control" id="title" value="{{ $post->title }}">
                 </div>
                 
 
@@ -51,7 +51,7 @@
 
                 <div class="form-group">
                     <label for="content" class="form-label fs-5">Conteúdo:</label>
-                    <textarea name="content" class="form-control" rows="5">{{ $post->content }}</textarea>
+                    <textarea name="content" class="form-control" id="content" rows="5">{{ $post->content }}</textarea>
                 </div>
 
                 <div class="form-buttons d-flex justify-content-evenly">

@@ -1,28 +1,50 @@
 <x-layout>
 
-    <main class="container py-5">
-        <h1 class="title d-none d-lg-block">Editar Vídeo</h1>
+    @push('head')
+        <link rel="stylesheet" href="{{ asset('css/videos/videos.css') }}">
+    @endpush   
 
-        <form action="{{ route('videos.update', $video->id) }}" method="POST" enctype="multipart/form-data">
+    <main class="container">
+        <h1 class="title">Editar Vídeo</h1>
+  
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
+
+        <form action="{{ route('videos.update', $video->id) }}" method="POST">
             @csrf
             @method('PUT')
 
-            <div class="mb-3">
-                <label for="title" class="form-label">Título do Vídeo (opcional)</label>
-                <input type="text" class="form-control" id="title" name="title" value="{{ $video->title }}">
-            </div>
+            <div class="container-lg form-custom">
 
-            <div class="mb-3">
-                <label for="path" class="form-label">Link do Vídeo (YouTube, Vimeo, etc.)</label>
-                <input type="text" class="form-control" id="path" name="path" value="{{ $video->path }}" required>
-            </div>
+                <div class="form-group">
+                    <label for="title" class="form-label fs-5">Título do Vídeo (opcional)</label>
+                    <input type="text" class="form-control" id="title" name="title" value="{{ $video->title }}">
+                </div>
 
-            <div class="mb-3">
-                <label for="description" class="form-label">Descrição do Vídeo (opcional)</label>
-                <textarea class="form-control" id="description" name="description" rows="4">{{ $video->description }}</textarea>
-            </div>
+                <div class="form-group">
+                    <label for="path" class="form-label fs-5">Link do Vídeo (YouTube, Vimeo, etc.)</label>
+                    <input type="text" class="form-control" id="path" name="path" value="{{ $video->path }}" required>
+                </div>
 
-            <button type="submit" class="btn btn-primary">Atualizar Vídeo</button>
+                <div class="form-group">
+                    <label for="description" class="form-label fs-5">Descrição do Vídeo (opcional)</label>
+                    <textarea class="form-control" id="description" name="description" rows="4">{{ $video->description }}</textarea>
+                </div>
+
+                <div class="form-buttons d-flex justify-content-evenly">
+                    <button type="submit" class="btn button-video rounded-pill fw-bold">Atualizar registro de Vídeo</button>
+                    <a href="{{ route('videos.index') }}" class="btn btn-secondary button-video-list rounded-pill fw-bold">Lista de Vídeos</a>
+                </div>
+
+            </div>
         </form>
     </main>
 
