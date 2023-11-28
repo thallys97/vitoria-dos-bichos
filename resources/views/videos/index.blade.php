@@ -35,11 +35,22 @@
                             
                             <iframe class="card-img-top" width="300" height="315" src="{{ $video->path }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             
-                            <div class="card-body">
-                                <h2 class="card-title fw-bold mt-3 text-center">{{ $video->title }}</h5>
-                                <p class="card-text mb-4">{{ $video->description }}</p>
+                            @guest
+                                @if(isset($video->title) || isset($video->description))
+                                    
+                                    <div class="card-body">
+                                        <h2 class="card-title fw-bold mt-3 text-center">{{ $video->title }}</h5>
+                                        <p class="card-text mb-4">{{ $video->description }}</p>
+                                    </div>
+                                @endif
+                            @endguest
 
-                                @auth 
+                            @auth
+                                <div class="card-body">
+                                    <h2 class="card-title fw-bold mt-3 text-center">{{ $video->title }}</h5>
+                                    <p class="card-text mb-4">{{ $video->description }}</p>
+
+                                 
                                     <div class="d-flex justify-content-evenly">       
                                         <a href="{{ route('videos.edit', $video->id) }}" class="btn button-video rounded-pill fw-bold">Editar</a>
                                         <form id="delete-form-{{ $video->id }}" action="{{ route('videos.destroy', $video->id) }}" method="POST" style="display: inline;">
@@ -47,10 +58,11 @@
                                             @method('DELETE')
                                             <button type="button" class="btn btn-danger rounded-pill delete-video button-delete fw-bold" data-video-id="{{ $video->id }}">Excluir</button>
                                         </form>
-                                    </div>    
-                                @endauth    
+                                    </div>  
+                                </div>      
+                            @endauth    
 
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
