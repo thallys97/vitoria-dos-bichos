@@ -10,20 +10,12 @@
 }
 
 
-.form-label, .image-title {
+.form-label {
     color: #000000;
     font-weight: 700;
     margin: 1.5rem 0 0.3rem 0; 
 }
 
-
-#file-name {
-
-    color: #000000;
-    font-weight: 700;
-    background-color: #6C3593;
-
-}
 
 
 .form-buttons {
@@ -52,12 +44,6 @@
 
 }
 
-.card-link{
-
-    text-decoration: none;
-
-    color: #000000;
-}
 
 .card-title {
 
@@ -74,7 +60,7 @@
 }
 
 
-.post {
+.video {
 
     background-color: white;
     border: #9D5A00 3px solid;
@@ -84,19 +70,19 @@
 
 }
 
-.post-title {
+.video-title {
 
     margin: 2rem 0;
 
 }
 
-.post-content {
+.video-content {
 
     padding: 1.5rem 1rem 0 1rem;
 
 }
 
-.no-posts{
+.no-videos{
 
     height: 20rem;
     display: flex;
@@ -105,7 +91,7 @@
 
 }
 
-.no-posts-card{
+.no-videos-card{
     background-color: white;
     border: #9D5A00 3px solid;
     border-radius: 8px;
@@ -113,7 +99,7 @@
     padding: 1rem;
 }
 
-.no-posts-text {
+.no-videos-text {
 
     margin-bottom: 0;
     font-size: 1.2rem;
@@ -123,25 +109,8 @@
 @media screen and (min-width: 768px) {
 
 
-    .current-image{
 
-        width: 60%;
-    
-    }
-
-    .form-control-file {
-
-        width: 60%;
-
-    }
-
-    .post-img {
-
-        width: 80%;
-
-    }
-
-    .post-content {
+    .video-content {
 
         width: 80%;
         padding: 2rem 0 3.5rem 0;

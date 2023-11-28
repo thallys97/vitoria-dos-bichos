@@ -22,7 +22,7 @@
         <div class="mb-4">
             <h1 class="title">Galeria de Vídeos</h1>
             @auth
-                <a href="{{ route('videos.create') }}" class="btn button-post rounded-pill fw-bold fs-5 mt-4 mb-2">Registrar Novo Vídeo</a>
+                <a href="{{ route('videos.create') }}" class="btn button-video rounded-pill fw-bold fs-5 mt-4 mb-2">Registrar Novo Vídeo</a>
             @endauth
         </div> 
     
@@ -41,11 +41,11 @@
 
                                 @auth 
                                     <div class="d-flex justify-content-evenly">       
-                                        <a href="{{ route('videos.edit', $video->id) }}" class="btn button-post rounded-pill fw-bold">Editar</a>
+                                        <a href="{{ route('videos.edit', $video->id) }}" class="btn button-video rounded-pill fw-bold">Editar</a>
                                         <form id="delete-form-{{ $video->id }}" action="{{ route('videos.destroy', $video->id) }}" method="POST" style="display: inline;">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="button" class="btn btn-danger rounded-pill delete-post button-delete fw-bold" data-video-id="{{ $video->id }}">Excluir</button>
+                                            <button type="button" class="btn btn-danger rounded-pill delete-video button-delete fw-bold" data-video-id="{{ $video->id }}">Excluir</button>
                                         </form>
                                     </div>    
                                 @endauth    
@@ -60,9 +60,9 @@
                 </div>
 
             @empty
-                <section class="no-posts">
-                    <div class="no-posts-card text-center">
-                        <p class="no-posts-text fw-bold">Nenhum post foi criado ainda.</p>
+                <section class="no-videos">
+                    <div class="no-videos-card text-center">
+                        <p class="no-videos-text fw-bold">Nenhum vídeo foi criado ainda.</p>
                     </div>
                 </section> 
             @endforelse   
