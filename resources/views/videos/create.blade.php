@@ -23,17 +23,17 @@
             <div class="container-lg form-custom">
                 <div class="form-group">
                     <label for="title" class="form-label fs-5">Título do Vídeo (opcional)</label>
-                    <input type="text" class="form-control" id="title" name="title">
+                    <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}">
                 </div>
 
                 <div class="form-group">
                     <label for="path" class="form-label fs-5">Link do Vídeo (YouTube, Vimeo, etc.)</label>
-                    <input type="text" class="form-control" id="path" name="path" required>
+                    <input type="text" class="form-control" id="path" name="path" value="{{ old('path') }}" required>
                 </div>
 
                 <div class="form-group">
                     <label for="description" class="form-label fs-5">Descrição do Vídeo (opcional)</label>
-                    <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+                    <textarea class="form-control" id="description" name="description" rows="4">{{ old('description') }}</textarea>
                 </div>
 
                 <div class="form-buttons d-flex justify-content-evenly">
