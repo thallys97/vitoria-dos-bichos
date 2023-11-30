@@ -6,6 +6,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\VideoController;
 
 
@@ -46,6 +47,14 @@ use App\Http\Controllers\VideoController;
             Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy'); // Exemplo de rota para excluir um post
             
 
+
+            Route::get('/photos/create', [PhotoController::class, 'create'])->name('photos.create');
+            Route::post('/photos', [PhotoController::class, 'store'])->name('photos.store');
+            Route::get('/photos/{photo}/edit', [PhotoController::class, 'edit'])->name('photos.edit');
+            Route::put('/photos/{photo}', [PhotoController::class, 'update'])->name('photos.update');
+            Route::delete('/photos/{photo}', [PhotoController::class, 'destroy'])->name('photos.destroy');
+
+
             Route::get('/videos/create', [VideoController::class, 'create'])->name('videos.create');
             Route::post('/videos', [VideoController::class, 'store'])->name('videos.store');
             Route::get('/videos/{video}/edit', [VideoController::class, 'edit'])->name('videos.edit');
@@ -76,8 +85,10 @@ use App\Http\Controllers\VideoController;
     
     Route::get('/', [HomeController::class, 'index'] )->name('home.index');
     
+    
+    Route::get('/photos', [PhotoController::class, 'index'])->name('photos.index'); 
 
-    Route::get('/videos', [VideoController::class, 'index'])->name('videos.index'); 
+    Route::get('/videos', [VideoController::class, 'index'])->name('videos.index');
 
 
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index'); // Exemplo de rota para listar todos os posts
