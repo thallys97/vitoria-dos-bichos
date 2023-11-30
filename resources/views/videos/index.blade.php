@@ -28,8 +28,11 @@
     
    <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3"> -->
         
-            @forelse ($videos as $video)
-                <div class="row">
+
+    @if (count($videos) > 0)
+            <div class="row">
+                
+                @foreach ($videos as $video)
                     <div class="col-12 col-md-6 col-lg-4 mb-4">
                         <div class="card custom-card">
                             
@@ -65,19 +68,21 @@
                             
                         </div>
                     </div>
-                </div>
+                @endforeach    
+            </div>
 
                 <div class="pagination d-flex justify-content-center mt-3">
                     {{ $videos->links('custom-pagination') }}
                 </div>
 
-            @empty
-                <section class="no-videos">
-                    <div class="no-videos-card text-center">
-                        <p class="no-videos-text fw-bold">Nenhum vídeo foi criado ainda.</p>
-                    </div>
-                </section> 
-            @endforelse   
+    @else
+        <section class="no-videos">
+            <div class="no-videos-card text-center">
+                <p class="no-videos-text fw-bold">Nenhum vídeo foi criado ainda.</p>
+            </div>
+        </section> 
+    @endif    
+    
    <!-- </div> -->
     </main>
     
