@@ -25,14 +25,14 @@
 
 }
 
-.button-video {
+.button-photo {
 
     color: #000000;
     background-color: #9D5A00;
     border: none;
 }
 
-.button-video-list, .button-delete {
+.button-photo-list, .button-delete {
     
     color: #000000;
 }
@@ -60,7 +60,7 @@
 }
 
 
-.video {
+.photo {
 
     background-color: white;
     border: #9D5A00 3px solid;
@@ -70,19 +70,19 @@
 
 }
 
-.video-title {
+.photo-title {
 
     margin: 2rem 0;
 
 }
 
-.video-content {
+.photo-content {
 
     padding: 1.5rem 1rem 0 1rem;
 
 }
 
-.no-videos{
+.no-photos{
 
     height: 20rem;
     display: flex;
@@ -91,7 +91,7 @@
 
 }
 
-.no-videos-card{
+.no-photos-card{
     background-color: white;
     border: #9D5A00 3px solid;
     border-radius: 8px;
@@ -99,7 +99,7 @@
     padding: 1rem;
 }
 
-.no-videos-text {
+.no-photos-text {
 
     margin-bottom: 0;
     font-size: 1.2rem;
@@ -110,7 +110,7 @@
 
 
 
-    .video-content {
+    .photo-content {
 
         width: 80%;
         padding: 2rem 0 3.5rem 0;
