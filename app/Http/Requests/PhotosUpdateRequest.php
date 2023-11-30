@@ -11,7 +11,7 @@ class PhotosUpdateRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -21,8 +21,31 @@ class PhotosUpdateRequest extends FormRequest
      */
     public function rules(): array
     {
+     
+        $photo = $this->route('photo');
+
+        $id = $photo->id;
+         
+
         return [
-            //
+            'path' => 'required|url|active_url|string|unique:photos,path,' . $id,
+            'title' => 'nullable|string',
+            'description' => 'nullable|string',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'path.required' => 'A URL deve ser informada.',
+            'path.url' => 'Forneça uma URL válida.',
+            'path.active_url' => 'Forneça uma URL válida.',
+            'path.string' => 'The path field must be a string.',
+            'path.unique' => 'A URL informada já está registrada no sistema.',
+            'title.string' => 'The title field must be a string.',
+            'description.string' => 'The description field must be a string.',
+            
+        ];
+    }
+
 }
