@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Video;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\VideosStoreRequest;
+use App\Http\Requests\VideosUpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
@@ -30,14 +32,8 @@ class VideoController extends Controller
         return view('videos.create');
     }
 
-    public function store(Request $request)
+    public function store(VideosStoreRequest $request)
     {
-        $request->validate([
-            'path' => 'required|url|active_url|string|unique:videos',
-            'title' => 'nullable|string',
-            'description' => 'nullable|string',
-        ]);
-
 
         Video::create([
             'user_id' => auth()->user()->id,
@@ -60,15 +56,8 @@ class VideoController extends Controller
         }
     }
 
-    public function update(Request $request, Video $video)
+    public function update(VideosUpdateRequest $request, Video $video)
     {
-        $id = $video->id;
-
-        $request->validate([
-            'path' => 'required|url|active_url|string|unique:videos,path,' . $id,
-            'title' => 'nullable|string',
-            'description' => 'nullable|string',
-        ]);
 
         $video->update([
             'path' => $request->path,
