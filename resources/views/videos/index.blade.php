@@ -42,7 +42,7 @@
                                 @if(isset($video->title) || isset($video->description))
                                     
                                     <div class="card-body">
-                                        <h2 class="card-title fw-bold mt-3 text-center">{{ $video->title }}</h5>
+                                        <h2 class="card-title fw-bold mt-3 text-center">{{ $video->title }}</h2>
                                         <p class="card-text mb-4">{{ $video->description }}</p>
                                     </div>
                                 @endif
