@@ -95,9 +95,60 @@
 
     {{ $slot }}
     
-    <footer style="background-color: black; color: white;" class="py-3">
+    <!-- <div style="background-color: black; color: white;" class="py-3">
         <p class="text-center mb-0">&copy; 2023 Associação Vitória dos Bichos. <br class="d-md-none"> Todos os Direitos Reservados</p>        
+    </div> -->
+
+    <footer style="background-color: black;" class="text-white py-5">
+      <div class="container">
+          <div class="row">
+              <!-- Informações de Contato -->
+              <div class="col-md-4">
+                  <h5>Contato</h5>
+                  <p>Endereço: Rua Exemplo, 123</p>
+                  <p>Telefone: (123) 456-7890</p>
+                  <p>Email: contato@example.com</p>
+              </div>
+              
+              <!-- Redes Sociais -->
+              <div class="col-md-4">
+                  <h5>Redes Sociais</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white">Facebook</a></li>
+                      <li><a href="#" class="text-white">Twitter</a></li>
+                      <li><a href="#" class="text-white">Instagram</a></li>
+                  </ul>
+              </div>
+              
+              <!-- Créditos -->
+              <div class="col-md-2">
+                  <h5>Créditos</h5>
+                  <p>Desenvolvido por: Seu Nome</p>
+              </div>
+              
+              <!-- Links Importantes -->
+              <div class="col-md-2">
+                  <h5>Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white">Sobre Nós</a></li>
+                      <li><a href="#" class="text-white">Política de Privacidade</a></li>
+                      <li><a href="#" class="text-white">Termos de Serviço</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Direitos Autorais -->
+      <div class="container mt-4">
+          <div class="row">
+              <div class="col text-center">
+                  <p class="mb-0">&copy; 2023 Associação Vitória dos Bichos. Todos os Direitos Reservados</p>
+              </div>
+          </div>
+      </div>
     </footer>
+  
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
