@@ -51,6 +51,7 @@
                         Galeria
                       </button>
                       <ul class="dropdown-menu">
+                        <li><a class="dropdown-item nav-link fw-bold dropdown-botao-item" href="{{ route('photos.index') }}">Fotos</a></li>
                         <li><a class="dropdown-item nav-link fw-bold dropdown-botao-item" href="{{ route('videos.index') }}">Vídeos</a></li>
                       </ul>
                     </li>
