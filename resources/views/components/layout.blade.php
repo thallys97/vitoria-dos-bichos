@@ -105,35 +105,36 @@
               <!-- Informações de Contato -->
               <div class="col-md-4">
                   <h5>Contatos</h5>
-                  <p>Rua G, n°50, quadra 39, lt 02, Setor União V 77405-340 Gurupi, TO</p>
-                  <p>(63) 98120-0001</p>
-                  <p>(63) 98426-6777</p>
-                  <p>avbgpito@gmail.com</p>
+                  <p class="d-flex align-items-center gap-1"><i class="fa-solid fa-map"></i>Rua G, n°50, quadra 39, lt 02, Setor União V 77405-340 Gurupi, TO</p>
+                  <p class="d-flex align-items-center gap-1"><i class="fa-solid fa-phone"></i>(63) 98120-0001</p>
+                  <p class="d-flex align-items-center gap-1"><i class="fa-solid fa-phone"></i>(63) 98426-6777</p>
+                  <p class="d-flex align-items-center gap-1"><i class="fa-regular fa-envelope fs-5"></i>avbgpito@gmail.com</p>
               </div>
               
               <!-- Redes Sociais -->
-              <div class="col-md-4">
+              <div class="col-md-3">
                   <h5>Redes Sociais</h5>
-                  <ul class="list-unstyled d-flex gap-3 ms-4">
-                    <li><a href="https://www.instagram.com/vitoriadosbichoss/" class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="https://www.tiktok.com/@vitoriadosbichos" class="text-white"><i class="fa-brands fa-tiktok"></i></a></li>
-                    <li><a href="https://www.facebook.com/vitoriadosbichos" class="text-white"><i class="fa-brands fa-facebook"></i></a></li>
+                  <ul class="list-unstyled d-flex gap-5">
+                    <li><a href="https://www.instagram.com/vitoriadosbichoss/" class="text-white"><i class="fa-brands fa-instagram fs-3"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@vitoriadosbichos" class="text-white"><i class="fa-brands fa-tiktok fs-3"></i></a></li>
+                    <li><a href="https://www.facebook.com/vitoriadosbichos" class="text-white"><i class="fa-brands fa-facebook fs-3"></i></a></li>
                   </ul>
               </div>
               
               <!-- Créditos -->
-              <div class="col-md-2">
+              <div class="col-md-3">
                   <h5>Créditos</h5>
-                  <p>Desenvolvido por: Seu Nome</p>
+                  <p>Desenvolvido por: <a href="https://github.com/thallys97" class="text-white">Thallys Roque</a> </p>
               </div>
               
               <!-- Links Importantes -->
               <div class="col-md-2">
                   <h5>Links</h5>
                   <ul class="list-unstyled">
-                      <li><a href="#" class="text-white">Sobre Nós</a></li>
-                      <li><a href="#" class="text-white">Política de Privacidade</a></li>
-                      <li><a href="#" class="text-white">Termos de Serviço</a></li>
+                      <li><a href="{{ route('home.index') }}" class="text-white">Página Inicial</a></li>
+                      <li><a href="{{ route('posts.index') }}" class="text-white">Posts do Blog</a></li>
+                      <li><a href="{{ route('photos.index') }}" class="text-white">Galeria de Fotos</a></li>
+                      <li><a href="{{ route('videos.index') }}" class="text-white">Galeria de Vídeos</a></li>
                   </ul>
               </div>
           </div>
