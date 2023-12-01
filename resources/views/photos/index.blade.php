@@ -36,7 +36,7 @@
                     <div class="col-12 col-md-6 col-lg-4 mb-4">
                         <div class="card custom-card">
                              
-                            <a href="{{ $photo->path }}"><img src="{{ $photo->path }}.png" class="card-img-top" title="source: imgur.com" /></a>
+                            <a href="{{ $photo->path }}"><img src="{{ $photo->path }}.png" class="card-img-top" alt="Imagem do post" title="source: imgur.com" /></a>
                             
                             @guest
                                 @if(isset($photo->title) || isset($photo->description))
