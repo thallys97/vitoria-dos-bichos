@@ -35,8 +35,8 @@
                 @foreach ($photos as $photo)
                     <div class="col-12 col-md-6 col-lg-4 mb-4">
                         <div class="card custom-card">
-                            
-                            <iframe class="card-img-top" width="300" height="315" src="{{ $photo->path }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                             
+                            <a href="{{ $photo->path }}"><img src="{{ $photo->path }}.png" class="card-img-top" title="source: imgur.com" /></a>
                             
                             @guest
                                 @if(isset($photo->title) || isset($photo->description))
@@ -80,7 +80,10 @@
             <div class="no-photos-card text-center">
                 <p class="no-photos-text fw-bold">Nenhuma foto foi registrada ainda.</p>
             </div>
+
         </section> 
+        
+
     @endif    
     
    <!-- </div> -->

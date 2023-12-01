@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="path" class="form-label fs-5">Link do Vídeo (YouTube, Vimeo, etc.)</label>
+                    <label for="path" class="form-label fs-5">Link do Vídeo (YouTube)</label>
                     <input type="text" class="form-control" id="path" name="path" value="{{ $video->path }}" required>
                 </div>
 
