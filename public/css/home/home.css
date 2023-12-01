@@ -56,6 +56,20 @@
 
 }
 
+.botao-galeria {
+
+    background-color: black;
+
+    color: #6C3593;
+
+    border: 3px solid #9D5A00;
+
+    width: 50%;
+
+    margin-top: 0.5rem;
+
+}
+
 
 .parallax-layer-gato {
     position: absolute;
@@ -105,7 +119,7 @@
 }
 
 
-.doacao-botao, .botao-galeria {
+.doacao-botao {
 
     background-color: black;
 
@@ -209,7 +223,7 @@
 
     .botao-galeria {
  
-        width: 50%;
+        width: 40%;
 
         margin-top: 0;
 
