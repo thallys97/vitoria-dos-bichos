@@ -6,12 +6,18 @@
         <div class="card custom-card">
             <div class="card-header"><h1 class="mt-2">Painel Administrativo</h1></div>
             <div class="card-body">
+
+                <div class="mb-3">
+                    <a href="{{ route('users.index') }}" class="btn dashboard-button rounded-pill fw-bold">Listagem de Usuários</a>
+                </div>
+
                 <div class="mb-3">
                     <a href="{{ route('posts.index') }}" class="btn dashboard-button rounded-pill fw-bold">Listagem de Posts</a>
                 </div>
         
+
                 <div class="mb-3">
-                    <a href="{{ route('users.index') }}" class="btn dashboard-button rounded-pill fw-bold">Listagem de Usuários</a>
+                    <a href="{{ route('photos.index') }}" class="btn dashboard-button rounded-pill fw-bold">Listagem de Fotos</a>
                 </div>
 
                 <div class="mb-3">
