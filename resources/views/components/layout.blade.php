@@ -104,19 +104,20 @@
           <div class="row">
               <!-- Informações de Contato -->
               <div class="col-md-4">
-                  <h5>Contato</h5>
-                  <p>Endereço: Rua Exemplo, 123</p>
-                  <p>Telefone: (123) 456-7890</p>
-                  <p>Email: contato@example.com</p>
+                  <h5>Contatos</h5>
+                  <p>Rua G, n°50, quadra 39, lt 02, Setor União V 77405-340 Gurupi, TO</p>
+                  <p>(63) 98120-0001</p>
+                  <p>(63) 98426-6777</p>
+                  <p>avbgpito@gmail.com</p>
               </div>
               
               <!-- Redes Sociais -->
               <div class="col-md-4">
                   <h5>Redes Sociais</h5>
-                  <ul class="list-unstyled">
-                      <li><a href="#" class="text-white">Facebook</a></li>
-                      <li><a href="#" class="text-white">Twitter</a></li>
-                      <li><a href="#" class="text-white">Instagram</a></li>
+                  <ul class="list-unstyled d-flex gap-3 ms-4">
+                    <li><a href="https://www.instagram.com/vitoriadosbichoss/" class="text-white"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@vitoriadosbichos" class="text-white"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://www.facebook.com/vitoriadosbichos" class="text-white"><i class="fa-brands fa-facebook"></i></a></li>
                   </ul>
               </div>
               
