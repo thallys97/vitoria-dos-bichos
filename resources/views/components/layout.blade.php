@@ -116,11 +116,16 @@
               <!-- Redes Sociais -->
               <div class="col-md-3 footer-info">
                   <h5 class="mb-3">Redes Sociais</h5>
-                  <ul class="list-unstyled d-flex gap-5 gap-md-4 gap-lg-5">
+                  <ul class="list-unstyled d-flex gap-5 gap-md-4 gap-lg-5 mb-4">
                     <li><a href="https://www.instagram.com/vitoriadosbichoss/" class="text-white footer-info-link"><i class="fa-brands fa-instagram fs-3"></i></a></li>
                     <li><a href="https://www.tiktok.com/@vitoriadosbichos" class="text-white footer-info-link"><i class="fa-brands fa-tiktok fs-3"></i></a></li>
                     <li><a href="https://www.facebook.com/vitoriadosbichos" class="text-white footer-info-link"><i class="fa-brands fa-facebook fs-3"></i></a></li>
                   </ul>
+
+                  <hr class="d-md-none">
+
+                  <h5 class="mb-2 mt-5">Horarios de Atendimento</h5>
+                  <p class="d-flex align-items-center gap-1"><i class="fa-regular fa-clock"></i>Segunda a Sexta das 08:00 a 11:00 e das 18:00 a 20:00</p>
               </div>
 
               <hr class="d-md-none">
