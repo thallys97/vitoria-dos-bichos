@@ -79,6 +79,20 @@ a.nav-link {
 
 }
 
+.footer-info {
+
+    margin-bottom: 1rem;
+
+}
+
+.footer-info-link {
+
+    text-decoration: none;
+
+}
+
+
+
 @media screen and (min-width: 768px) {
 
     .dashboard-button {
