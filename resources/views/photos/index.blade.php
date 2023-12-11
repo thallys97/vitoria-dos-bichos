@@ -42,19 +42,19 @@
                                 @if(isset($photo->title) || isset($photo->description))
                                     
                                     <div class="card-body">
-                                        <h2 class="card-title fw-bold mt-3 text-center">{{ $photo->title }}</h5>
-                                        <p class="card-text mb-4">{{ $photo->description }}</p>
+                                        <h2 class="card-title fw-bold mb-3 text-center">{{ $photo->title }}</h5>
+                                        <p class="card-text">{{ $photo->description }}</p>
                                     </div>
                                 @endif
                             @endguest
 
                             @auth
                                 <div class="card-body">
-                                    <h2 class="card-title fw-bold mt-3 text-center">{{ $photo->title }}</h2>
-                                    <p class="card-text mb-4">{{ $photo->description }}</p>
+                                    <h2 class="card-title fw-bold mb-3 text-center">{{ $photo->title }}</h2>
+                                    <p class="card-text">{{ $photo->description }}</p>
 
                                  
-                                    <div class="d-flex justify-content-evenly">       
+                                    <div class="d-flex justify-content-evenly mt-3">       
                                         <a href="{{ route('photos.edit', $photo->id) }}" class="btn button-photo rounded-pill fw-bold">Editar</a>
                                         <form id="delete-form-{{ $photo->id }}" action="{{ route('photos.destroy', $photo->id) }}" method="POST" style="display: inline;">
                                             @csrf

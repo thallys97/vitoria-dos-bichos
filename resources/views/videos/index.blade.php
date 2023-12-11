@@ -42,19 +42,19 @@
                                 @if(isset($video->title) || isset($video->description))
                                     
                                     <div class="card-body">
-                                        <h2 class="card-title fw-bold mt-3 text-center">{{ $video->title }}</h2>
-                                        <p class="card-text mb-4">{{ $video->description }}</p>
+                                        <h2 class="card-title fw-bold mb-3  text-center">{{ $video->title }}</h2>
+                                        <p class="card-text">{{ $video->description }}</p>
                                     </div>
                                 @endif
                             @endguest
 
                             @auth
                                 <div class="card-body">
-                                    <h2 class="card-title fw-bold mt-3 text-center">{{ $video->title }}</h5>
-                                    <p class="card-text mb-4">{{ $video->description }}</p>
+                                    <h2 class="card-title fw-bold mb-3 text-center">{{ $video->title }}</h5>
+                                    <p class="card-text">{{ $video->description }}</p>
 
                                  
-                                    <div class="d-flex justify-content-evenly">       
+                                    <div class="d-flex justify-content-evenly mt-3">       
                                         <a href="{{ route('videos.edit', $video->id) }}" class="btn button-video rounded-pill fw-bold">Editar</a>
                                         <form id="delete-form-{{ $video->id }}" action="{{ route('videos.destroy', $video->id) }}" method="POST" style="display: inline;">
                                             @csrf
