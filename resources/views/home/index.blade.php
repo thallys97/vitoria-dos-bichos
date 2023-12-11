@@ -12,6 +12,29 @@
         <div class="parallax-layer" style="background-image: url('{{ asset('images/parallax-cao-gato.png') }}');"></div>
     </div>
 
+      <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="carousel">
+        <div class="carousel-inner carousel-container-img">
+          <div class="carousel-item active ">
+            <img src="{{ asset('images/rifa-beneficiente.jpg') }}" class="d-block carousel-img" alt="Imagem 1">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('images/castracao-preco-popular.jpg') }}" class="d-block carousel-img" alt="Imagem 2">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('images/castracao-9000-animais.jpg') }}" class="d-block carousel-img" alt="Imagem 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon seta-carousel" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon seta-carousel" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>  
+    
+
     <!-- Conteúdo da página -->
     <div id="sobrenos" class="sobre-associacao-conteudo" >
       <div class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center pt-4 container-lg">

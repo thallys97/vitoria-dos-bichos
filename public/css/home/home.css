@@ -35,6 +35,24 @@
 }
 
 
+.carousel-container-img {
+
+    width: 100%;
+
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+
+.seta-carousel {
+
+    background-color: #000000;
+
+}
+
+
 .sobre-associacao-conteudo{
 
     background-color: #38076B;
@@ -314,6 +332,20 @@
 
         height: 40rem;
 
+    }
+
+
+    .carousel-container {
+
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .carousel-container-img {
+
+        width: 70%;
+    
     }
 
     .sobre-associacao-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{
