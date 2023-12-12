@@ -12,7 +12,7 @@
         <div class="parallax-layer" style="background-image: url('{{ asset('images/parallax-cao-gato.png') }}');"></div>
     </div>
 
-      <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="false">
         <div class="carousel-inner carousel-container-img">
           <div class="carousel-item active ">
             <img src="{{ asset('images/rifa-beneficiente.jpg') }}" class="d-block carousel-img" alt="Imagem 1">

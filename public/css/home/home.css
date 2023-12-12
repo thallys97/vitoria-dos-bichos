@@ -47,8 +47,11 @@
 
 
 .seta-carousel {
-
+    
     background-color: #000000;
+    border: 3px solid #9D5A00;
+    width: 3rem;
+    height: 3rem;
 
 }
 
@@ -238,6 +241,12 @@
 @media screen and (min-width: 768px) {
 
 
+    .seta-carousel {
+
+        width: 3.5rem;
+        height: 3.5rem;
+    
+    }
 
     .botao-galeria {
  
@@ -339,14 +348,25 @@
 
         display: flex;
         justify-content: center;
+        padding-top: 2.5rem;
     }
 
 
     .carousel-container-img {
 
-        width: 70%;
+        width: 50%;
+        border: 3px solid #9D5A00;
+        box-shadow: #000000 5px 5px 10px;
     
     }
+
+    
+    .seta-carousel:hover {
+    
+        background-color: #9D5A00;
+    
+    }
+
 
     .sobre-associacao-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{
 
