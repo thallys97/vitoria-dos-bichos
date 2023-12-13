@@ -140,6 +140,12 @@ a.nav-link {
 
     }    
 
+    .cabecalho-navbar-lista li:hover {
+
+        border-bottom: 1px solid white;
+
+    }
+    
     .cabecalho-navbar-item {
 
         padding: 0.1rem 1rem;
@@ -148,6 +154,7 @@ a.nav-link {
         align-items: center;
 
     }
+
 
     .galeria {
 
