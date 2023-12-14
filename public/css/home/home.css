@@ -56,13 +56,13 @@
 }
 
 
-.sobre-associacao-conteudo{
+.mensagem-conteudo{
 
     background-color: #38076B;
 
 }
 
-.mensagem-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{ 
+.mensagem-titulo , .mensagem-subtitulo , .mensagem-texto{ 
 
     color: white;
 
@@ -71,13 +71,22 @@
 
 }
 
+.mensagem-apresentacao {
+
+    background-color: #ffcd00;
+    color: #000000;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+
 .mensagem-img {
 
     width: 100%;
 
 }
 
-.sobre-associacao-texto {
+.mensagem-texto {
 
     text-align: justify;
 
@@ -374,12 +383,13 @@
     }
 
 
-    .mensagem-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{
+    .mensagem-titulo , .mensagem-subtitulo , .mensagem-texto{
 
         margin-right: 0;
         margin-left: 0;
 
     }
+
 
 
     .botao-galeria {

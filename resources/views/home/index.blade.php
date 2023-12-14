@@ -36,17 +36,17 @@
     
 
     <!-- Conteúdo da página -->
-    <div id="sobrenos" class="sobre-associacao-conteudo" >
+    <div id="mensagem" class="mensagem-conteudo" >
 
       <h2 class="mensagem-titulo text-center my-4 fw-bold">Mensagem da Vitória dos Bichos</h2>
 
       <div class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center container-lg">
         <img src="{{ asset('images/presidente-avb.jpg') }}" class="mensagem-img mb-2" alt="Diane Perinazzo, presidente da AVB">
         <div>
-      <!--    <h2 class="sobre-associacao-titulo text-center text-lg-start my-4 fw-bold">Conheça a Vitória dos <br class="d-md-none"> Bichos</h2>
-          <h4 class="sobre-associacao-subtitulo text-center text-lg-start fw-bold fs-5 pt-2">Sobre a Associação</h4>   -->
-          <p class="sobre-associacao-texto mt-3 mb-3 ">São vários os chamados por dia que recebemos pela página do Facebook, telefonemas de pessoas que se deparam com animais em risco, atropelados, doentes ou abandonados, mas que sequer se comprometem a se responsabilizar por eles, oferecendo ao menos um local para acomodá-los. Pessoas que passam pelo local e não prestam socorro ao animal, achando que esse trabalho somente pode ser executado por nós. Poucas pessoas vão ao local socorrer ou mesmo se interessam pela causa, e o animal acaba sofrendo e até vindo a falecer sem socorro. Isso é muito triste. Gostaríamos sim de recolher todos os animais de rua e perdemos a conta de quantos já resgatamos por conta própria, assumindo sozinhas as responsabilidades de ter que levá-los para nossas próprias casas. Sem falar que as casas das protetoras já estão abarrotadas de animais, porém são tantos que encontramos na rua que na maioria das vezes só conseguimos alimentá-los. Dispomos de poucos recursos financeiros, vivemos de doações e até mesmo colocamos a mão no bolso para poder oferecer um pouquinho de dignidade e carinho a esses seres indefesos. Fazemos o que podemos e te convidamos a fazer parte da equipe!</p>
-          <p class="sobre-associacao-texto" >Conheça o nosso trabalho:</p>
+      <!--    <h2 class="mensagem-titulo text-center text-lg-start my-4 fw-bold">Conheça a Vitória dos <br class="d-md-none"> Bichos</h2>
+          <h4 class="mensagem-subtitulo text-center text-lg-start fw-bold fs-5 pt-2">Sobre a Associação</h4>   -->
+          <p class="mt-3 mb-3 mensagem-apresentacao">São vários os chamados por dia que recebemos pela página do Facebook, telefonemas de pessoas que se deparam com animais em risco, atropelados, doentes ou abandonados, mas que sequer se comprometem a se responsabilizar por eles, oferecendo ao menos um local para acomodá-los. Pessoas que passam pelo local e não prestam socorro ao animal, achando que esse trabalho somente pode ser executado por nós. Poucas pessoas vão ao local socorrer ou mesmo se interessam pela causa, e o animal acaba sofrendo e até vindo a falecer sem socorro. Isso é muito triste. Gostaríamos sim de recolher todos os animais de rua e perdemos a conta de quantos já resgatamos por conta própria, assumindo sozinhas as responsabilidades de ter que levá-los para nossas próprias casas. Sem falar que as casas das protetoras já estão abarrotadas de animais, porém são tantos que encontramos na rua que na maioria das vezes só conseguimos alimentá-los. Dispomos de poucos recursos financeiros, vivemos de doações e até mesmo colocamos a mão no bolso para poder oferecer um pouquinho de dignidade e carinho a esses seres indefesos. Fazemos o que podemos e te convidamos a fazer parte da equipe!</p>
+          <p class="mensagem-texto">Conheça o nosso trabalho:</p>
           <div class="d-flex justify-content-center justify-content-md-evenly flex-column flex-md-row align-items-center mb-3 ">
             <a href="{{ route('photos.index') }}" class="btn botao-galeria py-3 rounded-pill fw-bold mb-2 fs-5">Galeria de fotos</a>
             <a href="{{ route('videos.index') }}" class="btn botao-galeria py-3 rounded-pill fw-bold mb-2 fs-5">Galeria de vídeos</a>
