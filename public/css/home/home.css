@@ -62,12 +62,18 @@
 
 }
 
-.sobre-associacao-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{ 
+.mensagem-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{ 
 
     color: white;
 
     margin-right: 1.5rem;
     margin-left: 1.5rem;
+
+}
+
+.mensagem-img {
+
+    width: 100%;
 
 }
 
@@ -368,12 +374,13 @@
     }
 
 
-    .sobre-associacao-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{
+    .mensagem-titulo , .sobre-associacao-subtitulo , .sobre-associacao-texto{
 
         margin-right: 0;
         margin-left: 0;
 
     }
+
 
     .botao-galeria {
 
