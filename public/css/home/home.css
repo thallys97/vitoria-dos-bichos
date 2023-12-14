@@ -94,7 +94,7 @@
 
 .botao-galeria {
 
-    background-color: black;
+    background-color: #ffcd00;
 
     color: #6C3593;
 
@@ -103,6 +103,8 @@
     width: 50%;
 
     margin-top: 0.5rem;
+
+    font-weight: 900;
 
 }
 
@@ -121,17 +123,34 @@
 }
 
 
-.servicos-conteudo {
+.sobre-conteudo {
 
     background-color: #38076B;
 
 }
 
-.servicos-titulo, .servicos-texto {
+.sobre-img {
+
+    width: 100%;
+    filter: brightness(90%);
+
+}
+
+.sobre-titulo, .sobre-texto {
     
     color: white;    
 
 } 
+
+.sobre-objetivo {
+
+    color: #ffcd00;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 0.5rem;
+
+}
 
 
 .doacao-conteudo {
@@ -169,7 +188,7 @@
 
 }
 
-.doacao-botao:hover, .botao-galeria:hover {
+.doacao-botao:hover {
 
     background-color: #3CB371;
 
@@ -398,7 +417,7 @@
 
     } 
 
-    .servicos-titulo {
+    .sobre-titulo {
 
         position: relative;
         bottom: 20px;
