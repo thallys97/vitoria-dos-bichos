@@ -49,7 +49,6 @@
 .seta-carousel {
     
     background-color: #000000;
-    border: 3px solid #9D5A00;
     width: 3rem;
     height: 3rem;
 
@@ -93,6 +92,7 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-weight: 700;
+    border-radius: 5px;
 }
 
 

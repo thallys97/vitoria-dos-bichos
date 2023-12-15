@@ -43,7 +43,7 @@
       <div class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center container-lg">
         <img src="{{ asset('images/presidente-avb.jpg') }}" class="mensagem-img mb-2" alt="Diane Perinazzo, presidente da AVB">
         <div class="d-flex flex-column justify-content-center align-items-center">
-          <button class="btn mb-3 botao-mensagem" onclick="toggleMensagem()">Mensagem</button>
+          <button class="mb-3 botao-mensagem" onclick="toggleMensagem()">Mensagem</button>
 
       <!--    <h2 class="mensagem-titulo text-center text-lg-start my-4 fw-bold">Conheça a Vitória dos <br class="d-md-none"> Bichos</h2>
           <h4 class="mensagem-subtitulo text-center text-lg-start fw-bold fs-5 pt-2">Sobre a Associação</h4>   -->
@@ -83,7 +83,7 @@
               Realizamos um trabalho voluntário quando encontramos animais acidentados ou doentes em nosso percurso, ele recebe o tratamento adequado e vai para adoção posteriormente.
             -->
           </p>
-          <img src="{{ asset('images/passeata-avb.jpg') }}" class="sobre-img mb-2" alt="passeata da associação vitória dos bichos, aparece pessoas segurando cartazes">
+          <img src="{{ asset('images/geracoes-animais.jpg') }}" class="sobre-img mb-2" alt="10 gerações sucessivas de animais e suas crias">
             <p class="sobre-texto text-center fs-5 my-3">Conheça o nosso trabalho:</p>
             <div class="d-flex justify-content-center justify-content-md-evenly flex-column flex-md-row align-items-center mb-3 ">
               <a href="{{ route('photos.index') }}" class="btn botao-galeria py-3  mb-2 fs-5">Galeria de fotos</a>
