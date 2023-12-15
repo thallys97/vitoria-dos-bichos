@@ -42,10 +42,12 @@
 
       <div class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center container-lg">
         <img src="{{ asset('images/presidente-avb.jpg') }}" class="mensagem-img mb-2" alt="Diane Perinazzo, presidente da AVB">
-        <div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <button class="btn mb-3 botao-mensagem" onclick="toggleMensagem()">Mensagem</button>
+
       <!--    <h2 class="mensagem-titulo text-center text-lg-start my-4 fw-bold">Conheça a Vitória dos <br class="d-md-none"> Bichos</h2>
           <h4 class="mensagem-subtitulo text-center text-lg-start fw-bold fs-5 pt-2">Sobre a Associação</h4>   -->
-          <p class="mt-3 mb-3 mensagem-apresentacao">São vários os chamados por dia que recebemos pela página do Facebook, telefonemas de pessoas que se deparam com animais em risco, atropelados, doentes ou abandonados, mas que sequer se comprometem a se responsabilizar por eles, oferecendo ao menos um local para acomodá-los. Pessoas que passam pelo local e não prestam socorro ao animal, achando que esse trabalho somente pode ser executado por nós. Poucas pessoas vão ao local socorrer ou mesmo se interessam pela causa, e o animal acaba sofrendo e até vindo a falecer sem socorro. Isso é muito triste. Gostaríamos sim de recolher todos os animais de rua e perdemos a conta de quantos já resgatamos por conta própria, assumindo sozinhas as responsabilidades de ter que levá-los para nossas próprias casas. Sem falar que as casas das protetoras já estão abarrotadas de animais, porém são tantos que encontramos na rua que na maioria das vezes só conseguimos alimentá-los. Dispomos de poucos recursos financeiros, vivemos de doações e até mesmo colocamos a mão no bolso para poder oferecer um pouquinho de dignidade e carinho a esses seres indefesos. Fazemos o que podemos e te convidamos a fazer parte da equipe!</p>
+          <p class="mb-3 mensagem-apresentacao">São vários os chamados por dia que recebemos pela página do Facebook, telefonemas de pessoas que se deparam com animais em risco, atropelados, doentes ou abandonados, mas que sequer se comprometem a se responsabilizar por eles, oferecendo ao menos um local para acomodá-los. Pessoas que passam pelo local e não prestam socorro ao animal, achando que esse trabalho somente pode ser executado por nós. Poucas pessoas vão ao local socorrer ou mesmo se interessam pela causa, e o animal acaba sofrendo e até vindo a falecer sem socorro. Isso é muito triste. Gostaríamos sim de recolher todos os animais de rua e perdemos a conta de quantos já resgatamos por conta própria, assumindo sozinhas as responsabilidades de ter que levá-los para nossas próprias casas. Sem falar que as casas das protetoras já estão abarrotadas de animais, porém são tantos que encontramos na rua que na maioria das vezes só conseguimos alimentá-los. Dispomos de poucos recursos financeiros, vivemos de doações e até mesmo colocamos a mão no bolso para poder oferecer um pouquinho de dignidade e carinho a esses seres indefesos. Fazemos o que podemos e te convidamos a fazer parte da equipe!</p>
 
         </div>
       </div>
@@ -84,8 +86,8 @@
           <img src="{{ asset('images/passeata-avb.jpg') }}" class="sobre-img mb-2" alt="passeata da associação vitória dos bichos, aparece pessoas segurando cartazes">
             <p class="sobre-texto text-center fs-5 my-3">Conheça o nosso trabalho:</p>
             <div class="d-flex justify-content-center justify-content-md-evenly flex-column flex-md-row align-items-center mb-3 ">
-              <a href="{{ route('photos.index') }}" class="btn botao-galeria py-2  mb-2 fs-5">Galeria de fotos</a>
-              <a href="{{ route('videos.index') }}" class="btn botao-galeria py-2  mb-2 fs-5">Galeria de vídeos</a>
+              <a href="{{ route('photos.index') }}" class="btn botao-galeria py-3  mb-2 fs-5">Galeria de fotos</a>
+              <a href="{{ route('videos.index') }}" class="btn botao-galeria py-3  mb-2 fs-5">Galeria de vídeos</a>
             </div>
         </div>
       </div>
@@ -101,11 +103,11 @@
 
     <h2 class="doacao-titulo fw-bold  display-4">Doação</h2>
 
-    <p class="doacao-texto fw-bold mx-4 mt-3 text-center">Se você gostaria de fazer uma doação para a AVB - Associação Vitória dos Bichos, basta acessar o link abaixo.</p>
+    <p class="doacao-texto fw-bold mx-4 mt-3 text-center">Para fazer uma doação para a Associação Vitória dos Bichos, basta clicar no botão abaixo.</p>
 
       <img src="{{ asset('images/PicPay.jpg') }}" class="imagem-picpay mt-2 rounded-3" alt="PicPay">
 
-    <a href="https://app.picpay.com/user/vitoriadosbichos" class="btn doacao-botao py-3 rounded-pill fw-bold">QUERO DOAR</a>
+    <a href="https://app.picpay.com/user/vitoriadosbichos" class="btn doacao-botao py-3 fw-bold">QUERO DOAR</a>
 
   </div>
   
@@ -118,7 +120,7 @@
       <img src="{{ asset('images/sempre6-cargeo.png') }}" class="imagem-sempre6-cargeo" alt="logos da sempre 6 e da cargeo">
     </div>
 
-    <a href="https://api.whatsapp.com/send?phone=5563981200001&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20uma%20atendente" class="btn doacao-botao mt-2 py-3 mt-4 rounded-pill fw-bold">QUERO ME TORNAR UM PARCEIRO</a>
+    <a href="https://api.whatsapp.com/send?phone=5563981200001&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20uma%20atendente" class="btn doacao-botao mt-2 py-3 mt-4 fw-bold">QUERO ME TORNAR UM PARCEIRO</a>
 
   </div>
 
@@ -158,7 +160,7 @@
 
 </main>
 
-
+<script src="{{ asset('js/home/message-button.js') }}"></script>
 
 
 </x-layout>   

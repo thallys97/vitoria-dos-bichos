@@ -71,20 +71,30 @@
 
 }
 
+.mensagem-img {
+    
+    width: 100%;
+    
+}
+
 .mensagem-apresentacao {
 
     background-color: #ffcd00;
     color: #000000;
     padding: 1rem 1.5rem 1rem 1.5rem;
     font-size: 1.2rem;
+    display: none;
 }
 
-
-.mensagem-img {
-
-    width: 100%;
-
+.botao-mensagem {
+    background-color: #ffcd00;
+    border: 3px solid #9D5A00;
+    color: #6C3593;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 700;
 }
+
 
 .mensagem-texto {
 
@@ -100,7 +110,7 @@
 
     border: 3px solid #9D5A00;
 
-    width: 50%;
+    width: 60%;
 
     margin-top: 0.5rem;
 
@@ -176,7 +186,7 @@
 
 .doacao-botao {
 
-    background-color: black;
+    background-color: #ffcd00;
 
     color: #6C3593;
 
