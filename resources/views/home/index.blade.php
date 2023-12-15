@@ -6,10 +6,9 @@
 
 <section class="introduction">
 
-      <!-- Camadas parallax -->
-    <div class="parallax-container">
-        <div class="parallax-black-banner" style="background-image: url('{{ asset('images/black_banner.png') }}');"></div>
-        <div class="parallax-layer" style="background-image: url('{{ asset('images/parallax-cao-gato.png') }}');"></div>
+      
+    <div class="banner" style="background-image: url('{{ asset('images/cao-gato.png') }}');">
+        
     </div>
 
       <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="false">
