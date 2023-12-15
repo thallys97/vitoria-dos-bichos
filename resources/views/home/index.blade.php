@@ -136,6 +136,8 @@
 
       <h2 class="localizacao-titulo fw-bold pb-3  display-4">Localização</h2>
 
+        <p class="localizacao-texto fs-4 fw-bold text-center">Rua G, n°50, quadra 39, lt 02, Setor União V 77405-340 Gurupi, TO</p>
+
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.3823753250945!2d-49.071228025716024!3d-11.73808963622875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933e9535e4f20845%3A0x9e96207bb1aa71d8!2sAssocia%C3%A7%C3%A3o%20Vit%C3%B3ria%20dos%20Bichos%20-%20AVB!5e0!3m2!1spt-BR!2sbr!4v1696017751942!5m2!1spt-BR!2sbr" width="90%" height="300" style="border: 8px solid white;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </div>
@@ -144,6 +146,7 @@
   <div id="contatos-telefones" class="contatos-conteudo d-flex flex-column justify-content-center align-items-center pt-3 pb-2">
 
     <h2 class="contatos-titulo fw-bold pb-3 display-4">Contatos</h2>
+
     <div class="d-flex flex-column justify-content-center align-items-center flex-md-row  justify-content-md-between">
         <p class="order-md-1 contatos-telefones fs-4 fw-bold"> <i class="fa-brands fa-whatsapp"></i> (63) 98120-0001 <br>
           <i class="fa-brands fa-whatsapp"></i>  (63) 98426-6777</p>
