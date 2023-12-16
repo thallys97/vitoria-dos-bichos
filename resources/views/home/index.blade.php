@@ -37,7 +37,7 @@
     <!-- Conteúdo da página -->
     <div id="mensagem" class="mensagem-conteudo" >
 
-      <h2 class="mensagem-titulo text-center my-4 fw-bold">Mensagem da Vitória dos Bichos</h2>
+      <h2 class="mensagem-titulo text-center my-4 fw-bold fs-1">Mensagem da Vitória dos Bichos</h2>
 
       <div class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center container-lg">
         <img src="{{ asset('images/presidente-avb.jpg') }}" class="mensagem-img mb-2" alt="Diane Perinazzo, presidente da AVB">
@@ -63,9 +63,11 @@
       </div>
 
     <div id="sobrenos" class="sobre-conteudo">
-      <div class=" d-flex flex-column flex-md-row-reverse justify-content-center align-items-center py-4 container-md"> 
 
-        <h2 class="sobre-titulo text-center fw-bold display-4">Sobre a Vitória dos Bichos</h2>
+      <h2 class="sobre-titulo text-center fw-bold display-4">Sobre a Vitória dos Bichos</h2>
+
+      <div class=" d-flex flex-column flex-md-row-reverse justify-content-center align-items-center py-3 container-md"> 
+
         
         <div>
           

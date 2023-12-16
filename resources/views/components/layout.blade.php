@@ -32,31 +32,31 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav cabecalho-navbar-lista">
                     <li class="nav-item cabecalho-navbar-item text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}">Home</a>
+                      <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('home.index') }}">Home</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#sobrenos">Sobre nós</a>
+                      <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('home.index') }}#sobrenos">Sobre nós</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#servicos-castracao">Serviços</a>
+                      <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('home.index') }}#servicos-castracao">Serviços</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#doacoes">Doação</a>
+                      <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('home.index') }}#doacoes">Doação</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item text-center">
-                      <a class="nav-link nav-link-custom fw-bold" href="{{ route('home.index') }}#contatos-telefones">Contatos</a>
+                      <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('home.index') }}#contatos-telefones">Contatos</a>
                     </li>
                     <li class="dropdown nav-item galeria text-center">
-                      <button class="btn galeria-botao dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button class="btn galeria-botao dropdown-toggle fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Galeria
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item nav-link fw-bold dropdown-botao-item" href="{{ route('photos.index') }}">Fotos</a></li>
-                        <li><a class="dropdown-item nav-link fw-bold dropdown-botao-item" href="{{ route('videos.index') }}">Vídeos</a></li>
+                        <li><a class="dropdown-item nav-link fw-bold dropdown-botao-item fs-5" href="{{ route('photos.index') }}">Fotos</a></li>
+                        <li><a class="dropdown-item nav-link fw-bold dropdown-botao-item fs-5" href="{{ route('videos.index') }}">Vídeos</a></li>
                       </ul>
                     </li>
                     <li class="nav-item cabecalho-navbar-item  text-center">
-                        <a class="nav-link nav-link-custom fw-bold" href="{{ route('posts.index') }}">Blog</a>
+                        <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('posts.index') }}">Blog</a>
                     </li>
                   </ul>
                 </div>

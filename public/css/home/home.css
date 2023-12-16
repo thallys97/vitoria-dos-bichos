@@ -144,6 +144,12 @@
     z-index: -1
 }
 
+.sobre-titulo {
+
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+}
 
 .sobre-conteudo {
 
@@ -153,7 +159,7 @@
 
 .sobre-img {
 
-    width: 100%;
+    width: 100vw;
     filter: brightness(90%);
 
 }
@@ -171,6 +177,12 @@
     font-size: 1.5rem;
 
     margin-bottom: 0.5rem;
+
+}
+
+.doacao-titulo {
+
+    margin-bottom: 0;
 
 }
 
@@ -257,6 +269,10 @@
 .localizacao-texto {
 
     color: #ffcd00;
+    background-color: #6C3593;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 90%;
 
 }
 
@@ -479,6 +495,8 @@
         width: 30%;
 
     }
+
+    
 
     
 }
