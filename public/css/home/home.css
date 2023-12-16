@@ -182,6 +182,8 @@
 
 }
 
+
+
 .doacao-titulo {
 
     margin-bottom: 0;
@@ -458,6 +460,13 @@
     
     }
 
+    .mensagem-conteudo {
+
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+
+    }
+
 
     .mensagem-titulo , .mensagem-subtitulo , .mensagem-texto{
 
@@ -504,6 +513,12 @@
     .imagem-picpay {
 
         width: 30%;
+    
+    }
+
+    .doacao {
+
+        margin-top: 1rem;
     
     }
 
