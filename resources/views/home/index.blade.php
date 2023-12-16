@@ -39,7 +39,7 @@
 
       <h2 class="mensagem-titulo text-center my-4 fw-bold fs-1">Mensagem da Vitória dos Bichos</h2>
 
-      <div class="d-flex flex-column flex-lg-row-reverse justify-content-center align-items-center container-lg">
+      <div class="d-flex flex-column  justify-content-center align-items-center container-lg">
         <img src="{{ asset('images/presidente-avb.jpg') }}" class="mensagem-img mb-2" alt="Diane Perinazzo, presidente da AVB">
         <div class="d-flex flex-column justify-content-center align-items-center">
           <button class="mb-3 botao-mensagem" onclick="toggleMensagem()">Mensagem</button>

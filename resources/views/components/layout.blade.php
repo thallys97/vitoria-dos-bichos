@@ -38,9 +38,6 @@
                       <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('home.index') }}#sobrenos">Sobre nós</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item text-center">
-                      <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('home.index') }}#servicos-castracao">Serviços</a>
-                    </li>
-                    <li class="nav-item cabecalho-navbar-item text-center">
                       <a class="nav-link nav-link-custom fw-bold fs-5" href="{{ route('home.index') }}#doacoes">Doação</a>
                     </li>
                     <li class="nav-item cabecalho-navbar-item text-center">
