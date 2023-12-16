@@ -112,7 +112,7 @@
 
       <img src="{{ asset('images/PicPay.jpg') }}" class="imagem-picpay mt-2 rounded-3" alt="PicPay">
 
-    <a href="https://app.picpay.com/user/vitoriadosbichos" class="btn doacao-botao py-3 fw-bold">QUERO DOAR</a>
+    <a href="https://app.picpay.com/user/vitoriadosbichos" class="doacao-botao py-3 fw-bold text-center">QUERO DOAR</a>
 
   </div>
   
@@ -125,7 +125,7 @@
       <img src="{{ asset('images/sempre6-cargeo.png') }}" class="imagem-sempre6-cargeo" alt="logos da sempre 6 e da cargeo">
     </div>
 
-    <a href="https://api.whatsapp.com/send?phone=5563981200001&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20uma%20atendente" class="btn doacao-botao mt-2 py-3 mt-4 fw-bold">QUERO ME TORNAR UM PARCEIRO</a>
+    <a href="https://api.whatsapp.com/send?phone=5563981200001&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20uma%20atendente" class="doacao-botao mt-2 py-3 mt-4 fw-bold text-center">QUERO ME TORNAR UM PARCEIRO</a>
 
   </div>
 
