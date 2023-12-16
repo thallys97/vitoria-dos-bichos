@@ -127,6 +127,8 @@
     margin-top: 0.5rem;
 
     font-weight: 900;
+    
+    text-decoration: none;
 
 }
 
@@ -215,10 +217,14 @@
     color: #6C3593;
 
     border: 3px solid #9D5A00;
+    border-radius: 5px;
 
     width: 75%;
 
     margin-top: 0.5rem;
+
+
+    cursor: pointer;
 
 }
 
@@ -481,12 +487,26 @@
 
     } 
 
-    .sobre-titulo {
+    .sobre-info {
 
-        position: relative;
-        bottom: 20px;
-        left: 150px;
+        margin-top: 1rem;
 
+    }
+
+    .sobre-info .sobre-texto {
+
+        background-color: #6C3593;
+        padding: 1rem;
+        border-radius: 5px;
+        width: 30%;
+
+    }
+
+    .sobre-img {
+
+        width: 30%;
+        
+    
     }
 
     .imagem-picpay {

@@ -46,7 +46,7 @@
 
       <!--    <h2 class="mensagem-titulo text-center text-lg-start my-4 fw-bold">Conheça a Vitória dos <br class="d-md-none"> Bichos</h2>
           <h4 class="mensagem-subtitulo text-center text-lg-start fw-bold fs-5 pt-2">Sobre a Associação</h4>   -->
-          <p class="mb-3 mensagem-apresentacao">São vários os chamados por dia que recebemos pela página do Facebook, telefonemas de pessoas que se deparam com animais em risco, atropelados, doentes ou abandonados, mas que sequer se comprometem a se responsabilizar por eles, oferecendo ao menos um local para acomodá-los. Pessoas que passam pelo local e não prestam socorro ao animal, achando que esse trabalho somente pode ser executado por nós. Poucas pessoas vão ao local socorrer ou mesmo se interessam pela causa, e o animal acaba sofrendo e até vindo a falecer sem socorro. Isso é muito triste. Gostaríamos sim de recolher todos os animais de rua e perdemos a conta de quantos já resgatamos por conta própria, assumindo sozinhas as responsabilidades de ter que levá-los para nossas próprias casas. Sem falar que as casas das protetoras já estão abarrotadas de animais, porém são tantos que encontramos na rua que na maioria das vezes só conseguimos alimentá-los. Dispomos de poucos recursos financeiros, vivemos de doações e até mesmo colocamos a mão no bolso para poder oferecer um pouquinho de dignidade e carinho a esses seres indefesos. Fazemos o que podemos e te convidamos a fazer parte da equipe!</p>
+          <p class="mb-3 mensagem-apresentacao">São vários os chamados por dia que recebemos pela página do Facebook, telefonemas de pessoas que se deparam com animais em risco, atropelados, doentes ou abandonados, mas que sequer se comprometem a se responsabilizar por eles, oferecendo ao menos um local para acomodá-los.<br><br>Pessoas que passam pelo local e não prestam socorro ao animal, achando que esse trabalho somente pode ser executado por nós. Poucas pessoas vão ao local socorrer ou mesmo se interessam pela causa, e o animal acaba sofrendo e até vindo a falecer sem socorro. Isso é muito triste.<br><br> Gostaríamos sim de recolher todos os animais de rua e perdemos a conta de quantos já resgatamos por conta própria, assumindo sozinhas as responsabilidades de ter que levá-los para nossas próprias casas. Sem falar que as casas das protetoras já estão abarrotadas de animais, porém são tantos que encontramos na rua que na maioria das vezes só conseguimos alimentá-los.<br><br> Dispomos de poucos recursos financeiros, vivemos de doações e até mesmo colocamos a mão no bolso para poder oferecer um pouquinho de dignidade e carinho a esses seres indefesos. Fazemos o que podemos e te convidamos a fazer parte da equipe!</p>
 
         </div>
       </div>
@@ -72,23 +72,27 @@
         <div>
           
           <p class="fw-bold sobre-objetivo text-center"> Objetivo: Castração </p>
-          
-          <p class="text-center text-md-start sobre-texto mx-4">   
+
+          <div class="d-lg-flex sobre-info align-items-lg-center justify-content-lg-center">
             
-            Temos um Centro de castração devidamente legalizado e registrado nos orgãos competentes, de iniciativa individual e privada da Vitória dos Bichos,
-            e promovemos castrações a preços populares especialmente para animais de rua ou de famílias carentes. Nossos preços são mais acessíveis graças aos parceiros e ao trabalho voluntário.
-            
-            <!-- 1. Não recebemos ajuda fianceira do municipio e governo <br>
-              2. Não dispomos de local para abrigo de animais <br>
-              3. Somente recolhemos animais que já possuem local de encaminhamento para o mesmo. <span class="fw-bold"> Ex: Lar temporário até que fique pronto para adoção. </span>  <br>
-              Realizamos um trabalho voluntário quando encontramos animais acidentados ou doentes em nosso percurso, ele recebe o tratamento adequado e vai para adoção posteriormente.
-            -->
-          </p>
-          <img src="{{ asset('images/geracoes-animais.jpg') }}" class="sobre-img mb-2" alt="10 gerações sucessivas de animais e suas crias">
+            <p class="text-center text-md-start sobre-texto mx-4">   
+              
+              Temos um Centro de castração devidamente legalizado e registrado nos orgãos competentes, de iniciativa individual e privada da Vitória dos Bichos,
+              e promovemos castrações a preços populares especialmente para animais de rua ou de famílias carentes. <br><br> Nossos preços são mais acessíveis graças aos parceiros e ao trabalho voluntário.
+              
+              <!-- 1. Não recebemos ajuda fianceira do municipio e governo <br>
+                2. Não dispomos de local para abrigo de animais <br>
+                3. Somente recolhemos animais que já possuem local de encaminhamento para o mesmo. <span class="fw-bold"> Ex: Lar temporário até que fique pronto para adoção. </span>  <br>
+                Realizamos um trabalho voluntário quando encontramos animais acidentados ou doentes em nosso percurso, ele recebe o tratamento adequado e vai para adoção posteriormente.
+              -->
+            </p>
+            <img src="{{ asset('images/geracoes-animais.jpg') }}" class="sobre-img mb-2" alt="10 gerações sucessivas de animais e suas crias">
+          </div>
+
             <p class="sobre-texto text-center fs-5 my-3">Conheça o nosso trabalho:</p>
             <div class="d-flex justify-content-center justify-content-md-evenly flex-column flex-md-row align-items-center mb-3 ">
-              <a href="{{ route('photos.index') }}" class="btn botao-galeria py-3  mb-2 fs-5">Galeria de fotos</a>
-              <a href="{{ route('videos.index') }}" class="btn botao-galeria py-3  mb-2 fs-5">Galeria de vídeos</a>
+              <a href="{{ route('photos.index') }}" class="botao-galeria py-3  mb-2 fs-5 text-center">Galeria de fotos</a>
+              <a href="{{ route('videos.index') }}" class="botao-galeria py-3  mb-2 fs-5 text-center">Galeria de vídeos</a>
             </div>
         </div>
       </div>
