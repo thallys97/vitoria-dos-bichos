@@ -46,6 +46,22 @@
 
 }
 
+.banner-titulo {
+
+    color: #38076B;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-right: 1rem;
+
+}
+
+.banner-subtitulo {
+
+    color: #6C3593;
+
+}
+
 
 .carousel-container-img {
 

@@ -7,7 +7,12 @@
 <section class="introduction">
 
       
-    <div class="banner" style="background-image: url('{{ asset('images/cao-gato.png') }}');">
+    <div class="banner d-flex flex-column justify-content-start align-items-end" style="background-image: url('{{ asset('images/cao-gato.png') }}');">
+
+      <h1 class="banner-titulo">A castração é a solução!</h1>
+      <p class="banner-subtitulo d-none d-md-block">Faça parte da mudança! Sua doação é vital para continuarmos nossa missão de castrar, proteger e proporcionar uma vida digna aos nossos amigos de quatro patas.</p>
+      <a href="https://app.picpay.com/user/vitoriadosbichos" class="doacao-botao py-3 fw-bold text-center">QUERO DOAR</a>
+
         
     </div>
 
