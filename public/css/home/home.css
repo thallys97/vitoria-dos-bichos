@@ -43,6 +43,7 @@
     background-position: left;
     width: 100%;
     height: 30vh;
+    gap: 1rem;
 
 }
 
@@ -59,6 +60,27 @@
 .banner-subtitulo {
 
     color: #6C3593;
+
+}
+
+.banner-botao {
+
+    background-color: #ffcd00;
+
+    color: #6C3593;
+
+    border: 3px solid #9D5A00;
+    border-radius: 5px;
+
+    width: 40%;
+
+    margin-right: 1rem;
+
+
+    cursor: pointer;
+
+    text-decoration: none;
+
 
 }
 
@@ -342,6 +364,31 @@
     
     }
 
+    .banner-titulo {
+
+        font-size: 2.75rem;
+        margin-bottom: 0;
+    
+    }
+    
+    .banner-subtitulo {
+    
+        width: 50%;
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-right: 1rem;
+        margin-bottom: 0;
+    
+    }
+    
+    .banner-botao {
+    
+        margin-right: 8rem;
+        width: 25%;
+    
+    }
+
+
 
     .seta-carousel {
 
@@ -449,6 +496,21 @@
     .banner {
 
         height: 80vh;
+        gap: 2rem;
+    
+    }
+
+    .banner-titulo {
+
+        font-size: 4rem;
+        margin-top: 2rem;
+    
+    }
+
+    .banner-botao {
+    
+        margin-right: 18rem;
+        width: 15%;
     
     }
 
