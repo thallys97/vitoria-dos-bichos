@@ -17,17 +17,25 @@
     </div>
 
       <div id="carouselExampleIndicators" class="carousel slide carousel-container" data-bs-ride="false">
+
+        
         <div class="carousel-inner carousel-container-img">
-          <div class="carousel-item active ">
-            <img src="{{ asset('images/rifa-beneficiente.jpg') }}" class="d-block carousel-img" alt="Imagem 1">
+          <div class="carousel-item active">
+            <img src="{{ asset('images/4-beneficios-castrar.jpg') }}" class="d-block carousel-img" alt="benefícios de castrar com a gente">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('images/castracao-preco-popular.jpg') }}" class="d-block carousel-img" alt="Imagem 2">
+            <img src="{{ asset('images/castracao-preco-popular.jpg') }}" class="d-block carousel-img" alt="preços populares para castração">
           </div>
           <div class="carousel-item">
-            <img src="{{ asset('images/castracao-9000-animais.jpg') }}" class="d-block carousel-img" alt="Imagem 3">
+            <img src="{{ asset('images/quem-ama-castra.jpg') }}" class="d-block carousel-img" alt="motivos para castrar o animal">
           </div>
+          <div class="carousel-item">
+            <img src="{{ asset('images/castracao-9000-animais.jpg') }}" class="d-block carousel-img" alt="castração em 9000 animais">
+          </div>          
         </div>
+
+        
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon seta-carousel" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
@@ -36,6 +44,14 @@
           <span class="carousel-control-next-icon seta-carousel" aria-hidden="true"></span>
           <span class="visually-hidden">Próximo</span>
         </button>
+
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+        </ol>
+
       </div>  
     
 
@@ -95,7 +111,7 @@
           </div>
 
             <p class="sobre-texto text-center fs-5 my-3">Conheça o nosso trabalho:</p>
-            <div class="d-flex justify-content-center justify-content-md-evenly flex-column flex-md-row align-items-center mb-3 ">
+            <div class="d-flex justify-content-center justify-content-md-center flex-column flex-md-row align-items-center mb-3 gap-md-5">
               <a href="{{ route('photos.index') }}" class="botao-galeria py-3  mb-2 fs-5 text-center">Galeria de fotos</a>
               <a href="{{ route('videos.index') }}" class="botao-galeria py-3  mb-2 fs-5 text-center">Galeria de vídeos</a>
             </div>

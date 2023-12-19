@@ -54,7 +54,7 @@
     font-weight: 700;
     margin-top: 1rem;
     margin-right: 1rem;
-
+    
 }
 
 .banner-subtitulo {
@@ -80,8 +80,13 @@
     cursor: pointer;
 
     text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-
+.banner-botao:hover {
+    background-color: #6C3593;
+    color: #ffcd00;
+    transform: scale(1.05);
 }
 
 
@@ -103,6 +108,12 @@
     height: 3rem;
 
 }
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
 
 .mensagem-conteudo{
@@ -143,7 +154,16 @@
     cursor: pointer;
     font-weight: 700;
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.botao-mensagem:hover {
+    background-color: #6C3593;
+    color: #ffcd00;
+    transform: scale(1.05);
+}
+
+
 
 
 .mensagem-texto {
@@ -160,7 +180,7 @@
 
     border: 3px solid #9D5A00;
 
-    width: 60%;
+    width: 55%;
 
     margin-top: 0.5rem;
 
@@ -168,6 +188,13 @@
     
     text-decoration: none;
 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-galeria:hover {
+    background-color: #6C3593;
+    color: #ffcd00;
+    transform: scale(1.05);
 }
 
 
@@ -268,7 +295,15 @@
 
     text-decoration: none;
 
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.doacao-botao:hover {
+    background-color: #6C3593;
+    color: #ffcd00;
+    transform: scale(1.05);
+}
+
  
 
 .parceiros{
@@ -399,7 +434,7 @@
 
     .botao-galeria {
  
-        width: 40%;
+        width: 25%;
 
         margin-top: 0;
 
@@ -562,13 +597,14 @@
 
     .botao-galeria {
 
-        width: 40%;
+        width: 20%;
 
     } 
 
     .sobre-info {
 
-        margin-top: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
 
     }
 
