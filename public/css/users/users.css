@@ -1,0 +1,141 @@
+
+.title{
+
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0 0 0;
+    text-align: center;
+
+}
+
+
+.form-label {
+    color: #000000;
+    font-weight: 700;
+    margin: 1.5rem 0 0.3rem 0; 
+}
+
+
+.form-buttons {
+
+    margin: 3rem 0 2rem 0;
+    
+
+}
+
+
+.button-user {
+
+    color: #000000;
+    background-color: #9D5A00;
+
+}
+
+.button-user-list, .button-delete {
+    
+    color: #000000;
+}
+
+.button-user-edit{
+
+    margin-bottom: 0.5rem;
+
+}
+
+
+
+/* Estilize o ícone de seta para baixo */
+.form-group .input-group {
+    position: relative;
+}
+
+.form-group .input-group .input-group-append {
+    position: absolute;
+    right: 10px; /* Ajuste o valor para a posição desejada */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Evita que o ícone seja clicável */
+}
+
+/* Ajuste o tamanho do ícone, se necessário */
+.form-group .input-group .input-group-text i.fas.fa-caret-down {
+    font-size: 1rem; /* Ajuste o tamanho desejado */
+}
+
+
+.users{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.users-th{
+
+    font-size: 1.1rem;
+
+}
+
+
+.users-td{
+
+    font-size: 1.1rem;
+
+}
+
+
+.no-users{
+
+    height: 17.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.no-users-card{
+    background-color: white;
+    border: #9D5A00 3px solid;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 1rem;
+}
+
+.no-users-text {
+
+    margin-bottom: 0;
+    font-size: 1.2rem;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .form-group-role{
+
+        width: 30%;
+
+    }
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+    .form-custom{
+
+        width: 70%;
+                
+    }
+
+    .button-user-edit{
+
+        margin-bottom: 0;
+    
+    }
+
+
+
+}

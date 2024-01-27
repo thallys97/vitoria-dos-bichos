@@ -1,0 +1,144 @@
+
+.title{
+
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.3rem 0;
+    text-align: center;
+
+}
+
+
+.form-label {
+    color: #000000;
+    font-weight: 700;
+    margin: 1.5rem 0 0.3rem 0; 
+}
+
+
+
+.form-buttons {
+
+    margin: 3rem 0 2rem 0;
+    
+
+}
+
+.button-photo {
+
+    color: #000000;
+    background-color: #9D5A00;
+    border: none;
+}
+
+.button-photo-list, .button-delete {
+    
+    color: #000000;
+}
+
+
+.custom-card{
+
+    border: #9D5A00 3px solid;
+
+}
+
+
+.card-title {
+
+    font-size: 1.8rem;
+    margin-bottom: 0;
+
+}
+
+
+.card-text {
+
+    font-size: 1.1rem;
+
+}
+
+
+.photo {
+
+    background-color: white;
+    border: #9D5A00 3px solid;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+    width: 100%;
+
+}
+
+.photo-title {
+
+    margin: 2rem 0;
+
+}
+
+.photo-content {
+
+    padding: 1.5rem 1rem 0 1rem;
+
+}
+
+.no-photos{
+
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.no-photos-card{
+    background-color: white;
+    border: #9D5A00 3px solid;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 1rem;
+}
+
+.no-photos-text {
+
+    margin-bottom: 0;
+    font-size: 1.2rem;
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+
+    .photo-content {
+
+        width: 80%;
+        padding: 2rem 0 3.5rem 0;
+        margin-bottom: 0;
+
+    
+    }
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+    .title{
+
+        margin-bottom: 0;
+
+    }   
+
+    .form-custom{
+
+        width: 80%;
+                
+    }
+
+
+
+}
+
+

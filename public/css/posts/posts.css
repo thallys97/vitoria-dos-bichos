@@ -1,0 +1,182 @@
+
+.title{
+
+    color: #000000;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.3rem 0;
+    text-align: center;
+
+}
+
+
+.form-label, .image-title {
+    color: #000000;
+    font-weight: 700;
+    margin: 1.5rem 0 0.3rem 0; 
+}
+
+
+#file-name {
+
+    color: #000000;
+    font-weight: 700;
+    background-color: #6C3593;
+
+}
+
+
+.form-buttons {
+
+    margin: 3rem 0 2rem 0;
+    
+
+}
+
+.button-post {
+
+    color: #000000;
+    background-color: #9D5A00;
+    border: none;
+}
+
+.button-post-list, .button-delete {
+    
+    color: #000000;
+}
+
+
+.custom-card{
+
+    border: #9D5A00 3px solid;
+
+}
+
+.card-link{
+
+    text-decoration: none;
+
+    color: #000000;
+}
+
+.card-title {
+
+    font-size: 1.8rem;
+    margin-bottom: 0;
+
+}
+
+
+.card-text {
+
+    font-size: 1.1rem;
+
+}
+
+
+.post {
+
+    background-color: white;
+    border: #9D5A00 3px solid;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+    width: 100%;
+
+}
+
+.post-title {
+
+    margin: 2rem 0;
+    padding: 0 1rem 0 1rem;
+
+}
+
+.post-content {
+
+    padding: 1.5rem 1rem 0 1rem;
+
+}
+
+.no-posts{
+
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.no-posts-card{
+    background-color: white;
+    border: #9D5A00 3px solid;
+    border-radius: 8px;
+    margin: 1.5rem 0 1.5rem 0;
+    padding: 1rem;
+}
+
+.no-posts-text {
+
+    margin-bottom: 0;
+    font-size: 1.2rem;
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .current-image{
+
+        width: 60%;
+    
+    }
+
+    .form-control-file {
+
+        width: 60%;
+
+    }
+
+    .post-img {
+
+        width: 80%;
+
+    }
+
+    .post-content {
+
+        width: 80%;
+        padding: 2rem 0 3.5rem 0;
+        margin-bottom: 0;
+
+    
+    }
+
+}
+
+
+
+@media screen and (min-width: 992px) {
+
+    .title{
+
+        margin-bottom: 0;
+
+    }   
+
+    .form-custom{
+
+        width: 80%;
+                
+    }
+
+    .post-title {
+
+        padding: 0 2rem 0 2rem;
+    
+    }
+
+
+
+}
+
+

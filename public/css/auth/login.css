@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: #38076B;
+
+}
+
+
+.custom-card{
+
+    color: black;
+
+    background-color: #9D5A00;
+
+}
+
+.login-button{
+    
+    background-color: #6C3593;
+
+    color: black;
+
+}

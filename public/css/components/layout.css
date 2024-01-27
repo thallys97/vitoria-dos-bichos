@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: #38076B;
+}
+
+.cabecalho{
+
+    background-color: black;
+
+    padding-bottom: 3rem;
+}
+
+.cabecalho-logo {
+
+    width: 50%;
+
+}
+
+.cabecalho-navbar{
+
+    width: 100%;
+
+}
+
+a.nav-link {
+
+    color: #6C3593;
+
+}
+
+
+.galeria-botao {
+
+    background-color: black;
+    width: 100%;
+    color: #6C3593;
+    font-weight: bold ;
+}
+
+.galeria-botao:hover {
+    
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.galeria-botao:focus {
+    
+    color: white;
+    font-weight: bolder;
+    
+}
+
+.dropdown-botao-item {
+
+    padding: 0 1rem;
+
+}
+
+.dropdown-botao-item:hover{
+
+    color: #9D5A00;
+
+}
+
+.dropdown-botao-item:focus{
+
+    color: #9D5A00;
+
+}
+
+.dashboard-button {
+
+    width: 15%;
+
+}
+
+.footer-info {
+
+    margin-bottom: 1rem;
+
+}
+
+.footer-info-link {
+
+    text-decoration: none;
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .dashboard-button {
+
+        width: 10%;
+    
+    }
+
+}    
+
+
+
+@media screen and (min-width: 992px) {
+
+    .cabecalho{
+    
+        padding-bottom: 0;
+    }
+
+    .cabecalho-logo-container{
+
+        width: 140px; /* Largura desejada */
+        height: 115px; /* Altura desejada após cortar 20px da parte superior e 20px da parte inferior */
+        overflow: hidden;
+
+    }
+
+    .cabecalho-logo {
+
+        width: 140px;
+        height: 150px;
+        margin-top: -20px;
+
+    }
+
+    .cabecalho-navbar{
+
+        width: 70%;
+    
+    }
+
+    .cabecalho-navbar-lista {
+
+        gap: 0.1rem;
+
+    }    
+
+    .cabecalho-navbar-lista li:hover {
+
+        border-bottom: 1px solid white;
+
+    }
+    
+    .cabecalho-navbar-item {
+
+        padding: 0.1rem 1rem;
+
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .galeria {
+
+        display: flex;
+        align-items: center;
+
+    }
+
+    .galeria-botao {
+
+        height: 100%;
+
+     }
+
+
+   
+
+    .dashboard-button {
+
+        width: 8%;
+    
+    }
+
+
+}    
